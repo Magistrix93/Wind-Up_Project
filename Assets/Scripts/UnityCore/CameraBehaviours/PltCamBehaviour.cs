@@ -25,6 +25,7 @@ public class PltCamBehaviour : MainCameraBehaviour
             groundPosition = player.transform.position.y;
 
         direction = new Vector3(player.transform.position.x + maxWidthDistance, groundPosition + maxHeightDistance, player.transform.position.z + maxDepthDistance);
+
         transform.position = Vector3.MoveTowards(transform.position, direction, step * Time.deltaTime);
     }
 }

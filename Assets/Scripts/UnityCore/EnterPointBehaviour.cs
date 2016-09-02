@@ -14,7 +14,7 @@ public class EnterPointBehaviour : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        thisSection = transform.parent.gameObject;
+        thisSection = transform.root.gameObject;
         newCam = newSection.transform.Find("Main Camera").gameObject;
     }
 
