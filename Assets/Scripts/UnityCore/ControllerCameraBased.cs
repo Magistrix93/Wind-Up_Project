@@ -83,15 +83,12 @@ public class ControllerCameraBased : MonoBehaviour
             MoveDirection += (JumpSpeed * Vector3.up);
         }
 
-    }
-
-
-    void LateUpdate()
-    {
-
         if (MoveDirection != Vector3.zero)
             MyController.Move(MoveDirection * Time.deltaTime);
+
     }
+
+
 
     private void Inputcontroller()
     {   
