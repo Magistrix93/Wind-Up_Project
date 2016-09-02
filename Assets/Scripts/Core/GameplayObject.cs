@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 
 
-public abstract class  GameplayObject
+public abstract class GameplayObject
 {
-    public float Health {get; protected set;}
-    public float HealthMax {get; protected set;}
+    public float Health { get; protected set; }
+    public float HealthMax { get; protected set; }
     public float Speed { get; protected set; }
     public bool Alive { get; protected set; }
 
@@ -28,7 +28,4 @@ public abstract class  GameplayObject
             Alive = false;
         }
     }
-
-
 }
-

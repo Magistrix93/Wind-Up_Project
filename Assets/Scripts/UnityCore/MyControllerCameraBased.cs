@@ -40,7 +40,7 @@ public class MyControllerCameraBased : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        
+
 
         if (MyController.isGrounded)
         {
@@ -50,7 +50,7 @@ public class MyControllerCameraBased : MonoBehaviour
         else
             Grounded = false;
 
-        
+
 
         if (Grounded)
         {
@@ -82,7 +82,7 @@ public class MyControllerCameraBased : MonoBehaviour
 
     void LateUpdate()
     {
-         
+
         if (MoveDirection != Vector3.zero)
             MyController.Move(MoveDirection * Time.deltaTime);
 
@@ -93,7 +93,7 @@ public class MyControllerCameraBased : MonoBehaviour
 
     private void Inputcontroller()
     {
-        if (Input.GetButton("Run")&&(MyController.isGrounded))
+        if (Input.GetButton("Run") && (MyController.isGrounded))
             RunSpeed = RunMultiplier;
 
         else
@@ -110,9 +110,9 @@ public class MyControllerCameraBased : MonoBehaviour
         }
 
 
-        if (Input.GetAxis("Horizontal")!=0)
+        if (Input.GetAxis("Horizontal") != 0)
         {
-            if (Input.GetAxis("Horizontal")>0)
+            if (Input.GetAxis("Horizontal") > 0)
                 CameraDirectionY = Camera.main.transform.right;
             else
                 CameraDirectionY = -Camera.main.transform.right;
@@ -121,10 +121,10 @@ public class MyControllerCameraBased : MonoBehaviour
         }
         if (!MyController.isGrounded)
         {
-           MoveDirection.x /= 2;
-           MoveDirection.z /= 2;
+            MoveDirection.x /= 2;
+            MoveDirection.z /= 2;
         }
-           
+
     }
 
 

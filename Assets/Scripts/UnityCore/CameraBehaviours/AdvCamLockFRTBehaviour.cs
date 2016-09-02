@@ -3,18 +3,15 @@ using System.Collections;
 
 public class AdvCamLockFRTBehaviour : MainCameraBehaviour
 {
-
-
     private float groundPosition;
     private Vector3 lookTarget;
-
 
     // Use this for initialization
     void Start()
     {
         GetPlayer();
         transform.position = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
-        Setting(player);        
+        Setting(player);
         groundPosition = player.transform.position.y;
     }
 
