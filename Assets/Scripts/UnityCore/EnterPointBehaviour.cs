@@ -32,10 +32,13 @@ public class EnterPointBehaviour : MonoBehaviour
             newSection.SetActive(true);
             player.transform.position = newExitPoint.transform.position;
             thisSection.SetActive(false);
+
             if ((newCam.GetComponent<AdvCamFreeSIDEBehaviour>()!=null) || (newCam.GetComponent<AdvCamLockSIDEBehaviour>()!=null))
-                    newCam.transform.position = new Vector3(transform.position.x, transform.position.y, player.transform.position.z);
+                newCam.transform.position = new Vector3(newCam.transform.position.x, newCam.transform.position.y, player.transform.position.z);
+
             if ((newCam.GetComponent<AdvCamFreeFRTBehaviour>() != null) || (newCam.GetComponent<AdvCamLockFRTBehaviour>() != null))
-                transform.position = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
+                newCam.transform.position = new Vector3(player.transform.position.x, newCam.transform.position.y, newCam.transform.position.z);
+
             other.gameObject.GetComponent<ControllerCameraBased>().CameraDirectionSetting(newCam);
         }
 
