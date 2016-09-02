@@ -20,6 +20,10 @@ public class ControllerCameraBased : MonoBehaviour
     public Vector3 CameraDirectionX;
     public Vector3 CameraDirectionY;
 
+    private Vector3 lookDirection;
+
+    private Animator animator;
+
     // Use this for initialization
     void Start()
     {
@@ -33,6 +37,7 @@ public class ControllerCameraBased : MonoBehaviour
         Grounded = false;
         MoveDirection = Vector3.zero;
         mass = 4f;
+        animator = GetComponent<Animator>();
 
     }
 
@@ -63,12 +68,18 @@ public class ControllerCameraBased : MonoBehaviour
             if (!Input.GetButton("Jump"))
                 CanJump = true;
             MoveDirection = Vector3.zero;
+            animator.SetBool("IsOnAir", false);
+            animator.SetBool("IsJumping", false);
         }
 
         Inputcontroller();
 
         if (!Grounded)
+        {
             MoveDirection += Physics.gravity * Time.deltaTime * mass;
+            animator.SetBool("IsOnAir", true);
+        }
+            
 
         if (MoveDirection.y > Physics.gravity.y / 5)
             if (Input.GetButton("Jump") && CanJump)
@@ -81,10 +92,23 @@ public class ControllerCameraBased : MonoBehaviour
         {
             Jumping = false;
             MoveDirection += (JumpSpeed * Vector3.up);
+            animator.SetBool("IsJumping", true);
         }
 
+        lookDirection = new Vector3(MoveDirection.x, 0, MoveDirection.z);
+
         if (MoveDirection != Vector3.zero)
+        {
             MyController.Move(MoveDirection * Time.deltaTime);
+            transform.LookAt(lookDirection);
+            animator.SetBool("IsRunning", true);
+        }
+            
+        else
+        {
+            animator.SetBool("IsRunning", false);
+        }
+            
 
     }
 
@@ -94,9 +118,17 @@ public class ControllerCameraBased : MonoBehaviour
     {   
         if (MyController.isGrounded)
             if (Input.GetButton("Run"))
+            {
                 RunSpeed = RunMultiplier;
+                animator.SetBool("IsSprinting", true);
+            }
+                
             else
+            {
                 RunSpeed = 1;
+                animator.SetBool("IsSprinting", false);
+            }
+                
 
         if (Input.GetAxis("Vertical") != 0)
         {
