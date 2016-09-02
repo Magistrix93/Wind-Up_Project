@@ -9,10 +9,13 @@ public class EnterPointBehaviour : MonoBehaviour
     private GameObject player;
     private GameObject thisSection;
 
+    private GameObject newCam;
+
     // Use this for initialization
     void Start()
     {
         thisSection = transform.parent.gameObject;
+        newCam = newSection.transform.Find("Main Camera").gameObject;
     }
 
     // Update is called once per frame
@@ -29,7 +32,7 @@ public class EnterPointBehaviour : MonoBehaviour
             newSection.SetActive(true);
             player.transform.position = newExitPoint.transform.position;
             thisSection.SetActive(false);
-            other.gameObject.GetComponent<ControllerCameraBased>().CameraDirectionSetting(Camera.current.gameObject);
+            other.gameObject.GetComponent<ControllerCameraBased>().CameraDirectionSetting(newCam);
         }
 
     }

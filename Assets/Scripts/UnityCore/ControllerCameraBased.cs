@@ -83,15 +83,11 @@ public class ControllerCameraBased : MonoBehaviour
             MoveDirection += (JumpSpeed * Vector3.up);
         }
 
-    }
-
-
-    void LateUpdate()
-    {
-
         if (MoveDirection != Vector3.zero)
             MyController.Move(MoveDirection * Time.deltaTime);
+
     }
+
 
     private void Inputcontroller()
     {
@@ -120,8 +116,9 @@ public class ControllerCameraBased : MonoBehaviour
             else
                 MoveDirection += (Speed * Mathf.Sign(Input.GetAxis("Horizontal")) * Input.GetAxis("Horizontal") * -CameraDirectionY * RunSpeed);
 
-
         }
+
+
         if (!MyController.isGrounded)
         {
             MoveDirection.x /= 2.5f;

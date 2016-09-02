@@ -8,7 +8,9 @@ public class AdvCamFreeFRTBehaviour : MainCameraBehaviour
     void Start()
     {
         GetPlayer();
+
         transform.position = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
+
         Setting(player);
     }
 

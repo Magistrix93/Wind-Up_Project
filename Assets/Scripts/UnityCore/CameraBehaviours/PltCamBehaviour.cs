@@ -4,6 +4,7 @@ using System.Collections;
 public class PltCamBehaviour : MainCameraBehaviour
 {
     private float groundPosition;
+
     // Use this for initialization
     void Start()
     {

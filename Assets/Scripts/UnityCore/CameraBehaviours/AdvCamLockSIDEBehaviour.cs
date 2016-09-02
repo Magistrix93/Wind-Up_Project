@@ -21,7 +21,7 @@ public class AdvCamLockSIDEBehaviour : MainCameraBehaviour
     // Update is called once per frame
     void Update()
     {
-        direction = new Vector3(transform.position.x, player.transform.position.y + maxHeightDistance, player.transform.position.z);
+        direction = new Vector3(transform.position.x, transform.position.y, player.transform.position.z);
         lookTarget = new Vector3(player.transform.position.x, groundPosition, player.transform.position.z);
     }
 
