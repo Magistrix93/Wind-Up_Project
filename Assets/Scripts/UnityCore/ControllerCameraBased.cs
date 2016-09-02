@@ -79,14 +79,13 @@ public class ControllerCameraBased : MonoBehaviour
             animator.SetBool("IsOnAir", false);
             animator.SetBool("IsJumping", false);
             
-            if (Input.GetButtonDown("Jump") && (!animator.GetCurrentAnimatorStateInfo(0).IsName("OnAir")))
+            if (Input.GetButtonDown("Jump") && (!animator.GetCurrentAnimatorStateInfo(0).IsName("OnAir")) && CanJump)
             {
-                MoveDirection += (JumpSpeed * Vector3.up);
-                animator.SetBool("IsJumping", true);
+                CanJump = false;
+                Jumping = true;
             }
         }
         else
-
             animator.SetBool("IsOnAir", false);
 
         
@@ -97,9 +96,9 @@ public class ControllerCameraBased : MonoBehaviour
             animator.SetBool("IsOnAir", true);
 
         }
-            
+
         //if (!Physics.Raycast(transform.position, Vector3.down, 0.75f))
-        //    if (Input.GetButton("Jump") && CanJump)
+        //    if (Input.GetButton("Jump") && )
         //    {
         //        CanJump = false;
         //        Jumping = true;
@@ -108,13 +107,13 @@ public class ControllerCameraBased : MonoBehaviour
         //    Grounded = false;
 
         //if (MoveDirection.y < Physics.gravity.y)
-        
-        //if (Jumping)
-        //{
-        //    Jumping = false;
-        //    MoveDirection += (JumpSpeed * Vector3.up);
-        //    animator.SetBool("IsJumping", true);
-        //}
+
+        if (Jumping)
+        {
+            Jumping = false;
+            MoveDirection += (JumpSpeed * Vector3.up);
+            animator.SetBool("IsJumping", true);
+        }
 
         Inputcontroller();
 
