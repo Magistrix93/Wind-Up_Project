@@ -28,7 +28,7 @@ public class MainCameraBehaviour : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         step = player.GetComponent<CharacterBehaviour>().character.Speed * 2.5f;
         controller = player.GetComponent<CharacterController>();
-        
+
     }
 
     public void Setting(GameObject player)
@@ -39,5 +39,5 @@ public class MainCameraBehaviour : MonoBehaviour
         maxWidthDistance = (transform.position.x - player.transform.position.x);
     }
 
-   
+
 }

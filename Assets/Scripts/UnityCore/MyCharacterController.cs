@@ -51,7 +51,7 @@ public class MyCharacterController : MonoBehaviour
 
         if (Grounded)
         {
-            if(!Input.GetButton("Jump"))
+            if (!Input.GetButton("Jump"))
                 CanJump = true;
             MoveDirection = Vector3.zero;
             Inputcontroller();
@@ -61,7 +61,7 @@ public class MyCharacterController : MonoBehaviour
             MoveDirection += Physics.gravity * Time.deltaTime;
 
 
-        if (MoveDirection.y > Physics.gravity.y/5)
+        if (MoveDirection.y > Physics.gravity.y / 5)
             if (Input.GetButton("Jump") && CanJump)
             {
                 CanJump = false;

@@ -14,7 +14,7 @@ public class PltCamBehaviour : MainCameraBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
 
@@ -22,10 +22,8 @@ public class PltCamBehaviour : MainCameraBehaviour
     {
         if (controller.isGrounded)
             groundPosition = player.transform.position.y;
-            
+
         direction = new Vector3(player.transform.position.x + maxWidthDistance, groundPosition + maxHeightDistance, player.transform.position.z + maxDepthDistance);
         transform.position = Vector3.MoveTowards(transform.position, direction, step * Time.deltaTime);
     }
-
-
 }

@@ -94,7 +94,7 @@ public class ControllerCameraBased : MonoBehaviour
     }
 
     private void Inputcontroller()
-    {   
+    {
         if (MyController.isGrounded)
             if (Input.GetButton("Run"))
                 RunSpeed = RunMultiplier;

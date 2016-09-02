@@ -4,6 +4,7 @@ using System.Collections;
 public class AdvCamLockSIDEBehaviour : MainCameraBehaviour
 {
 
+
     private float groundPosition;
     private Vector3 lookTarget;
 
@@ -12,7 +13,7 @@ public class AdvCamLockSIDEBehaviour : MainCameraBehaviour
     void Start()
     {
         GetPlayer();
-        transform.position = new Vector3(transform.position.x, transform.position.y, player.transform.position.z);
+        transform.position = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
         Setting(player);
         groundPosition = player.transform.position.y;
     }
@@ -20,7 +21,7 @@ public class AdvCamLockSIDEBehaviour : MainCameraBehaviour
     // Update is called once per frame
     void Update()
     {
-        direction = new Vector3(transform.position.x, transform.position.y, player.transform.position.z);
+        direction = new Vector3(transform.position.x, player.transform.position.y + maxHeightDistance, player.transform.position.z);
         lookTarget = new Vector3(player.transform.position.x, groundPosition, player.transform.position.z);
     }
 
