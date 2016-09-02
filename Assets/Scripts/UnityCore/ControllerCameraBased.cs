@@ -95,7 +95,7 @@ public class ControllerCameraBased : MonoBehaviour
             animator.SetBool("IsJumping", true);
         }
 
-        lookDirection = new Vector3(MoveDirection.x, 0, MoveDirection.z);
+        lookDirection = new Vector3(MoveDirection.x, 0, MoveDirection.z) * 10;
 
         if (MoveDirection != Vector3.zero)
         {
