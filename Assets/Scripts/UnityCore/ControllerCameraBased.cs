@@ -26,6 +26,10 @@ public class ControllerCameraBased : MonoBehaviour
 
     private GameObject model;
 
+    public float maxGravity;
+
+    public float raycast;
+
     // Use this for initialization
     void Start()
     {
@@ -41,8 +45,10 @@ public class ControllerCameraBased : MonoBehaviour
         mass = 4f;
         model = transform.Find("omyno").gameObject;
         animator = model.GetComponent<Animator>();
+        maxGravity = 0f;
+        raycast = 2.5f;
 
-    }
+}
 
     public void CameraDirectionSetting(GameObject activeCam)
     {
@@ -57,69 +63,86 @@ public class ControllerCameraBased : MonoBehaviour
     {
 
 
-        if (MyController.isGrounded)
-        {
+        if (Physics.Raycast(transform.position, Vector3.down, raycast))
             Grounded = true;
-        }
+
         else
             Grounded = false;
 
 
 
+
         if (Grounded)
         {
-            if (!Input.GetButton("Jump"))
-                CanJump = true;
+            
             MoveDirection = Vector3.zero;
             animator.SetBool("IsOnAir", false);
             animator.SetBool("IsJumping", false);
+            
+            if (Input.GetButtonDown("Jump") && (!animator.GetCurrentAnimatorStateInfo(0).IsName("OnAir")))
+            {
+                MoveDirection += (JumpSpeed * Vector3.up);
+                animator.SetBool("IsJumping", true);
+            }
         }
+        else
 
-        Inputcontroller();
+            animator.SetBool("IsOnAir", false);
+
+        
 
         if (!Grounded)
         {
             MoveDirection += Physics.gravity * Time.deltaTime * mass;
             animator.SetBool("IsOnAir", true);
+
         }
             
+        //if (!Physics.Raycast(transform.position, Vector3.down, 0.75f))
+        //    if (Input.GetButton("Jump") && CanJump)
+        //    {
+        //        CanJump = false;
+        //        Jumping = true;
 
-        if (MoveDirection.y > Physics.gravity.y / 5)
-            if (Input.GetButton("Jump") && CanJump)
-            {
-                CanJump = false;
-                Jumping = true;
-            }
+        //    }
+        //    Grounded = false;
 
-        if (Jumping)
-        {
-            Jumping = false;
-            MoveDirection += (JumpSpeed * Vector3.up);
-            animator.SetBool("IsJumping", true);
-        }
+        //if (MoveDirection.y < Physics.gravity.y)
+        
+        //if (Jumping)
+        //{
+        //    Jumping = false;
+        //    MoveDirection += (JumpSpeed * Vector3.up);
+        //    animator.SetBool("IsJumping", true);
+        //}
 
-        lookDirection = new Vector3(MoveDirection.x, 0, MoveDirection.z) * 10;
+        Inputcontroller();
+
+        lookDirection = new Vector3(MoveDirection.x, 0, MoveDirection.z) * 10;        
 
         if (MoveDirection != Vector3.zero)
         {
             MyController.Move(MoveDirection * Time.deltaTime);
             transform.LookAt(lookDirection);
-            animator.SetBool("IsRunning", true);
+            transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
         }
-            
+
         else
         {
             animator.SetBool("IsRunning", false);
+            animator.SetBool("IsSprinting", false);
         }
             
 
+        if (maxGravity > MoveDirection.y)
+            maxGravity = MoveDirection.y;
     }
 
 
 
     private void Inputcontroller()
     {   
-        if (MyController.isGrounded)
+        if (Grounded)
             if (Input.GetButton("Run"))
             {
                 RunSpeed = RunMultiplier;
@@ -133,28 +156,31 @@ public class ControllerCameraBased : MonoBehaviour
             }
                 
 
-        if (Input.GetAxis("Vertical") != 0)
+        if ((Input.GetAxis("Vertical") != 0) || (Input.GetAxis("Horizontal") != 0))
         {
             if (Input.GetAxis("Vertical") > 0)
                 MoveDirection += (Speed * Mathf.Sign(Input.GetAxis("Vertical")) * Input.GetAxis("Vertical") * CameraDirectionX * RunSpeed);
             else
                 MoveDirection += (Speed * Mathf.Sign(Input.GetAxis("Vertical")) * Input.GetAxis("Vertical") * -CameraDirectionX * RunSpeed);
 
-
-
-        }
-
-
-        if (Input.GetAxis("Horizontal") != 0)
-        {
             if (Input.GetAxis("Horizontal") > 0)
                 MoveDirection += (Speed * Mathf.Sign(Input.GetAxis("Horizontal")) * Input.GetAxis("Horizontal") * CameraDirectionY * RunSpeed);
             else
                 MoveDirection += (Speed * Mathf.Sign(Input.GetAxis("Horizontal")) * Input.GetAxis("Horizontal") * -CameraDirectionY * RunSpeed);
 
+            if(Grounded)
+                animator.SetBool("IsRunning", true);
 
         }
-        if (!MyController.isGrounded)
+
+        else
+        {
+            if (Grounded)
+                animator.SetBool("IsRunning", false);
+        }
+
+
+        if (!Grounded)
         {
             MoveDirection.x /= 2.5f;
             MoveDirection.z /= 2.5f;

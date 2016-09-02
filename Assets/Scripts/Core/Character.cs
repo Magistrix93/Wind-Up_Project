@@ -8,7 +8,7 @@ public class Character : GameplayObject
 {
     public float JumpSpeed;
     public float RunMultiplier;
-    public Character() : base(3, 10)
+    public Character() : base(3, 12)
     {
         JumpSpeed = 20f;
         RunMultiplier = 2f;
