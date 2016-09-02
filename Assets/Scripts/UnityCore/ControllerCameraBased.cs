@@ -24,6 +24,8 @@ public class ControllerCameraBased : MonoBehaviour
 
     private Animator animator;
 
+    private GameObject model;
+
     // Use this for initialization
     void Start()
     {
@@ -37,7 +39,8 @@ public class ControllerCameraBased : MonoBehaviour
         Grounded = false;
         MoveDirection = Vector3.zero;
         mass = 4f;
-        animator = GetComponent<Animator>();
+        model = transform.Find("omyno").gameObject;
+        animator = model.GetComponent<Animator>();
 
     }
 
