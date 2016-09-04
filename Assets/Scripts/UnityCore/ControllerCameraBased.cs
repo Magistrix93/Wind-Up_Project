@@ -78,7 +78,8 @@ public class ControllerCameraBased : MonoBehaviour
             MoveDirection = Vector3.zero;
             animator.SetBool("IsOnAir", false);
             animator.SetBool("IsJumping", false);
-            
+            CanJump = true;
+
             if (Input.GetButtonDown("Jump") && (!animator.GetCurrentAnimatorStateInfo(0).IsName("OnAir")) && CanJump)
             {
                 CanJump = false;
@@ -117,7 +118,7 @@ public class ControllerCameraBased : MonoBehaviour
 
         Inputcontroller();
 
-        lookDirection = new Vector3(MoveDirection.x, 0, MoveDirection.z) * 10;        
+        lookDirection = new Vector3(transform.position.x + MoveDirection.x, transform.position.y, transform.position.z + MoveDirection.z);  
 
         if (MoveDirection != Vector3.zero)
         {
