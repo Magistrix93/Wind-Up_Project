@@ -90,6 +90,7 @@ public class ControllerCameraBased : MonoBehaviour
             if (!Input.GetButton("Jump"))
                 CanJump = true;
             if (charaStates == states.Controllable)
+                if (Input.GetButton("Jump") && CanJump)
                 {
                     CanJump = false;
                     Jumping = true;
