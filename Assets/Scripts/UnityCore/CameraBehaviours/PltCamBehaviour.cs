@@ -21,7 +21,7 @@ public class PltCamBehaviour : MainCameraBehaviour
 
     void LateUpdate()
     {
-        if (controller.isGrounded)
+        if (controller.Grounded)
             groundPosition = player.transform.position.y;
 
         direction = new Vector3(player.transform.position.x + maxWidthDistance, groundPosition + maxHeightDistance, player.transform.position.z + maxDepthDistance);

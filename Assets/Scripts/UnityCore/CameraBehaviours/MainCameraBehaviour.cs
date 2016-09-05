@@ -6,7 +6,7 @@ public class MainCameraBehaviour : MonoBehaviour
     protected GameObject player;
     protected Vector3 direction;
     protected float step;
-    protected CharacterController controller;
+    protected ControllerCameraBased controller;
     protected float maxDepthDistance;
     protected float maxWidthDistance;
     protected float maxHeightDistance;
@@ -27,7 +27,7 @@ public class MainCameraBehaviour : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         step = player.GetComponent<CharacterBehaviour>().character.Speed * 2.5f;
-        controller = player.GetComponent<CharacterController>();
+        controller = player.GetComponent<ControllerCameraBased>();
     }
 
     public void Setting(GameObject player)
@@ -35,7 +35,7 @@ public class MainCameraBehaviour : MonoBehaviour
         maxHeightDistance = (transform.position.y - player.transform.position.y);
         maxDepthDistance = (transform.position.z - player.transform.position.z);
         maxWidthDistance = (transform.position.x - player.transform.position.x);
-        player.GetComponent<ControllerCameraBased>().CameraDirectionSetting(gameObject);
+        controller.CameraDirectionSetting(gameObject);
     }
 
 
