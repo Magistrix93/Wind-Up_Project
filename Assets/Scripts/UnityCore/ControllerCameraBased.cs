@@ -31,14 +31,15 @@ public class ControllerCameraBased : MonoBehaviour
 
     private new Rigidbody rigidbody;
 
-    private enum states
+    public enum states
     {
         Controllable,
         Inventory,
     }
 
-    private states charaStates;
- 
+   
+    public states charaStates;
+
 
     // Use this for initialization
     void Start()
@@ -58,7 +59,7 @@ public class ControllerCameraBased : MonoBehaviour
         charaStates = states.Controllable;
         rigidbody = GetComponent<Rigidbody>();
 
-}
+    }
 
     public void CameraDirectionSetting(GameObject activeCam)
     {
@@ -73,7 +74,7 @@ public class ControllerCameraBased : MonoBehaviour
     {
 
 
-        if (Physics.Raycast (transform.position, Vector3.down, raycast))
+        if (Physics.Raycast(transform.position, Vector3.down, raycast))
             Grounded = true;
 
         else
@@ -84,11 +85,13 @@ public class ControllerCameraBased : MonoBehaviour
 
         if (Grounded)
         {
-            
+
             MoveDirection = Vector3.zero;
             animator.SetBool("IsOnAir", false);
+
             if (!Input.GetButton("Jump"))
                 CanJump = true;
+
             if (charaStates == states.Controllable)
                 if (Input.GetButton("Jump") && CanJump)
                 {
@@ -99,51 +102,51 @@ public class ControllerCameraBased : MonoBehaviour
         else
             animator.SetBool("IsOnAir", false);
 
-        
 
-        if (!Grounded)
-        {
-            MoveDirection += Physics.gravity * Time.deltaTime * mass;
-            animator.SetBool("IsOnAir", true);
+
+            if (!Grounded)
+            {
+                MoveDirection += Physics.gravity * Time.deltaTime * mass;
+                animator.SetBool("IsOnAir", true);
+
+            }
+
+
+            if (Jumping)
+            {
+                Jumping = false;
+                MoveDirection += (JumpSpeed * Vector3.up);
+            }
+
+            if (charaStates == states.Controllable)
+                Inputcontroller();
+
+            lookDirection = new Vector3(transform.position.x + MoveDirection.x, transform.position.y, transform.position.z + MoveDirection.z);
+
+            if (MoveDirection != Vector3.zero)
+            {
+                rigidbody.MovePosition(transform.position + MoveDirection * Time.deltaTime);
+            }
+
+            else
+            {
+                animator.SetBool("IsRunning", false);
+                animator.SetBool("IsSprinting", false);
+            }
+
+
+            if (maxGravity > MoveDirection.y)
+                maxGravity = MoveDirection.y;
+
+            transform.LookAt(lookDirection);
+            transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
 
         }
-
-
-        if (Jumping)
-        {
-            Jumping = false;
-            MoveDirection += (JumpSpeed * Vector3.up);
-        }
-
-        if (charaStates == states.Controllable)
-            Inputcontroller();
-
-        lookDirection = new Vector3(transform.position.x + MoveDirection.x, transform.position.y, transform.position.z + MoveDirection.z);  
-
-        if (MoveDirection != Vector3.zero)
-        {
-            rigidbody.MovePosition(transform.position + MoveDirection * Time.deltaTime);         
-        }
-
-        else
-        {
-            animator.SetBool("IsRunning", false);
-            animator.SetBool("IsSprinting", false);
-        }
-            
-
-        if (maxGravity > MoveDirection.y)
-            maxGravity = MoveDirection.y;
-
-        transform.LookAt(lookDirection);
-        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
-
-    }
 
 
 
     private void Inputcontroller()
-    {   
+    {
         if (Grounded)
             if (Input.GetButton("Run"))
             {
@@ -151,13 +154,13 @@ public class ControllerCameraBased : MonoBehaviour
                 if (animator.GetBool("IsRunning"))
                     animator.SetBool("IsSprinting", true);
             }
-                
+
             else
             {
                 RunSpeed = 1;
                 animator.SetBool("IsSprinting", false);
             }
-                
+
 
         if ((Input.GetAxis("Vertical") != 0) || (Input.GetAxis("Horizontal") != 0))
         {
@@ -171,7 +174,7 @@ public class ControllerCameraBased : MonoBehaviour
             else
                 MoveDirection += (Speed * Input.GetAxis("Horizontal") * CameraDirectionY * RunSpeed);
 
-            if(Grounded)
+            if (Grounded)
                 animator.SetBool("IsRunning", true);
 
         }
