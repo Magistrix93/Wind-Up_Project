@@ -25,11 +25,9 @@ public class ControllerCameraBased : MonoBehaviour
 
     private GameObject model;
 
-    public float maxGravity;
+    public int gravity;
 
     public float raycast;
-
-    private new Rigidbody rigidbody;
 
     public enum states
     {
@@ -37,7 +35,7 @@ public class ControllerCameraBased : MonoBehaviour
         Inventory,
     }
 
-   
+
     public states charaStates;
 
 
@@ -57,8 +55,6 @@ public class ControllerCameraBased : MonoBehaviour
         animator = model.GetComponent<Animator>();
         raycast = 2.5f;
         charaStates = states.Controllable;
-        rigidbody = GetComponent<Rigidbody>();
-
     }
 
     public void CameraDirectionSetting(GameObject activeCam)
@@ -73,15 +69,21 @@ public class ControllerCameraBased : MonoBehaviour
     void FixedUpdate()
     {
 
-
         if (Physics.Raycast(transform.position, Vector3.down, raycast))
+        {
             Grounded = true;
+            gravity = 0;
+            animator.SetInteger("Gravity", gravity);
+        }
 
         else
             Grounded = false;
 
-
-
+        if (!Grounded)
+        {
+            MoveDirection += Physics.gravity * Time.deltaTime * mass;
+            animator.SetBool("IsOnAir", true);
+        }
 
         if (Grounded)
         {
@@ -98,50 +100,38 @@ public class ControllerCameraBased : MonoBehaviour
                     CanJump = false;
                     Jumping = true;
                 }
+        }    
+
+        if (Jumping)
+        {
+            Jumping = false;
+            MoveDirection += (JumpSpeed * Vector3.up);
         }
+
+
+        if (charaStates == states.Controllable)
+            Inputcontroller();
+
+        lookDirection = new Vector3(transform.position.x + MoveDirection.x, transform.position.y, transform.position.z + MoveDirection.z);
+
+        if (MoveDirection != Vector3.zero)
+            transform.position += MoveDirection * Time.deltaTime;
+
         else
-            animator.SetBool("IsOnAir", false);
-
-
-
-            if (!Grounded)
-            {
-                MoveDirection += Physics.gravity * Time.deltaTime * mass;
-                animator.SetBool("IsOnAir", true);
-
-            }
-
-
-            if (Jumping)
-            {
-                Jumping = false;
-                MoveDirection += (JumpSpeed * Vector3.up);
-            }
-
-            if (charaStates == states.Controllable)
-                Inputcontroller();
-
-            lookDirection = new Vector3(transform.position.x + MoveDirection.x, transform.position.y, transform.position.z + MoveDirection.z);
-
-            if (MoveDirection != Vector3.zero)
-            {
-                rigidbody.MovePosition(transform.position + MoveDirection * Time.deltaTime);
-            }
-
-            else
-            {
-                animator.SetBool("IsRunning", false);
-                animator.SetBool("IsSprinting", false);
-            }
-
-
-            if (maxGravity > MoveDirection.y)
-                maxGravity = MoveDirection.y;
-
-            transform.LookAt(lookDirection);
-            transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
-
+        {
+            animator.SetBool("IsRunning", false);
+            animator.SetBool("IsSprinting", false);
         }
+
+        if (gravity == 0)
+        {
+            gravity = (int)MoveDirection.y;
+            animator.SetInteger("Gravity", gravity);
+        }
+
+        transform.LookAt(lookDirection);
+
+    }
 
 
 
@@ -164,14 +154,10 @@ public class ControllerCameraBased : MonoBehaviour
 
         if ((Input.GetAxis("Vertical") != 0) || (Input.GetAxis("Horizontal") != 0))
         {
-            if (Input.GetAxis("Vertical") > 0)
-                MoveDirection += (Speed * Input.GetAxis("Vertical") * CameraDirectionX * RunSpeed);
-            else
+            if (Input.GetAxis("Vertical") != 0)
                 MoveDirection += (Speed * Input.GetAxis("Vertical") * CameraDirectionX * RunSpeed);
 
-            if (Input.GetAxis("Horizontal") > 0)
-                MoveDirection += (Speed * Input.GetAxis("Horizontal") * CameraDirectionY * RunSpeed);
-            else
+            if (Input.GetAxis("Horizontal") != 0)
                 MoveDirection += (Speed * Input.GetAxis("Horizontal") * CameraDirectionY * RunSpeed);
 
             if (Grounded)
