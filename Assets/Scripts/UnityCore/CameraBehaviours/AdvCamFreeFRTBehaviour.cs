@@ -4,6 +4,7 @@ using System;
 
 public class AdvCamFreeFRTBehaviour : MainCameraBehaviour
 {
+    public bool LookOnCharacter;
 
     // Use this for initialization
     void Start()
@@ -27,7 +28,8 @@ public class AdvCamFreeFRTBehaviour : MainCameraBehaviour
 
             transform.position = Vector3.MoveTowards(transform.position, direction, step * Time.deltaTime);
 
-            transform.LookAt(player.transform.position);
+            if (LookOnCharacter)
+                transform.LookAt(player.transform.position);
         }
 
     }

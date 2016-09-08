@@ -9,6 +9,7 @@ public class AdvCamLockSIDEBehaviour : MainCameraBehaviour
     private float groundPosition;
     private Vector3 lookTarget;
 
+    public bool LookOnCharacter;
 
     // Use this for initialization
     void Start()
@@ -31,9 +32,14 @@ public class AdvCamLockSIDEBehaviour : MainCameraBehaviour
         if(thisCamera.enabled)
         {
             direction = new Vector3(transform.position.x, transform.position.y, player.transform.position.z);
-            lookTarget = new Vector3(player.transform.position.x, groundPosition, player.transform.position.z);
+
+            if (LookOnCharacter)
+                lookTarget = new Vector3(player.transform.position.x, groundPosition, player.transform.position.z);
+
             transform.position = Vector3.MoveTowards(transform.position, direction, step * Time.deltaTime);
-            transform.LookAt(lookTarget);
+
+            if (LookOnCharacter)
+                transform.LookAt(lookTarget);
         }
         
     }
