@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MainCameraBehaviour : MonoBehaviour
+public abstract class MainCameraBehaviour : MonoBehaviour
 {
     protected GameObject player;
     protected Vector3 direction;
@@ -10,6 +10,7 @@ public class MainCameraBehaviour : MonoBehaviour
     protected float maxDepthDistance;
     protected float maxWidthDistance;
     protected float maxHeightDistance;
+    protected Camera thisCamera;
 
     // Use this for initialization
     void Start()
@@ -23,20 +24,23 @@ public class MainCameraBehaviour : MonoBehaviour
 
     }
 
-    public void GetPlayer()
+    public virtual void GetPlayer()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         step = player.GetComponent<CharacterBehaviour>().character.Speed * 2.5f;
         controller = player.GetComponent<ControllerCameraBased>();
+        controller.CameraDirectionSetting(gameObject);
     }
 
-    public void Setting(GameObject player)
+    public virtual void Setting(GameObject player)
     {
         maxHeightDistance = (transform.position.y - player.transform.position.y);
         maxDepthDistance = (transform.position.z - player.transform.position.z);
         maxWidthDistance = (transform.position.x - player.transform.position.x);
-        controller.CameraDirectionSetting(gameObject);
     }
+
+    public abstract void SetCamera();
+   
 
 
 }

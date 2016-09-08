@@ -14,21 +14,6 @@ public class TorchBehaviour : MonoBehaviour
     void Update()
     {
 
-    }
+    }   
 
-    void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.CompareTag("WallHidden"))
-        {
-            other.GetComponent<WallHiddenBehaviour>().ChangeMaterial();
-        }
-    }
-
-    void OnTriggerExit (Collider other)
-    {
-        if (other.gameObject.CompareTag("WallHidden"))
-        {
-            other.GetComponent<WallHiddenBehaviour>().ChangeMaterial();
-        }
-    }
 }

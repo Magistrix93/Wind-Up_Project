@@ -8,24 +8,43 @@ public class PltCamBehaviour : MainCameraBehaviour
     // Use this for initialization
     void Start()
     {
+        thisCamera = GetComponent<Camera>();
+
         GetPlayer();
+
+        groundPosition = player.transform.position.y;
+
         Setting(player);
+
     }
 
+   
     // Update is called once per frame
     void Update()
     {
+        if (thisCamera.enabled)
+        {
+            if (controller.Grounded)
+                groundPosition = player.transform.position.y;
 
+            direction = new Vector3(player.transform.position.x + maxWidthDistance, groundPosition + maxHeightDistance, player.transform.position.z + maxDepthDistance);
+
+            transform.position = Vector3.MoveTowards(transform.position, direction, step * Time.deltaTime);
+        }
     }
 
-
-    void LateUpdate()
+    public override void SetCamera() 
     {
-        if (controller.Grounded)
-            groundPosition = player.transform.position.y;
-
-        direction = new Vector3(player.transform.position.x + maxWidthDistance, groundPosition + maxHeightDistance, player.transform.position.z + maxDepthDistance);
-
-        transform.position = Vector3.MoveTowards(transform.position, direction, step * Time.deltaTime);
+        GetPlayer();
+        groundPosition = player.transform.position.y;
+        SetPosition();
+        Setting(player);
+        
     }
+
+    public void SetPosition()
+    {
+        transform.position = new Vector3(player.transform.position.x + maxWidthDistance, groundPosition + maxHeightDistance, player.transform.position.z + maxDepthDistance);
+    }
+
 }

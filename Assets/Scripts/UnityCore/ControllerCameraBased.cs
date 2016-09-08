@@ -79,12 +79,6 @@ public class ControllerCameraBased : MonoBehaviour
         else
             Grounded = false;
 
-        if (!Grounded)
-        {
-            MoveDirection += Physics.gravity * Time.deltaTime * mass;
-            animator.SetBool("IsOnAir", true);
-        }
-
         if (Grounded)
         {
 
@@ -100,7 +94,10 @@ public class ControllerCameraBased : MonoBehaviour
                     CanJump = false;
                     Jumping = true;
                 }
-        }    
+        }
+
+        else
+            MoveDirection += Physics.gravity * Time.deltaTime * mass;
 
         if (Jumping)
         {
@@ -108,14 +105,15 @@ public class ControllerCameraBased : MonoBehaviour
             MoveDirection += (JumpSpeed * Vector3.up);
         }
 
-
         if (charaStates == states.Controllable)
             Inputcontroller();
 
         lookDirection = new Vector3(transform.position.x + MoveDirection.x, transform.position.y, transform.position.z + MoveDirection.z);
 
         if (MoveDirection != Vector3.zero)
+        {
             transform.position += MoveDirection * Time.deltaTime;
+        }
 
         else
         {
@@ -130,6 +128,7 @@ public class ControllerCameraBased : MonoBehaviour
         }
 
         transform.LookAt(lookDirection);
+        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
 
     }
 

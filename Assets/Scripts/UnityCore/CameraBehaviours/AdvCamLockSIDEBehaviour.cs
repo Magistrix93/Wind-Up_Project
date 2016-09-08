@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class AdvCamLockSIDEBehaviour : MainCameraBehaviour
 {
@@ -13,22 +14,37 @@ public class AdvCamLockSIDEBehaviour : MainCameraBehaviour
     void Start()
     {
         GetPlayer();
+
         transform.position = new Vector3(transform.position.x, transform.position.y, player.transform.position.z);
-        Setting(player);
+
         groundPosition = player.transform.position.y;
+
+        Setting(player);
+
+        thisCamera = GetComponent<Camera>();
     }
+
 
     // Update is called once per frame
     void Update()
     {
-        direction = new Vector3(transform.position.x, transform.position.y, player.transform.position.z);
-        lookTarget = new Vector3(player.transform.position.x, groundPosition, player.transform.position.z);
+        if(thisCamera.enabled)
+        {
+            direction = new Vector3(transform.position.x, transform.position.y, player.transform.position.z);
+            lookTarget = new Vector3(player.transform.position.x, groundPosition, player.transform.position.z);
+            transform.position = Vector3.MoveTowards(transform.position, direction, step * Time.deltaTime);
+            transform.LookAt(lookTarget);
+        }
+        
     }
 
-    void LateUpdate()
+    public override void SetCamera()
     {
-        transform.position = Vector3.MoveTowards(transform.position, direction, step * Time.deltaTime);
-        transform.LookAt(lookTarget);
+        GetPlayer();
+
+        transform.position = new Vector3(transform.position.x, transform.position.y, player.transform.position.z);        
+
+        groundPosition = player.transform.position.y;
     }
 
 }

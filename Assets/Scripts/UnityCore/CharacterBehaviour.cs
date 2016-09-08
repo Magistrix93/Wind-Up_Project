@@ -10,6 +10,8 @@ public class CharacterBehaviour : MonoBehaviour
     {
         character = new Character();
     }
+
+
     // Use this for initialization
     void Start()
     {
