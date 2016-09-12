@@ -5,20 +5,18 @@ public class PltCamBehaviour : MainCameraBehaviour
 {
     private float groundPosition;
 
+    private Vector3 startPosition;
+
+    public bool resettable;
+
     // Use this for initialization
     void Start()
     {
         thisCamera = GetComponent<Camera>();
-
-        GetPlayer();
-
-        groundPosition = player.transform.position.y;
-
-        Setting(player);
-
+        startPosition = transform.position;
     }
 
-   
+
     // Update is called once per frame
     void Update()
     {
@@ -33,13 +31,22 @@ public class PltCamBehaviour : MainCameraBehaviour
         }
     }
 
-    public override void SetCamera() 
+    public override void SetCamera()
     {
         GetPlayer();
+
         groundPosition = player.transform.position.y;
-        SetPosition();
-        Setting(player);
-        
+
+        if ((maxDepthDistance == 0) && (maxHeightDistance == 0) && (maxWidthDistance == 0))
+            Setting(player);
+
+        if (resettable)
+            transform.position = startPosition;
+        else
+            SetPosition();
+
+
+
     }
 
     public void SetPosition()

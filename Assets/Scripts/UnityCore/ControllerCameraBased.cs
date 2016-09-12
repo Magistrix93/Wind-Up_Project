@@ -61,8 +61,11 @@ public class ControllerCameraBased : MonoBehaviour
     {
         CameraDirectionX = activeCam.transform.forward;
         CameraDirectionX.y = 0;
+        CameraDirectionX.Normalize();
+
         CameraDirectionY = activeCam.transform.right;
         CameraDirectionY.y = 0;
+        CameraDirectionY.Normalize();
     }
 
     // Update is called once per frame

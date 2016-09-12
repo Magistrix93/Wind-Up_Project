@@ -9,13 +9,7 @@ public class AdvCamFreeSIDEBehaviour : MainCameraBehaviour
     // Use this for initialization
     void Start()
     {
-        GetPlayer();
-
-        transform.position = new Vector3(transform.position.x, transform.position.y, player.transform.position.z);
-
-        Setting(player);
-
-        thisCamera = GetComponent<Camera>();
+       thisCamera = GetComponent<Camera>();
     }
 
    
@@ -37,6 +31,8 @@ public class AdvCamFreeSIDEBehaviour : MainCameraBehaviour
     public override void SetCamera()
     {
         GetPlayer();
+
+        Setting(player);
 
         transform.position = new Vector3(transform.position.x, transform.position.y, player.transform.position.z);
 

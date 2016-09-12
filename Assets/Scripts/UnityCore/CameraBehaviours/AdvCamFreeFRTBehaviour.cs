@@ -9,12 +9,6 @@ public class AdvCamFreeFRTBehaviour : MainCameraBehaviour
     // Use this for initialization
     void Start()
     {
-        GetPlayer();
-
-        transform.position = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
-
-        Setting(player);
-
         thisCamera = GetComponent<Camera>();
     }
 
@@ -38,8 +32,9 @@ public class AdvCamFreeFRTBehaviour : MainCameraBehaviour
     {
         GetPlayer();
 
-        transform.position = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
+        Setting(player);
 
+        transform.position = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
     }
 
 }

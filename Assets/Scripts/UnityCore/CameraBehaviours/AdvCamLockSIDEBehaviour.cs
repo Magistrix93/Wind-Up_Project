@@ -14,14 +14,6 @@ public class AdvCamLockSIDEBehaviour : MainCameraBehaviour
     // Use this for initialization
     void Start()
     {
-        GetPlayer();
-
-        transform.position = new Vector3(transform.position.x, transform.position.y, player.transform.position.z);
-
-        groundPosition = player.transform.position.y;
-
-        Setting(player);
-
         thisCamera = GetComponent<Camera>();
     }
 
@@ -48,7 +40,7 @@ public class AdvCamLockSIDEBehaviour : MainCameraBehaviour
     {
         GetPlayer();
 
-        transform.position = new Vector3(transform.position.x, transform.position.y, player.transform.position.z);        
+        transform.position = new Vector3(transform.position.x, transform.position.y, player.transform.position.z);
 
         groundPosition = player.transform.position.y;
     }
