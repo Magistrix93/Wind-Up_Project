@@ -23,12 +23,12 @@ public class SwitchCamTriggerBehaviour : MonoBehaviour
     {
         actualCam = Camera.current;
         if(other.gameObject.CompareTag("Player"))
-           if(cameraObject != actualCam.gameObject)
+           if(!cameraObject.activeSelf)
             {
-                actualCam.enabled = !actualCam.enabled;
-                actualCam.GetComponent<AudioListener>().enabled = false;                
-                myCam.enabled = !myCam.enabled;
-                myCam.GetComponent<AudioListener>().enabled = true;
+                actualCam.gameObject.SetActive(false);
+
+                cameraObject.SetActive(true);
+
                 myCam.GetComponent<MainCameraBehaviour>().SetCamera();
                 
             }

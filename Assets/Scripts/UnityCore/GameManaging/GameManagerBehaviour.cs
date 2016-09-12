@@ -9,8 +9,7 @@ public class GameManagerBehaviour : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        firstCamera.GetComponent<Camera>().enabled = true;
-        firstCamera.GetComponent<AudioListener>().enabled = true;
+        firstCamera.SetActive(true);
         firstCamera.GetComponent<MainCameraBehaviour>().SetCamera();
     }
 
