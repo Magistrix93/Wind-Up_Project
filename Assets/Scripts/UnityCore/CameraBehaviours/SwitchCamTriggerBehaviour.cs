@@ -4,13 +4,13 @@ using System.Collections;
 public class SwitchCamTriggerBehaviour : MonoBehaviour
 {
     public GameObject cameraObject;
-    private Camera myCam;
-    private Camera actualCam;
+
+    private GameObject actualCam;
 
     // Use this for initialization
     void Start()
     {
-        myCam = cameraObject.GetComponent<Camera>();
+
     }
 
     // Update is called once per frame
@@ -21,15 +21,15 @@ public class SwitchCamTriggerBehaviour : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        actualCam = Camera.current;
+        actualCam = Camera.main.gameObject;
         if(other.gameObject.CompareTag("Player"))
            if(!cameraObject.activeSelf)
             {
-                actualCam.gameObject.SetActive(false);
+                actualCam.SetActive(false);
 
                 cameraObject.SetActive(true);
 
-                myCam.GetComponent<MainCameraBehaviour>().SetCamera();
+                cameraObject.GetComponent<MainCameraBehaviour>().SetCamera();
                 
             }
     }
