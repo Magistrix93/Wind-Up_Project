@@ -29,14 +29,14 @@ public class ControllerCameraBased : MonoBehaviour
 
     public float raycast;
 
-    public enum states
+    public enum CharacterStates
     {
         Controllable,
-        Inventory,
+        Uncontrollable,
     }
 
 
-    public states charaStates;
+    public CharacterStates charaStates;
 
 
     // Use this for initialization
@@ -54,7 +54,7 @@ public class ControllerCameraBased : MonoBehaviour
         model = transform.Find("omyno").gameObject;
         animator = model.GetComponent<Animator>();
         raycast = 2.5f;
-        charaStates = states.Controllable;
+        charaStates = CharacterStates.Controllable;
     }
 
     public void CameraDirectionSetting(GameObject activeCam)
@@ -91,7 +91,7 @@ public class ControllerCameraBased : MonoBehaviour
             if (!Input.GetButton("Jump"))
                 CanJump = true;
 
-            if (charaStates == states.Controllable)
+            if (charaStates == CharacterStates.Controllable)
                 if (Input.GetButton("Jump") && CanJump)
                 {
                     CanJump = false;
@@ -108,7 +108,7 @@ public class ControllerCameraBased : MonoBehaviour
             MoveDirection += (JumpSpeed * Vector3.up);
         }
 
-        if (charaStates == states.Controllable)
+        if (charaStates == CharacterStates.Controllable)
             Inputcontroller();
 
         lookDirection = new Vector3(transform.position.x + MoveDirection.x, transform.position.y, transform.position.z + MoveDirection.z);
