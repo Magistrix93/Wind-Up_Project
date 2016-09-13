@@ -2,9 +2,9 @@
 using System.Collections;
 using System;
 
-public class AdvCamFreeFRTBehaviour : MainCameraBehaviour
+public class PzlCamFreeFRTBehaviour : MainCameraBehaviour
 {
-    public bool LookOnCharacter;
+    public bool LookOnCharacter = true;
 
     // Use this for initialization
     void Start()

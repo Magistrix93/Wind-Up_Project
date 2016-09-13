@@ -2,12 +2,12 @@
 using System.Collections;
 using System;
 
-public class AdvCamLockFRTBehaviour : MainCameraBehaviour
+public class PzlCamLockFRTBehaviour : MainCameraBehaviour
 {
     private float groundPosition;
     private Vector3 lookTarget;
 
-    public bool LookOnCharacter;
+    public bool LookOnCharacter = true;
 
     // Use this for initialization
     void Start()

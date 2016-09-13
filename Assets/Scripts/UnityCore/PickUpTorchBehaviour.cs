@@ -1,23 +1,27 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PickUpTorchBehaviour : MonoBehaviour {
+public class PickUpTorchBehaviour : MonoBehaviour
+{
 
-    public GameObject torch;
+    private GameObject torch;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    // Use this for initialization
+    void Start()
+    {
+        torch = GameObject.FindGameObjectWithTag("Torch");
+        GetComponent<BoxCollider>().isTrigger = true;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             torch.SetActive(true);
             Destroy(gameObject);

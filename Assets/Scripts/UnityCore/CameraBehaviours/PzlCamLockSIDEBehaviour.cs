@@ -2,28 +2,36 @@
 using System.Collections;
 using System;
 
-public class AdvCamFreeSIDEBehaviour : MainCameraBehaviour
+public class PzlCamLockSIDEBehaviour : MainCameraBehaviour
 {
-    public bool LookOnCharacter;
+
+
+    private float groundPosition;
+    private Vector3 lookTarget;
+
+    public bool LookOnCharacter = true;
 
     // Use this for initialization
     void Start()
     {
-       thisCamera = GetComponent<Camera>();
+        thisCamera = GetComponent<Camera>();
     }
 
-   
+
     // Update is called once per frame
     void Update()
     {
         if(thisCamera.enabled)
         {
-            direction = new Vector3(transform.position.x, player.transform.position.y + maxHeightDistance, player.transform.position.z);
+            direction = new Vector3(transform.position.x, transform.position.y, player.transform.position.z);
+
+            if (LookOnCharacter)
+                lookTarget = new Vector3(player.transform.position.x, groundPosition, player.transform.position.z);
 
             transform.position = Vector3.MoveTowards(transform.position, direction, step * Time.deltaTime);
 
             if (LookOnCharacter)
-                transform.LookAt(player.transform.position);
+                transform.LookAt(lookTarget);
         }
         
     }
@@ -32,11 +40,9 @@ public class AdvCamFreeSIDEBehaviour : MainCameraBehaviour
     {
         GetPlayer();
 
-        Setting(player);
-
         transform.position = new Vector3(transform.position.x, transform.position.y, player.transform.position.z);
 
+        groundPosition = player.transform.position.y;
     }
-
 
 }
