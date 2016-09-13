@@ -12,6 +12,7 @@ public class ItemHiddenBehaviour : MonoBehaviour
         rend = GetComponent<Renderer>();
         rend.enabled = false;
         coll = GetComponent<Collider>();
+        coll.isTrigger = true;
 
 
     }
