@@ -2,6 +2,11 @@
 using System.Collections;
 using System;
 
+public enum CharacterStates
+{
+    Controllable,
+    Uncontrollable,
+}
 
 public class ControllerCameraBased : MonoBehaviour
 {
@@ -29,11 +34,7 @@ public class ControllerCameraBased : MonoBehaviour
 
     public float raycast;
 
-    public enum CharacterStates
-    {
-        Controllable,
-        Uncontrollable,
-    }
+    
 
 
     public CharacterStates charaStates;
