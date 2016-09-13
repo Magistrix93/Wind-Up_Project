@@ -4,7 +4,9 @@ using System.Collections;
 public class WallHiddenBehaviour : MonoBehaviour
 {
 
-    private Material material;
+
+
+    public Material trasparentMat;
 
     private Collider coll;
 
@@ -14,10 +16,6 @@ public class WallHiddenBehaviour : MonoBehaviour
     void Start()
     {
         coll = GetComponent<Collider>();
-        material = GetComponent<Renderer>().material;
-        color = material.color;
-
-        color.a -= 0.4f;
     }
 
     // Update is called once per frame
@@ -30,7 +28,8 @@ public class WallHiddenBehaviour : MonoBehaviour
     {
         if(other.CompareTag("Torch"))
         {
-            material.color = color;
+            GetComponent<Renderer>().sharedMaterial = trasparentMat;
+
             coll.isTrigger = true;
         }
     }
