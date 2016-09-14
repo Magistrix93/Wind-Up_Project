@@ -73,7 +73,7 @@ public class CuboSwitchBehaviour : MonoBehaviour
                     }
                     else
                     {
-                        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+                        transform.position = new Vector3(transform.position.x, maxHeightA, transform.position.z);
                         movement = false;
                     }
                 }
@@ -87,7 +87,7 @@ public class CuboSwitchBehaviour : MonoBehaviour
                         }
                         else
                         {
-                            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+                            transform.position = new Vector3(maxHeightA, transform.position.y, transform.position.z);
                             movement = false;
                         }
                     }
@@ -101,7 +101,7 @@ public class CuboSwitchBehaviour : MonoBehaviour
                             }
                             else
                             {
-                                transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+                                transform.position = new Vector3(transform.position.x, transform.position.y, maxHeightA);
                                 movement = false;
                             }
                         }
@@ -118,7 +118,7 @@ public class CuboSwitchBehaviour : MonoBehaviour
                     }
                     else
                     {
-                        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+                        transform.position = new Vector3(transform.position.x, minHeightB, transform.position.z);
                         movement = false;
                     }
                 }
@@ -132,7 +132,7 @@ public class CuboSwitchBehaviour : MonoBehaviour
                         }
                         else
                         {
-                            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+                            transform.position = new Vector3(minHeightB, transform.position.y, transform.position.z);
                             movement = false;
                         }
                     }
@@ -146,7 +146,7 @@ public class CuboSwitchBehaviour : MonoBehaviour
                             }
                             else
                             {
-                                transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+                                transform.position = new Vector3(transform.position.x, transform.position.y, minHeightB);
                                 movement = false;
                             }
                         }
@@ -168,7 +168,7 @@ public class CuboSwitchBehaviour : MonoBehaviour
                     }
                     else
                     {
-                        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+                        transform.position = new Vector3(transform.position.x, minHeightA, transform.position.z);
                         reverseMovement = false;
                     }
                 }
@@ -182,7 +182,7 @@ public class CuboSwitchBehaviour : MonoBehaviour
                         }
                         else
                         {
-                            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+                            transform.position = new Vector3(minHeightA, transform.position.y, transform.position.z);
                             reverseMovement = false;
                         }
                     }
@@ -196,7 +196,7 @@ public class CuboSwitchBehaviour : MonoBehaviour
                             }
                             else
                             {
-                                transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+                                transform.position = new Vector3(transform.position.x, transform.position.y, minHeightA);
                                 reverseMovement = false;
                             }
                         }
@@ -213,7 +213,7 @@ public class CuboSwitchBehaviour : MonoBehaviour
                     }
                     else
                     {
-                        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+                        transform.position = new Vector3(transform.position.x, maxHeightB, transform.position.z);
                         reverseMovement = false;
                     }
                 }
@@ -227,7 +227,7 @@ public class CuboSwitchBehaviour : MonoBehaviour
                         }
                         else
                         {
-                            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+                            transform.position = new Vector3(maxHeightB, transform.position.y, transform.position.z);
                             reverseMovement = false;
                         }
                     }
@@ -241,7 +241,7 @@ public class CuboSwitchBehaviour : MonoBehaviour
                             }
                             else
                             {
-                                transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+                                transform.position = new Vector3(transform.position.x, transform.position.y, maxHeightB);
                                 reverseMovement = false;
                             }
                         }
@@ -259,14 +259,14 @@ public class CuboSwitchBehaviour : MonoBehaviour
                 {
                     if (this.tag == "cuboA")
                     {
-                        transform.position = new Vector3(transform.position.x, transform.position.y - 5 * (sizeY / 2), transform.position.z);
+                        transform.position = new Vector3(transform.position.x, transform.position.y - 5 * (sizeY / 2)+2.5f, transform.position.z);
 
                         maxHeightA = transform.position.y + 5 * sizeY;
                         minHeightA = transform.position.y;
                     }
                     else
                     {
-                        transform.position = new Vector3(transform.position.x, transform.position.y + 5 * (sizeY / 2), transform.position.z);
+                        transform.position = new Vector3(transform.position.x, transform.position.y + 5 * (sizeY / 2)+2.5f, transform.position.z);
 
                         maxHeightB = transform.position.y;
                         minHeightB = transform.position.y - 5 * sizeY;
@@ -277,14 +277,14 @@ public class CuboSwitchBehaviour : MonoBehaviour
                 {
                     if (this.tag == "cuboA")
                     {
-                        transform.position = new Vector3(transform.position.x - 5 * (sizeX / 2), transform.position.y, transform.position.z);
+                        transform.position = new Vector3(transform.position.x - 5 * (sizeX / 2)-2.5f, transform.position.y, transform.position.z);
 
                         maxHeightA = transform.position.x + 5 * sizeX;
                         minHeightA = transform.position.x;
                     }
                     else
                     {
-                        transform.position = new Vector3(transform.position.x + 5 * (sizeX / 2), transform.position.y, transform.position.z);
+                        transform.position = new Vector3(transform.position.x + 5 * (sizeX / 2)-2.5f, transform.position.y, transform.position.z);
 
                         maxHeightB = transform.position.x;
                         minHeightB = transform.position.x - 5 * sizeX;
@@ -295,14 +295,14 @@ public class CuboSwitchBehaviour : MonoBehaviour
                 {
                     if (this.tag == "cuboA")
                     {
-                        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - 5 * (sizeZ / 2));
+                        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - 5 * (sizeZ / 2)-2.5f);
 
                         maxHeightA = transform.position.z + 5 * sizeZ;
                         minHeightA = transform.position.z;
                     }
                     else
                     {
-                        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 5 * (sizeZ / 2));
+                        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 5 * (sizeZ / 2)-2.5f);
 
                         maxHeightB = transform.position.z;
                         minHeightB = transform.position.z - 5 * sizeZ;
