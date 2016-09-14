@@ -21,7 +21,7 @@ public class PickUpTorchBehaviour : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             torch.SetActive(true);
             Destroy(gameObject);

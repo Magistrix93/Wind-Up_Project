@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class KeyDoorTrigger : MonoBehaviour
+public class KeyDoorTriggerBehaviour : MonoBehaviour
 {
     public bool chiave;
 
@@ -19,10 +19,10 @@ public class KeyDoorTrigger : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             chiave=true;
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 }

@@ -2,28 +2,28 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class DoorTrigger : MonoBehaviour
+public class DoorTriggerBehaviour : MonoBehaviour
 {
     public GameObject key;
-    public bool puoiEntrare;
+    public KeyDoorTriggerBehaviour porta;
 
     // Use this for initialization
     void Start()
     {
-        
+        porta = key.GetComponent<KeyDoorTriggerBehaviour>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        puoiEntrare = key.GetComponent<KeyDoorTrigger>().chiave;
+        
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            if (puoiEntrare)
+            if (porta.chiave)
                 SceneManager.LoadScene("scena 3");
 
         }
