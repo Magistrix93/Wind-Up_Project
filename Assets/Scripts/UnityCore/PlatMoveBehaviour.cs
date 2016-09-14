@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 
-public class PlatMove : MonoBehaviour
+public class PlatMoveBehaviour : MonoBehaviour
 {
 
     public Transform[] Plat;
