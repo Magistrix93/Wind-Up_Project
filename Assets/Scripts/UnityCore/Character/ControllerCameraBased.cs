@@ -34,8 +34,7 @@ public class ControllerCameraBased : MonoBehaviour
 
     public float raycast;
 
-    
-
+    private RaycastHit hit;
 
     public CharacterStates charaStates;
 
@@ -73,15 +72,23 @@ public class ControllerCameraBased : MonoBehaviour
     void FixedUpdate()
     {
 
-        if (Physics.Raycast(transform.position, Vector3.down, raycast))
+        if (Physics.Raycast(transform.position, Vector3.down,out hit, raycast))
         {
             Grounded = true;
             gravity = 0;
             animator.SetInteger("Gravity", gravity);
+            if(hit.transform.CompareTag("Platform"))
+            {
+                transform.SetParent(hit.transform);
+            }
         }
 
         else
+        {
             Grounded = false;
+            transform.parent = null;
+        }
+            
 
         if (Grounded)
         {
