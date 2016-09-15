@@ -23,7 +23,7 @@ public class PickUpTorchBehaviour : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            torch.SetActive(true);
+            torch.GetComponent<TorchBehaviour>().Active();
             Destroy(gameObject);
         }
     }

@@ -15,7 +15,7 @@ public class ItemHiddenBehaviour : MonoBehaviour
     private Color color;
     private Color startColor;
 
-    public float intensity = 0;
+    private float intensity = 0;
 
     // Use this for initialization
     void Start()
