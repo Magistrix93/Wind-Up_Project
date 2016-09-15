@@ -26,6 +26,9 @@ public class ItemHiddenBehaviour : MonoBehaviour
         coll.isTrigger = true;
         particles = transform.Find("Hidden_particles").gameObject;
         particles.SetActive(false);
+        startColor = rend.material.GetColor("_EmissionColor");
+        startColor = new Color(0.01f, 0.01f, 0.01f);
+        rend.material.SetColor("_EmissionColor", startColor);
 
     }
 
