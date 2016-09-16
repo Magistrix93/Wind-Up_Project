@@ -12,6 +12,10 @@ public class WallHiddenBehaviour : MonoBehaviour
 
     private bool triggered = false;
 
+    private bool fading = false;
+
+    private Color color;
+
     // Use this for initialization
     void Start()
     {
@@ -26,7 +30,19 @@ public class WallHiddenBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(fading)
+        {
+            color = rend.materials[0].GetColor("_Color");
+            color.a -= 0.5f * Time.deltaTime;
+            if (color.a <= 0.35f)
+            {
+                color.a = 0.35f;
+                fading = false;
+            }                
+            rend.materials[0].SetColor("_Color", color);
+            rend.materials[1].SetColor("_Color", color);
+            rend.materials[2].SetColor("_Color", color);
+        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -37,6 +53,7 @@ public class WallHiddenBehaviour : MonoBehaviour
                 rend.materials = traspMaterials;
 
                 GetComponent<CubeTileBehaviour>().SetTiling();
+                fading = true;
                 coll.isTrigger = true;
                 triggered = true;
             }
