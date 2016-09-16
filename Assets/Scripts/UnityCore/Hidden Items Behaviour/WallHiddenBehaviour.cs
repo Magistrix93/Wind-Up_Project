@@ -4,18 +4,23 @@ using System.Collections;
 public class WallHiddenBehaviour : MonoBehaviour
 {
 
+    private Renderer rend;
 
-
-    public Material trasparentMat;
+    private Material[] traspMaterials;
 
     private Collider coll;
 
-    private Color color;
+    private bool triggered = false;
 
     // Use this for initialization
     void Start()
     {
         coll = GetComponent<Collider>();
+        rend = GetComponent<Renderer>();
+        traspMaterials = new Material[3];
+        traspMaterials[0] = Resources.Load<Material>("FacceWidthDepthTransp");
+        traspMaterials[1] = Resources.Load<Material>("FacceDepthHeightTrasp");
+        traspMaterials[2] = Resources.Load<Material>("FacceWidthHeghtTransp");
     }
 
     // Update is called once per frame
@@ -26,12 +31,15 @@ public class WallHiddenBehaviour : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Torch"))
-        {
-            GetComponent<Renderer>().sharedMaterial = trasparentMat;
+        if(!triggered)
+            if(other.CompareTag("Torch"))
+            {
+                rend.materials = traspMaterials;
 
-            coll.isTrigger = true;
-        }
+                GetComponent<CubeTileBehaviour>().SetTiling();
+                coll.isTrigger = true;
+                triggered = true;
+            }
     }
 
 }
