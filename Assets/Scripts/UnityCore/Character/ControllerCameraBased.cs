@@ -20,6 +20,7 @@ public class ControllerCameraBased : MonoBehaviour
 
     public bool Jumping;
     public bool Grounded;
+    public bool platformRotate;
 
     public Vector3 CameraDirectionX;
     public Vector3 CameraDirectionY;
@@ -75,6 +76,7 @@ public class ControllerCameraBased : MonoBehaviour
         if (Physics.Raycast(transform.position, Vector3.down,out hit, raycast))
         {
             Grounded = true;
+            platformRotate = false;
             gravity = 0;
             animator.SetInteger("Gravity", gravity);
             if(hit.transform.CompareTag("Platform"))
@@ -104,6 +106,7 @@ public class ControllerCameraBased : MonoBehaviour
                 {
                     CanJump = false;
                     Jumping = true;
+                    platformRotate = true;
                 }
         }
 
@@ -142,7 +145,6 @@ public class ControllerCameraBased : MonoBehaviour
         transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
 
     }
-
 
 
     private void Inputcontroller()
