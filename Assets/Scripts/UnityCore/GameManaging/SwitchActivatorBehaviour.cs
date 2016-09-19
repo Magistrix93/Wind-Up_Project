@@ -27,6 +27,8 @@ public class SwitchActivatorBehaviour : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
+
             for (int i = 0; i < lenghtA; i++)
             {
                 findCubeA[i].GetComponent<CuboSwitchBehaviour>().MovingCubes();
