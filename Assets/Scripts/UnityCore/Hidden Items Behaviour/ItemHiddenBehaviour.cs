@@ -51,7 +51,7 @@ public class ItemHiddenBehaviour : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if(!check)
-            if ((other.CompareTag("Torch")) && (coll.isTrigger))
+            if ((other.CompareTag("Visor")) && (coll.isTrigger))
             {
                 coll.isTrigger = false;
                 rend.enabled = true;

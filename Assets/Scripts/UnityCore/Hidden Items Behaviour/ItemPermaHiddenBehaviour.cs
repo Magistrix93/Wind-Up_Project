@@ -77,7 +77,7 @@ public class ItemPermaHiddenBehaviour : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (!check)
-            if (other.CompareTag("Torch"))
+            if (other.CompareTag("Visor"))
             {
                 particles.SetActive(false);
                 StopAllCoroutines();
@@ -94,7 +94,7 @@ public class ItemPermaHiddenBehaviour : MonoBehaviour
     void OnTriggerExit(Collider other)
     {
         if (check)
-            if (other.CompareTag("Torch"))
+            if (other.CompareTag("Visor"))
             {
                 particles.SetActive(false);
                 StopAllCoroutines();

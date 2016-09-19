@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TorchBehaviour : MonoBehaviour
+public class VisorBehaviour : MonoBehaviour
 {
     private GameObject spotlight;
     // Use this for initialization

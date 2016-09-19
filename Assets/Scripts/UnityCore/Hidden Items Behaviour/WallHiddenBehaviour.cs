@@ -48,7 +48,7 @@ public class WallHiddenBehaviour : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if(!triggered)
-            if(other.CompareTag("Torch"))
+            if(other.CompareTag("Visor"))
             {
                 rend.materials = traspMaterials;
 

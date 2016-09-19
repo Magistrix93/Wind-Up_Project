@@ -4,12 +4,12 @@ using System.Collections;
 public class PickUpTorchBehaviour : MonoBehaviour
 {
 
-    private GameObject torch;
+    private GameObject visor;
 
     // Use this for initialization
     void Start()
     {
-        torch = GameObject.FindGameObjectWithTag("Torch");
+        visor = GameObject.FindGameObjectWithTag("Visor");
         GetComponent<BoxCollider>().isTrigger = true;
     }
 
@@ -23,7 +23,7 @@ public class PickUpTorchBehaviour : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            torch.GetComponent<TorchBehaviour>().Active();
+            visor.GetComponent<VisorBehaviour>().Active();
             Destroy(gameObject);
         }
     }
