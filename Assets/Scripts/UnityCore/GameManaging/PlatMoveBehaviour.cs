@@ -31,7 +31,7 @@ public class PlatMoveBehaviour : MonoBehaviour
         size = Plat.Length;
         actualPosition = transform.position;
         StartCoroutine(Attesa());
-        coll = GetComponent<BoxCollider>();
+        coll = transform.Find("Cube").GetComponent<BoxCollider>();
 
 
     }

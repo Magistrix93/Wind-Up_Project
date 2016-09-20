@@ -84,7 +84,7 @@ public class ControllerCameraBased : MonoBehaviour
             animator.SetInteger("Gravity", gravity);
             if (hit.transform.CompareTag("Platform"))
             {
-                transform.SetParent(hit.transform);
+                transform.SetParent(hit.transform.parent);
             }
             
         }
@@ -93,6 +93,7 @@ public class ControllerCameraBased : MonoBehaviour
         {
             Grounded = false;
             transform.parent = null;
+
         }
 
 
