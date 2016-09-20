@@ -39,6 +39,8 @@ public class ControllerCameraBased : MonoBehaviour
 
     public CharacterStates charaStates;
 
+    private Rigidbody rigid;
+
 
     // Use this for initialization
     void Start()
@@ -46,6 +48,7 @@ public class ControllerCameraBased : MonoBehaviour
         Speed = GetComponent<CharacterBehaviour>().character.Speed;
         JumpSpeed = GetComponent<CharacterBehaviour>().character.JumpSpeed;
         RunMultiplier = GetComponent<CharacterBehaviour>().character.RunMultiplier;
+        rigid = GetComponent<Rigidbody>();
         RunSpeed = 1f;
         CanJump = false;
         Jumping = false;
@@ -54,7 +57,7 @@ public class ControllerCameraBased : MonoBehaviour
         mass = 4f;
         model = transform.Find("omyno").gameObject;
         animator = model.GetComponent<Animator>();
-        raycast = 2.5f;
+        raycast = 1.6f;
         charaStates = CharacterStates.Controllable;
     }
 
@@ -73,16 +76,17 @@ public class ControllerCameraBased : MonoBehaviour
     void FixedUpdate()
     {
 
-        if (Physics.Raycast(transform.position, Vector3.down,out hit, raycast))
+        if (Physics.SphereCast(transform.position, 0.90f, Vector3.down, out hit, raycast))
         {
             Grounded = true;
             platformRotate = false;
             gravity = 0;
             animator.SetInteger("Gravity", gravity);
-            if(hit.transform.CompareTag("Platform"))
+            if (hit.transform.CompareTag("Platform"))
             {
                 transform.SetParent(hit.transform);
             }
+            
         }
 
         else
@@ -90,11 +94,12 @@ public class ControllerCameraBased : MonoBehaviour
             Grounded = false;
             transform.parent = null;
         }
-            
+
 
         if (Grounded)
         {
-
+            rigid.velocity = Vector3.zero;
+            rigid.angularVelocity = Vector3.zero;
             MoveDirection = Vector3.zero;
             animator.SetBool("IsOnAir", false);
 
@@ -126,7 +131,7 @@ public class ControllerCameraBased : MonoBehaviour
 
         if (MoveDirection != Vector3.zero)
         {
-            transform.position += MoveDirection * Time.deltaTime;
+            transform.position += MoveDirection * Time.fixedDeltaTime;
         }
 
         else
