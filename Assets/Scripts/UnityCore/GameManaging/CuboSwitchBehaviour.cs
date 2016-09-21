@@ -30,7 +30,7 @@ public class CuboSwitchBehaviour : MonoBehaviour
     void Start()
     {
 
-        transform.localScale = new Vector3(5 * sizeX, 5 * sizeY, 5 * sizeZ);
+        transform.localScale = new Vector3(sizeX, sizeY, sizeZ);
 
         movement = false;
         reverseMovement = false;
