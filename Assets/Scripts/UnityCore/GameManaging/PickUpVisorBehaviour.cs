@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PickUpTorchBehaviour : MonoBehaviour
+public class PickUpVisorBehaviour : MonoBehaviour
 {
 
     private GameObject visor;
