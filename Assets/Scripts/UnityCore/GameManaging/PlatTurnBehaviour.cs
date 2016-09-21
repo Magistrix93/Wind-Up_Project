@@ -7,9 +7,11 @@ public class PlatTurnBehaviour : MonoBehaviour
     private bool groundControl;
     private bool controlJumping;
 
+    private GameObject enterPoint;
+
     private BoxCollider coll;
 
-    private bool stopRotation;
+    private bool stopRotation = true;
     private float direction;
 
     public float speed;
@@ -23,7 +25,7 @@ public class PlatTurnBehaviour : MonoBehaviour
     void Start()
     {
         character = GameObject.FindGameObjectWithTag("Player");
-
+        enterPoint = transform.Find("EnterPoint").gameObject;
         coll = GetComponent<BoxCollider>();
         coll.isTrigger = false;
         //sizeY = 2.5f;
@@ -46,11 +48,13 @@ public class PlatTurnBehaviour : MonoBehaviour
         {
             transform.Rotate(Time.deltaTime * speed * direction * 180, 0, 0);
             coll.isTrigger = true;
+            enterPoint.SetActive(false);
 
             if (transform.eulerAngles.x > 180)
             {
                 stopRotation = true;
                 coll.isTrigger = false;
+                enterPoint.SetActive(true);
                 direction = direction * (-1);
                 transform.eulerAngles = new Vector3(180, 0, 0);
             }
@@ -61,6 +65,7 @@ public class PlatTurnBehaviour : MonoBehaviour
         {
             transform.Rotate(Time.deltaTime * speed * direction * 180, 0, 0);
             coll.isTrigger = true;
+            enterPoint.SetActive(false);
 
             if (transform.eulerAngles.x > 180)
             {

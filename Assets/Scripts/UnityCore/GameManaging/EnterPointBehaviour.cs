@@ -33,6 +33,7 @@ public class EnterPointBehaviour : MonoBehaviour
             player = other.gameObject;
 
             teleport.SetActive(true);
+            teleport.transform.position = player.transform.position;
             if(!checkRoutine)
                 StartCoroutine(Teleporting());
         }

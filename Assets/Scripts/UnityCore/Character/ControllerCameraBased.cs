@@ -20,7 +20,7 @@ public class ControllerCameraBased : MonoBehaviour
 
     public bool Jumping;
     public bool Grounded;
-    public bool platformRotate;
+    public bool platformRotate = false;
 
     public Vector3 CameraDirectionX;
     public Vector3 CameraDirectionY;
