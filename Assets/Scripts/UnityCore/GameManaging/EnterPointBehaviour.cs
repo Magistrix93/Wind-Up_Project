@@ -46,6 +46,7 @@ public class EnterPointBehaviour : MonoBehaviour
         player.GetComponent<ControllerCameraBased>().charaStates = CharacterStates.Uncontrollable;
         yield return new WaitForSeconds(0.3f);
         player.transform.position = newExitPoint.transform.position;
+        newExitPoint.GetComponent<ExitPointBehaviour>().Arrived();
         player.GetComponent<ControllerCameraBased>().charaStates = CharacterStates.Controllable;
         teleport.SetActive(false);
         checkRoutine = false;

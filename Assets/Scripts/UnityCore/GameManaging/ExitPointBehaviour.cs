@@ -24,5 +24,6 @@ public class ExitPointBehaviour : MonoBehaviour
     {
         teleport.SetActive(true);
         teleport.transform.position = player.transform.position;
+        Camera.main.gameObject.GetComponent<MainCameraBehaviour>().SetCamera();
     }
 }
