@@ -7,23 +7,27 @@ public class PlatTurnBehaviour : MonoBehaviour
     private bool groundControl;
     private bool controlJumping;
 
+    private BoxCollider coll;
+
     private bool stopRotation;
     private float direction;
 
     public float speed;
 
-    public float sizeX;
-    public float sizeZ;
+    //public float sizeX;
+    //public float sizeZ;
 
-    private float sizeY;
+    //private float sizeY;
 
     // Use this for initialization
     void Start()
     {
         character = GameObject.FindGameObjectWithTag("Player");
 
-        sizeY = 2.5f;
-        transform.localScale = new Vector3(5 * sizeX, sizeY, 5 * sizeZ);
+        coll = GetComponent<BoxCollider>();
+        coll.isTrigger = false;
+        //sizeY = 2.5f;
+        //transform.localScale = new Vector3(5 * sizeX, sizeY, 5 * sizeZ);
 
         direction = 1;
     }
@@ -33,31 +37,35 @@ public class PlatTurnBehaviour : MonoBehaviour
     {
         controlJumping = character.GetComponent<ControllerCameraBased>().platformRotate;
 
-        if (!controlJumping)
+        if (controlJumping)
         {
             stopRotation = false;
         }
 
-        if (controlJumping && !stopRotation && direction == 1 )
+        if (!stopRotation && direction == 1 )
         {
             transform.Rotate(Time.deltaTime * speed * direction * 180, 0, 0);
+            coll.isTrigger = true;
 
             if (transform.eulerAngles.x > 180)
             {
                 stopRotation = true;
+                coll.isTrigger = false;
                 direction = direction * (-1);
                 transform.eulerAngles = new Vector3(180, 0, 0);
             }
 
         }
 
-        if (controlJumping && !stopRotation && direction == (-1))
+        if (!stopRotation && direction == (-1))
         {
             transform.Rotate(Time.deltaTime * speed * direction * 180, 0, 0);
+            coll.isTrigger = true;
 
             if (transform.eulerAngles.x > 180)
             {
                 stopRotation = true;
+                coll.isTrigger = false;
                 direction = direction * (-1);
                 transform.eulerAngles = new Vector3(0, 0, 0);
             }

@@ -78,8 +78,7 @@ public class ControllerCameraBased : MonoBehaviour
 
         if (Physics.SphereCast(transform.position, 0.90f, Vector3.down, out hit, raycast))
         {
-            Grounded = true;
-            platformRotate = false;
+            Grounded = true;            
             gravity = 0;
             animator.SetInteger("Gravity", gravity);
             if (hit.transform.CompareTag("Platform"))
@@ -197,6 +196,9 @@ public class ControllerCameraBased : MonoBehaviour
         }
 
     }
-
+    void LateUpdate()
+    {
+        platformRotate = false;
+    }
 
 }
