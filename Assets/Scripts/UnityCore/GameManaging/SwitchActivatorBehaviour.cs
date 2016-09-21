@@ -5,6 +5,7 @@ public class SwitchActivatorBehaviour : MonoBehaviour
 {
     private GameObject[] findCubeA;
     private GameObject[] findCubeB;
+    private GameObject cuboSwitch;
     private int lenghtA;
     private int lenghtB;
 
@@ -13,6 +14,7 @@ public class SwitchActivatorBehaviour : MonoBehaviour
     {
         findCubeA = GameObject.FindGameObjectsWithTag("cuboA");
         findCubeB = GameObject.FindGameObjectsWithTag("cuboB");
+        cuboSwitch = transform.parent.gameObject;
         lenghtA = findCubeA.Length;
         lenghtB = findCubeB.Length;
 
@@ -27,7 +29,7 @@ public class SwitchActivatorBehaviour : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
+            cuboSwitch.transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
 
             for (int i = 0; i < lenghtA; i++)
             {
