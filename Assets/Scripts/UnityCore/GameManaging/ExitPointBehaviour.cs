@@ -5,10 +5,12 @@ public class ExitPointBehaviour : MonoBehaviour
 {
 
     private GameObject teleport;
+    private GameObject player;
 
     // Use this for initialization
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         teleport = transform.Find("TeleportExit").gameObject;
     }
 
@@ -21,5 +23,6 @@ public class ExitPointBehaviour : MonoBehaviour
     public void Arrived()
     {
         teleport.SetActive(true);
+        teleport.transform.position = player.transform.position;
     }
 }
