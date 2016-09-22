@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlatTurnBehaviour : MonoBehaviour
+public class PlatTurnAnimationBehaviour : MonoBehaviour
 {
     public GameObject character;
     public bool controlJumping;
@@ -12,6 +12,8 @@ public class PlatTurnBehaviour : MonoBehaviour
 
     public bool stopRotation = true;
     public float direction;
+
+    public float speed;
 
     public bool teleportFaceUp;
 
@@ -45,27 +47,37 @@ public class PlatTurnBehaviour : MonoBehaviour
 
         if (!stopRotation && !teleportFaceUp && direction == 1)
         {
-            transform.Rotate(direction * 180, 0, 0);
+            transform.Rotate(Time.deltaTime * speed * direction * 180, 0, 0);
             coll.isTrigger = true;
             enterPoint.SetActive(false);
-            stopRotation = true;
-            teleportFaceUp = true;
-            coll.isTrigger = false;
-            enterPoint.SetActive(true);
-            direction = direction * (-1);
+
+            if (transform.eulerAngles.x > 180)
+            {
+                stopRotation = true;
+                teleportFaceUp = true;
+                coll.isTrigger = false;
+                enterPoint.SetActive(true);
+                direction = direction * (-1);
+                transform.eulerAngles = new Vector3(180, 0, 0);
+            }
 
         }
 
         if (!stopRotation && teleportFaceUp && direction == (-1))
         {
-            transform.Rotate(direction * 180, 0, 0);
+            transform.Rotate(Time.deltaTime * speed * direction * 180, 0, 0);
             coll.isTrigger = true;
             enterPoint.SetActive(false);
-            stopRotation = true;
-            teleportFaceUp = false;
-            coll.isTrigger = false;
-            direction = direction * (-1);
+
+            if (transform.eulerAngles.x > 180)
+            {
+                stopRotation = true;
+                teleportFaceUp = false;
+                coll.isTrigger = false;
+                direction = direction * (-1);
+                transform.eulerAngles = new Vector3(0, 0, 0);
+            }
+
         }
     }
 }
-
