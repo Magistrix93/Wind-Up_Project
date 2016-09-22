@@ -26,9 +26,9 @@ public class ItemHiddenBehaviour : MonoBehaviour
         coll.isTrigger = true;
         particles = transform.Find("Hidden_particles").gameObject;
         particles.SetActive(false);
-        startColor = rend.material.GetColor("_EmissionColor");
+        startColor = rend.material.GetColor("_MKGlowColor");
         startColor = new Color(0.01f, 0.01f, 0.01f);
-        rend.material.SetColor("_EmissionColor", startColor);
+        rend.material.SetColor("_MKGlowColor", startColor);
 
     }
 
@@ -41,7 +41,7 @@ public class ItemHiddenBehaviour : MonoBehaviour
             if (intensity >= 100)
                 intensity = 100;
             color = startColor * intensity;
-            rend.material.SetColor("_EmissionColor", color);
+            rend.material.SetColor("_MKGlowColor", color);
             if (intensity == 100)
                 fading = false;
 
@@ -55,7 +55,7 @@ public class ItemHiddenBehaviour : MonoBehaviour
             {
                 coll.isTrigger = false;
                 rend.enabled = true;
-                startColor = rend.material.GetColor("_EmissionColor");
+                startColor = rend.material.GetColor("_MKGlowColor");
                 fading = true;
                 StartCoroutine(StartParticles());
                 check = true;

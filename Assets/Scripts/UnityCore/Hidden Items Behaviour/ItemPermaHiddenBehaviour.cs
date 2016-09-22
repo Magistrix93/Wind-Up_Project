@@ -31,7 +31,7 @@ public class ItemPermaHiddenBehaviour : MonoBehaviour
         particles = transform.Find("Hidden_particles").gameObject;
         particles.SetActive(false);
         startColor = new Color(0.01f, 0.01f, 0.01f);
-        rend.material.SetColor("_EmissionColor", startColor);
+        rend.material.SetColor("_MKGlowColor", startColor);
 
     }
 
@@ -48,7 +48,7 @@ public class ItemPermaHiddenBehaviour : MonoBehaviour
                         if (intensity > 100)
                             intensity = 100;
                         color = startColor * intensity;
-                        rend.material.SetColor("_EmissionColor", color);
+                        rend.material.SetColor("_MKGlowColor", color);
                         if (intensity == 100)
                             fading = false;
                         break;
@@ -59,7 +59,7 @@ public class ItemPermaHiddenBehaviour : MonoBehaviour
                         if (intensity < 1)
                             intensity = 1;
                         color = startColor * intensity;
-                        rend.material.SetColor("_EmissionColor", color);
+                        rend.material.SetColor("_MKGlowColor", color);
                         if (intensity == 1)
                         {
                             fading = false;
