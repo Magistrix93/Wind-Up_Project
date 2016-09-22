@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlatTurnAnimationBehaviour : MonoBehaviour
+public class PlatTurneAnimationBehaviour : MonoBehaviour
 {
     public GameObject character;
     public bool controlJumping;
