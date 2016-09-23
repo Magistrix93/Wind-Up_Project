@@ -32,9 +32,10 @@ public class PzlCamFreeFRTBehaviour : MainCameraBehaviour
     {
         GetPlayer();
 
-        Setting(player);
+        if (maxHeightDistance == 0)
+            Setting(player);
 
-        transform.position = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
+        transform.position = new Vector3(player.transform.position.x, transform.position.y + maxHeightDistance, transform.position.z);
     }
 
 }

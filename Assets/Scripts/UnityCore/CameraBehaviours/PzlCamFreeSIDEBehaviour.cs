@@ -32,9 +32,10 @@ public class PzlCamFreeSIDEBehaviour : MainCameraBehaviour
     {
         GetPlayer();
 
-        Setting(player);
+        if (maxHeightDistance == 0)
+            Setting(player);
 
-        transform.position = new Vector3(transform.position.x, transform.position.y, player.transform.position.z);
+        transform.position = new Vector3(transform.position.x, player.transform.position.y + maxHeightDistance, player.transform.position.z);
 
     }
 

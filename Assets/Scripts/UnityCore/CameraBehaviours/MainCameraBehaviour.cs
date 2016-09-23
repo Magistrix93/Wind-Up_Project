@@ -7,9 +7,9 @@ public abstract class MainCameraBehaviour : MonoBehaviour
     protected Vector3 direction;
     protected float step;
     protected ControllerCameraBased controller;
-    protected float maxDepthDistance;
-    protected float maxWidthDistance;
-    protected float maxHeightDistance;
+    protected float maxDepthDistance = 0;
+    protected float maxWidthDistance = 0;
+    protected float maxHeightDistance = 0;
     protected Camera thisCamera;
 
     // Use this for initialization
