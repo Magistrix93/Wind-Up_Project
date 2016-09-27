@@ -23,8 +23,6 @@ public class PlatMoveBehaviour : MonoBehaviour
     void Start()
     {
         i = 0;
-        speed = 5;
-        wait = 2;
         start = true;
         inWaiting = true;
         coroutineChecker = false;
