@@ -61,15 +61,10 @@ public class ControllerCameraBased : MonoBehaviour
         charaStates = CharacterStates.Controllable;
     }
 
-    public void CameraDirectionSetting(GameObject activeCam)
+    public void CameraDirectionSetting(Vector3 camForward, Vector3 camRight)
     {
-        CameraDirectionX = activeCam.transform.forward;
-        CameraDirectionX.y = 0;
-        CameraDirectionX.Normalize();
-
-        CameraDirectionY = activeCam.transform.right;
-        CameraDirectionY.y = 0;
-        CameraDirectionY.Normalize();
+        CameraDirectionX = camForward;
+        CameraDirectionY = camRight;
     }
 
     // Update is called once per frame

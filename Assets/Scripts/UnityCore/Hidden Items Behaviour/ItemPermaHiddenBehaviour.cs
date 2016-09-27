@@ -11,13 +11,14 @@ public class ItemPermaHiddenBehaviour : MonoBehaviour
 
     private bool fading = false;
     private bool check = false;
+    private bool triggerable = true;
 
     private Color color;
     private Color startColor;
 
     private float intensity = 0;
 
-    private enum InOut { In, Out}
+    private enum InOut { In, Out }
 
     private InOut typeFade;
 
@@ -40,7 +41,7 @@ public class ItemPermaHiddenBehaviour : MonoBehaviour
     {
         if (fading)
         {
-            switch(typeFade)
+            switch (typeFade)
             {
                 case InOut.In:
                     {
@@ -65,34 +66,41 @@ public class ItemPermaHiddenBehaviour : MonoBehaviour
                             fading = false;
                             coll.isTrigger = true;
                             rend.enabled = false;
-                        }                            
+                        }
                         break;
                     }
             }
-            
+
 
         }
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (!check)
-            if (other.CompareTag("Visor"))
-            {
-                particles.SetActive(false);
-                StopAllCoroutines();
-                coll.isTrigger = false;
-                rend.enabled = true;
-                fading = true;
-                typeFade = InOut.In;
-                intensity = 0;
-                StartCoroutine(StartParticles());
-                check = true;
-            }
+        if (other.CompareTag("Player"))
+            triggerable = false;
+
+        if (triggerable)
+            if (!check)
+                if (other.CompareTag("Visor"))
+                {
+                    particles.SetActive(false);
+                    StopAllCoroutines();
+                    coll.isTrigger = false;
+                    rend.enabled = true;
+                    fading = true;
+                    typeFade = InOut.In;
+                    intensity = 0;
+                    StartCoroutine(StartParticles());
+                    check = true;
+                }
     }
 
     void OnTriggerExit(Collider other)
     {
+        if (other.CompareTag("Player"))
+            triggerable = true;
+
         if (check)
             if (other.CompareTag("Visor"))
             {
@@ -110,10 +118,10 @@ public class ItemPermaHiddenBehaviour : MonoBehaviour
 
     private IEnumerator StartParticles()
     {
-        if(!particles.activeSelf)
+        if (!particles.activeSelf)
             particles.SetActive(true);
         yield return new WaitForSeconds(1f);
-        if(particles.activeSelf)
+        if (particles.activeSelf)
             particles.SetActive(false);
     }
 }

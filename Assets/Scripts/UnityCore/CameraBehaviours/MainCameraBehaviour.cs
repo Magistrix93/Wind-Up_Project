@@ -10,12 +10,25 @@ public abstract class MainCameraBehaviour : MonoBehaviour
     protected float maxDepthDistance = 0;
     protected float maxWidthDistance = 0;
     protected float maxHeightDistance = 0;
+    protected Vector3 myForward;
+    protected Vector3 myRight;
     protected Camera thisCamera;
 
     // Use this for initialization
     void Start()
     {
 
+    }
+
+    void Awake()
+    {
+        myForward = transform.forward;
+        myForward.y = 0;
+        myForward.Normalize();
+
+        myRight = transform.right;
+        myRight.y = 0;
+        myRight.Normalize();
     }
 
     // Update is called once per frame
@@ -29,7 +42,7 @@ public abstract class MainCameraBehaviour : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         step = player.GetComponent<CharacterBehaviour>().character.Speed * 2.5f;
         controller = player.GetComponent<ControllerCameraBased>();
-        controller.CameraDirectionSetting(gameObject);
+        controller.CameraDirectionSetting(myForward, myRight);
     }
 
     public virtual void Setting(GameObject player)
