@@ -11,6 +11,7 @@ public class ItemHiddenBehaviour : MonoBehaviour
 
     private bool fading = false;
     private bool check = false;
+    private bool triggerable = true;
 
     private Color color;
     private Color startColor;
@@ -50,18 +51,27 @@ public class ItemHiddenBehaviour : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(!check)
-            if ((other.CompareTag("Visor")) && (coll.isTrigger))
-            {
-                coll.isTrigger = false;
-                rend.enabled = true;
-                startColor = rend.material.GetColor("_MKGlowColor");
-                fading = true;
-                StartCoroutine(StartParticles());
-                check = true;
-            }
+        if (other.CompareTag("Player"))
+            triggerable = false;
+
+        if(triggerable)
+            if(!check)
+                if ((other.CompareTag("Visor")) && (coll.isTrigger))
+                {
+                    coll.isTrigger = false;
+                    rend.enabled = true;
+                    startColor = rend.material.GetColor("_MKGlowColor");
+                    fading = true;
+                    StartCoroutine(StartParticles());
+                    check = true;
+                }
     }
 
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+            triggerable = true;        
+    }
 
 
     private IEnumerator StartParticles()

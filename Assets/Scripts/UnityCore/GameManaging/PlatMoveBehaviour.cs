@@ -23,15 +23,13 @@ public class PlatMoveBehaviour : MonoBehaviour
     void Start()
     {
         i = 0;
-        speed = 5;
-        wait = 2;
         start = true;
         inWaiting = true;
         coroutineChecker = false;
         size = Plat.Length;
         actualPosition = transform.position;
         StartCoroutine(Attesa());
-        coll = transform.Find("Cube").GetComponent<BoxCollider>();
+        coll = transform.Find("Cubo").GetComponent<BoxCollider>();
 
 
     }
