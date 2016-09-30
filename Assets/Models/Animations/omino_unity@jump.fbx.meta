@@ -1,0 +1,1489 @@
+fileFormatVersion: 2
+guid: 36065078dc6c4154a843be824849174e
+timeCreated: 1475251720
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: AnimData_Head
+    100002: AnimData_HeadTop_End
+    100004: AnimData_Hips
+    100006: AnimData_Joint_GRP
+    100008: AnimData_LeftArm
+    100010: AnimData_LeftFoot
+    100012: AnimData_LeftForeArm
+    100014: AnimData_LeftHand
+    100016: AnimData_LeftHandIndex1
+    100018: AnimData_LeftHandIndex2
+    100020: AnimData_LeftHandIndex3
+    100022: AnimData_LeftHandIndex4
+    100024: AnimData_LeftHandThumb1
+    100026: AnimData_LeftHandThumb2
+    100028: AnimData_LeftHandThumb3
+    100030: AnimData_LeftHandThumb4
+    100032: AnimData_LeftLeg
+    100034: AnimData_LeftShoulder
+    100036: AnimData_LeftToe_End
+    100038: AnimData_LeftToeBase
+    100040: AnimData_LeftUpLeg
+    100042: AnimData_Neck
+    100044: AnimData_RightArm
+    100046: AnimData_RightFoot
+    100048: AnimData_RightForeArm
+    100050: AnimData_RightHand
+    100052: AnimData_RightHandIndex1
+    100054: AnimData_RightHandIndex2
+    100056: AnimData_RightHandIndex3
+    100058: AnimData_RightHandIndex4
+    100060: AnimData_RightHandThumb1
+    100062: AnimData_RightHandThumb2
+    100064: AnimData_RightHandThumb3
+    100066: AnimData_RightHandThumb4
+    100068: AnimData_RightLeg
+    100070: AnimData_RightShoulder
+    100072: AnimData_RightToe_End
+    100074: AnimData_RightToeBase
+    100076: AnimData_RightUpLeg
+    100078: AnimData_Root
+    100080: AnimData_Spine
+    100082: AnimData_Spine1
+    100084: AnimData_Spine2
+    100086: Bind_Head
+    100088: Bind_HeadTop_End
+    100090: Bind_Hips
+    100092: Bind_Joint_GRP
+    100094: Bind_LeftArm
+    100096: Bind_LeftFoot
+    100098: Bind_LeftForeArm
+    100100: Bind_LeftHand
+    100102: Bind_LeftHandIndex1
+    100104: Bind_LeftHandIndex2
+    100106: Bind_LeftHandIndex3
+    100108: Bind_LeftHandIndex4
+    100110: Bind_LeftHandThumb1
+    100112: Bind_LeftHandThumb2
+    100114: Bind_LeftHandThumb3
+    100116: Bind_LeftHandThumb4
+    100118: Bind_LeftLeg
+    100120: Bind_LeftShoulder
+    100122: Bind_LeftToe_End
+    100124: Bind_LeftToeBase
+    100126: Bind_LeftUpLeg
+    100128: Bind_Neck
+    100130: Bind_RightArm
+    100132: Bind_RightFoot
+    100134: Bind_RightForeArm
+    100136: Bind_RightHand
+    100138: Bind_RightHandIndex1
+    100140: Bind_RightHandIndex2
+    100142: Bind_RightHandIndex3
+    100144: Bind_RightHandIndex4
+    100146: Bind_RightHandThumb1
+    100148: Bind_RightHandThumb2
+    100150: Bind_RightHandThumb3
+    100152: Bind_RightHandThumb4
+    100154: Bind_RightLeg
+    100156: Bind_RightShoulder
+    100158: Bind_RightToe_End
+    100160: Bind_RightToeBase
+    100162: Bind_RightUpLeg
+    100164: Bind_Root
+    100166: Bind_Spine
+    100168: Bind_Spine1
+    100170: Bind_Spine2
+    100172: CTRL_GRP
+    100174: FK_LeftArm
+    100176: FK_LeftFoot
+    100178: FK_LeftForeArm
+    100180: FK_LeftHand
+    100182: FK_LeftLeg
+    100184: FK_LeftToe_End
+    100186: FK_LeftToeBase
+    100188: FK_LeftUpLeg
+    100190: FK_RightArm
+    100192: FK_RightFoot
+    100194: FK_RightForeArm
+    100196: FK_RightHand
+    100198: FK_RightLeg
+    100200: FK_RightToe_End
+    100202: FK_RightToeBase
+    100204: FK_RightUpLeg
+    100206: global_CTRL
+    100208: Head_CTRL
+    100210: Head_CTRL_AnimData_CONST_GRP
+    100212: Head_CTRL_In_Rig_CONST_GRP
+    100214: Head_CTRL_POS_GRP
+    100216: IK_Dummy_Hips
+    100218: IK_Dummy_Joint_GRP
+    100220: IK_Dummy_LeftShoulder
+    100222: IK_Dummy_RightShoulder
+    100224: IK_Dummy_Root
+    100226: IK_Dummy_Spine
+    100228: IK_Dummy_Spine1
+    100230: IK_Dummy_Spine2
+    100232: IK_LeftArm
+    100234: IK_LeftFoot
+    100236: IK_LeftForeArm
+    100238: IK_LeftHand
+    100240: IK_LeftLeg
+    100242: IK_LeftToe_End
+    100244: IK_LeftToeBase
+    100246: IK_LeftUpLeg
+    100248: IK_RightArm
+    100250: IK_RightFoot
+    100252: IK_RightForeArm
+    100254: IK_RightHand
+    100256: IK_RightLeg
+    100258: IK_RightToe_End
+    100260: IK_RightToeBase
+    100262: IK_RightUpLeg
+    100264: Joint_GRP
+    100266: Left_Ankle_IK_AnimData_GRP
+    100268: Left_Ankle_IK_CTRL
+    100270: Left_Toe_End_IK_CTRL
+    100272: Left_Toe_IK_AnimData_GRP
+    100274: Left_ToeBase_IK_AnimData_GRP
+    100276: Left_ToeBase_IK_CTRL
+    100278: LeftArm_FK_CTRL
+    100280: LeftArm_FK_CTRL_AnimData_CONST_GRP
+    100282: LeftArm_FK_CTRL_In_Rig_CONST_GRP
+    100284: LeftArm_FK_CTRL_POS_GRP
+    100286: LeftFoot_FK_CTRL
+    100288: LeftFoot_FK_CTRL_AnimData_CONST_GRP
+    100290: LeftFoot_FK_CTRL_In_Rig_CONST_GRP
+    100292: LeftFoot_FK_CTRL_POS_GRP
+    100294: LeftFoot_IK_BakingLOC
+    100296: LeftFoot_IK_CTRL
+    100298: LeftFoot_IK_CTRL_AnimData_CONST_GRP
+    100300: LeftFoot_IK_CTRL_grandparent_AnimData_CONST_GRP
+    100302: LeftFoot_IK_CTRL_grandparent_Global_POS_GRP
+    100304: LeftFoot_IK_CTRL_grandparent_inRig_CONST_GRP
+    100306: LeftFoot_IK_CTRL_grandparent_POS_GRP
+    100308: LeftFoot_IK_CTRL_In_Rig_CONST_GRP
+    100310: LeftFoot_IK_CTRL_parent_AnimData_CONST_GRP
+    100312: LeftFoot_IK_CTRL_parent_Global_POS_GRP
+    100314: LeftFoot_IK_CTRL_parent_POS_GRP
+    100316: LeftFoot_IK_CTRL_POS_GRP
+    100318: LeftFoot_IK_CTRL_Reorient_GRP
+    100320: LeftFoot_Options
+    100322: LeftForeArm_FK_CTRL
+    100324: LeftForeArm_FK_CTRL_AnimData_CONST_GRP
+    100326: LeftForeArm_FK_CTRL_In_Rig_CONST_GRP
+    100328: LeftForeArm_FK_CTRL_POS_GRP
+    100330: LeftForeArm_IK_BakingLOC
+    100332: LeftForeArm_IK_CTRL_GuideCurve_Cluster2Handle
+    100334: LeftHand_CTRLs_GRP
+    100336: LeftHand_FK_CTRL
+    100338: LeftHand_FK_CTRL_AnimData_CONST_GRP
+    100340: LeftHand_FK_CTRL_In_Rig_CONST_GRP
+    100342: LeftHand_FK_CTRL_POS_GRP
+    100344: LeftHand_IK_CTRL
+    100346: LeftHand_IK_CTRL_AnimData_CONST_GRP
+    100348: LeftHand_IK_CTRL_grandparent_AnimData_CONST_GRP
+    100350: LeftHand_IK_CTRL_grandparent_Global_POS_GRP
+    100352: LeftHand_IK_CTRL_grandparent_inRig_CONST_GRP
+    100354: LeftHand_IK_CTRL_grandparent_POS_GRP
+    100356: LeftHand_IK_CTRL_In_Rig_CONST_GRP
+    100358: LeftHand_IK_CTRL_parent_AnimData_CONST_GRP
+    100360: LeftHand_IK_CTRL_parent_Global_POS_GRP
+    100362: LeftHand_IK_CTRL_parent_POS_GRP
+    100364: LeftHand_IK_CTRL_POS_GRP
+    100366: LeftHand_Options
+    100368: LeftHandIndex1_CTRL
+    100370: LeftHandIndex1_CTRL_AnimData_CONST_GRP
+    100372: LeftHandIndex1_CTRL_In_Rig_CONST_GRP
+    100374: LeftHandIndex1_CTRL_POS_GRP
+    100376: LeftHandIndex2_CTRL
+    100378: LeftHandIndex2_CTRL_AnimData_CONST_GRP
+    100380: LeftHandIndex2_CTRL_In_Rig_CONST_GRP
+    100382: LeftHandIndex2_CTRL_POS_GRP
+    100384: LeftHandIndex3_CTRL
+    100386: LeftHandIndex3_CTRL_AnimData_CONST_GRP
+    100388: LeftHandIndex3_CTRL_In_Rig_CONST_GRP
+    100390: LeftHandIndex3_CTRL_POS_GRP
+    100392: LeftHandThumb1_CTRL
+    100394: LeftHandThumb1_CTRL_AnimData_CONST_GRP
+    100396: LeftHandThumb1_CTRL_In_Rig_CONST_GRP
+    100398: LeftHandThumb1_CTRL_POS_GRP
+    100400: LeftHandThumb2_CTRL
+    100402: LeftHandThumb2_CTRL_AnimData_CONST_GRP
+    100404: LeftHandThumb2_CTRL_In_Rig_CONST_GRP
+    100406: LeftHandThumb2_CTRL_POS_GRP
+    100408: LeftHandThumb3_CTRL
+    100410: LeftHandThumb3_CTRL_AnimData_CONST_GRP
+    100412: LeftHandThumb3_CTRL_In_Rig_CONST_GRP
+    100414: LeftHandThumb3_CTRL_POS_GRP
+    100416: LeftLeg_FK_CTRL
+    100418: LeftLeg_FK_CTRL_AnimData_CONST_GRP
+    100420: LeftLeg_FK_CTRL_In_Rig_CONST_GRP
+    100422: LeftLeg_FK_CTRL_POS_GRP
+    100424: LeftLeg_IK_BakingLOC
+    100426: LeftLeg_IK_CTRL_GuideCurve_Cluster2Handle
+    100428: LeftShoulder_CTRL
+    100430: LeftShoulder_CTRL_AnimData_CONST_GRP
+    100432: LeftShoulder_CTRL_In_Rig_CONST_GRP
+    100434: LeftShoulder_CTRL_POS_GRP
+    100436: LeftToeBase_FK_CTRL
+    100438: LeftToeBase_FK_CTRL_AnimData_CONST_GRP
+    100440: LeftToeBase_FK_CTRL_In_Rig_CONST_GRP
+    100442: LeftToeBase_FK_CTRL_POS_GRP
+    100444: LeftUpLeg_FK_CTRL
+    100446: LeftUpLeg_FK_CTRL_AnimData_CONST_GRP
+    100448: LeftUpLeg_FK_CTRL_In_Rig_CONST_GRP
+    100450: LeftUpLeg_FK_CTRL_POS_GRP
+    100452: Neck_CTRL
+    100454: Neck_CTRL_AnimData_CONST_GRP
+    100456: Neck_CTRL_In_Rig_CONST_GRP
+    100458: Neck_CTRL_POS_GRP
+    100460: //RootNode
+    100462: Pelvis_CTRL
+    100464: Pelvis_CTRL_AnimData_CONST_GRP
+    100466: Pelvis_CTRL_In_Rig_CONST_GRP
+    100468: Pelvis_CTRL_POS_GRP
+    100470: Right_Ankle_IK_AnimData_GRP
+    100472: Right_Ankle_IK_CTRL
+    100474: Right_Toe_End_IK_CTRL
+    100476: Right_Toe_IK_AnimData_GRP
+    100478: Right_ToeBase_IK_AnimData_GRP
+    100480: Right_ToeBase_IK_CTRL
+    100482: RightArm_FK_CTRL
+    100484: RightArm_FK_CTRL_AnimData_CONST_GRP
+    100486: RightArm_FK_CTRL_In_Rig_CONST_GRP
+    100488: RightArm_FK_CTRL_POS_GRP
+    100490: RightFoot_FK_CTRL
+    100492: RightFoot_FK_CTRL_AnimData_CONST_GRP
+    100494: RightFoot_FK_CTRL_In_Rig_CONST_GRP
+    100496: RightFoot_FK_CTRL_POS_GRP
+    100498: RightFoot_IK_BakingLOC
+    100500: RightFoot_IK_CTRL
+    100502: RightFoot_IK_CTRL_AnimData_CONST_GRP
+    100504: RightFoot_IK_CTRL_grandparent_AnimData_CONST_GRP
+    100506: RightFoot_IK_CTRL_grandparent_Global_POS_GRP
+    100508: RightFoot_IK_CTRL_grandparent_inRig_CONST_GRP
+    100510: RightFoot_IK_CTRL_grandparent_POS_GRP
+    100512: RightFoot_IK_CTRL_In_Rig_CONST_GRP
+    100514: RightFoot_IK_CTRL_parent_AnimData_CONST_GRP
+    100516: RightFoot_IK_CTRL_parent_Global_POS_GRP
+    100518: RightFoot_IK_CTRL_parent_POS_GRP
+    100520: RightFoot_IK_CTRL_POS_GRP
+    100522: RightFoot_IK_CTRL_Reorient_GRP
+    100524: RightFoot_Options
+    100526: RightForeArm_FK_CTRL
+    100528: RightForeArm_FK_CTRL_AnimData_CONST_GRP
+    100530: RightForeArm_FK_CTRL_In_Rig_CONST_GRP
+    100532: RightForeArm_FK_CTRL_POS_GRP
+    100534: RightForeArm_IK_BakingLOC
+    100536: RightForeArm_IK_CTRL_GuideCurve_Cluster2Handle
+    100538: RightHand_CTRLs_GRP
+    100540: RightHand_FK_CTRL
+    100542: RightHand_FK_CTRL_AnimData_CONST_GRP
+    100544: RightHand_FK_CTRL_In_Rig_CONST_GRP
+    100546: RightHand_FK_CTRL_POS_GRP
+    100548: RightHand_IK_CTRL
+    100550: RightHand_IK_CTRL_AnimData_CONST_GRP
+    100552: RightHand_IK_CTRL_grandparent_AnimData_CONST_GRP
+    100554: RightHand_IK_CTRL_grandparent_Global_POS_GRP
+    100556: RightHand_IK_CTRL_grandparent_inRig_CONST_GRP
+    100558: RightHand_IK_CTRL_grandparent_POS_GRP
+    100560: RightHand_IK_CTRL_In_Rig_CONST_GRP
+    100562: RightHand_IK_CTRL_parent_AnimData_CONST_GRP
+    100564: RightHand_IK_CTRL_parent_Global_POS_GRP
+    100566: RightHand_IK_CTRL_parent_POS_GRP
+    100568: RightHand_IK_CTRL_POS_GRP
+    100570: RightHand_Options
+    100572: RightHandIndex1_CTRL
+    100574: RightHandIndex1_CTRL_AnimData_CONST_GRP
+    100576: RightHandIndex1_CTRL_In_Rig_CONST_GRP
+    100578: RightHandIndex1_CTRL_POS_GRP
+    100580: RightHandIndex2_CTRL
+    100582: RightHandIndex2_CTRL_AnimData_CONST_GRP
+    100584: RightHandIndex2_CTRL_In_Rig_CONST_GRP
+    100586: RightHandIndex2_CTRL_POS_GRP
+    100588: RightHandIndex3_CTRL
+    100590: RightHandIndex3_CTRL_AnimData_CONST_GRP
+    100592: RightHandIndex3_CTRL_In_Rig_CONST_GRP
+    100594: RightHandIndex3_CTRL_POS_GRP
+    100596: RightHandThumb1_CTRL
+    100598: RightHandThumb1_CTRL_AnimData_CONST_GRP
+    100600: RightHandThumb1_CTRL_In_Rig_CONST_GRP
+    100602: RightHandThumb1_CTRL_POS_GRP
+    100604: RightHandThumb2_CTRL
+    100606: RightHandThumb2_CTRL_AnimData_CONST_GRP
+    100608: RightHandThumb2_CTRL_In_Rig_CONST_GRP
+    100610: RightHandThumb2_CTRL_POS_GRP
+    100612: RightHandThumb3_CTRL
+    100614: RightHandThumb3_CTRL_AnimData_CONST_GRP
+    100616: RightHandThumb3_CTRL_In_Rig_CONST_GRP
+    100618: RightHandThumb3_CTRL_POS_GRP
+    100620: RightLeg_FK_CTRL
+    100622: RightLeg_FK_CTRL_AnimData_CONST_GRP
+    100624: RightLeg_FK_CTRL_In_Rig_CONST_GRP
+    100626: RightLeg_FK_CTRL_POS_GRP
+    100628: RightLeg_IK_BakingLOC
+    100630: RightLeg_IK_CTRL_GuideCurve_Cluster2Handle
+    100632: RightShoulder_CTRL
+    100634: RightShoulder_CTRL_AnimData_CONST_GRP
+    100636: RightShoulder_CTRL_In_Rig_CONST_GRP
+    100638: RightShoulder_CTRL_POS_GRP
+    100640: RightToeBase_FK_CTRL
+    100642: RightToeBase_FK_CTRL_AnimData_CONST_GRP
+    100644: RightToeBase_FK_CTRL_In_Rig_CONST_GRP
+    100646: RightToeBase_FK_CTRL_POS_GRP
+    100648: RightUpLeg_FK_CTRL
+    100650: RightUpLeg_FK_CTRL_AnimData_CONST_GRP
+    100652: RightUpLeg_FK_CTRL_In_Rig_CONST_GRP
+    100654: RightUpLeg_FK_CTRL_POS_GRP
+    100656: Root_CTRL
+    100658: Root_CTRL_AnimData_CONST_GRP
+    100660: Root_CTRL_In_Rig_CONST_GRP
+    100662: Root_CTRL_POS_GRP
+    100664: Spine1_CTRL
+    100666: Spine1_CTRL_AnimData_CONST_GRP
+    100668: Spine1_CTRL_In_Rig_CONST_GRP
+    100670: Spine1_CTRL_POS_GRP
+    100672: Spine2_CTRL
+    100674: Spine2_CTRL_AnimData_CONST_GRP
+    100676: Spine2_CTRL_In_Rig_CONST_GRP
+    100678: Spine2_CTRL_POS_GRP
+    100680: Spine_CTRL
+    100682: Spine_CTRL_AnimData_CONST_GRP
+    100684: Spine_CTRL_In_Rig_CONST_GRP
+    100686: Spine_CTRL_POS_GRP
+    100688: transform1
+    100690: transform2
+    100692: transform3
+    400000: AnimData_Head
+    400002: AnimData_HeadTop_End
+    400004: AnimData_Hips
+    400006: AnimData_Joint_GRP
+    400008: AnimData_LeftArm
+    400010: AnimData_LeftFoot
+    400012: AnimData_LeftForeArm
+    400014: AnimData_LeftHand
+    400016: AnimData_LeftHandIndex1
+    400018: AnimData_LeftHandIndex2
+    400020: AnimData_LeftHandIndex3
+    400022: AnimData_LeftHandIndex4
+    400024: AnimData_LeftHandThumb1
+    400026: AnimData_LeftHandThumb2
+    400028: AnimData_LeftHandThumb3
+    400030: AnimData_LeftHandThumb4
+    400032: AnimData_LeftLeg
+    400034: AnimData_LeftShoulder
+    400036: AnimData_LeftToe_End
+    400038: AnimData_LeftToeBase
+    400040: AnimData_LeftUpLeg
+    400042: AnimData_Neck
+    400044: AnimData_RightArm
+    400046: AnimData_RightFoot
+    400048: AnimData_RightForeArm
+    400050: AnimData_RightHand
+    400052: AnimData_RightHandIndex1
+    400054: AnimData_RightHandIndex2
+    400056: AnimData_RightHandIndex3
+    400058: AnimData_RightHandIndex4
+    400060: AnimData_RightHandThumb1
+    400062: AnimData_RightHandThumb2
+    400064: AnimData_RightHandThumb3
+    400066: AnimData_RightHandThumb4
+    400068: AnimData_RightLeg
+    400070: AnimData_RightShoulder
+    400072: AnimData_RightToe_End
+    400074: AnimData_RightToeBase
+    400076: AnimData_RightUpLeg
+    400078: AnimData_Root
+    400080: AnimData_Spine
+    400082: AnimData_Spine1
+    400084: AnimData_Spine2
+    400086: Bind_Head
+    400088: Bind_HeadTop_End
+    400090: Bind_Hips
+    400092: Bind_Joint_GRP
+    400094: Bind_LeftArm
+    400096: Bind_LeftFoot
+    400098: Bind_LeftForeArm
+    400100: Bind_LeftHand
+    400102: Bind_LeftHandIndex1
+    400104: Bind_LeftHandIndex2
+    400106: Bind_LeftHandIndex3
+    400108: Bind_LeftHandIndex4
+    400110: Bind_LeftHandThumb1
+    400112: Bind_LeftHandThumb2
+    400114: Bind_LeftHandThumb3
+    400116: Bind_LeftHandThumb4
+    400118: Bind_LeftLeg
+    400120: Bind_LeftShoulder
+    400122: Bind_LeftToe_End
+    400124: Bind_LeftToeBase
+    400126: Bind_LeftUpLeg
+    400128: Bind_Neck
+    400130: Bind_RightArm
+    400132: Bind_RightFoot
+    400134: Bind_RightForeArm
+    400136: Bind_RightHand
+    400138: Bind_RightHandIndex1
+    400140: Bind_RightHandIndex2
+    400142: Bind_RightHandIndex3
+    400144: Bind_RightHandIndex4
+    400146: Bind_RightHandThumb1
+    400148: Bind_RightHandThumb2
+    400150: Bind_RightHandThumb3
+    400152: Bind_RightHandThumb4
+    400154: Bind_RightLeg
+    400156: Bind_RightShoulder
+    400158: Bind_RightToe_End
+    400160: Bind_RightToeBase
+    400162: Bind_RightUpLeg
+    400164: Bind_Root
+    400166: Bind_Spine
+    400168: Bind_Spine1
+    400170: Bind_Spine2
+    400172: CTRL_GRP
+    400174: FK_LeftArm
+    400176: FK_LeftFoot
+    400178: FK_LeftForeArm
+    400180: FK_LeftHand
+    400182: FK_LeftLeg
+    400184: FK_LeftToe_End
+    400186: FK_LeftToeBase
+    400188: FK_LeftUpLeg
+    400190: FK_RightArm
+    400192: FK_RightFoot
+    400194: FK_RightForeArm
+    400196: FK_RightHand
+    400198: FK_RightLeg
+    400200: FK_RightToe_End
+    400202: FK_RightToeBase
+    400204: FK_RightUpLeg
+    400206: global_CTRL
+    400208: Head_CTRL
+    400210: Head_CTRL_AnimData_CONST_GRP
+    400212: Head_CTRL_In_Rig_CONST_GRP
+    400214: Head_CTRL_POS_GRP
+    400216: IK_Dummy_Hips
+    400218: IK_Dummy_Joint_GRP
+    400220: IK_Dummy_LeftShoulder
+    400222: IK_Dummy_RightShoulder
+    400224: IK_Dummy_Root
+    400226: IK_Dummy_Spine
+    400228: IK_Dummy_Spine1
+    400230: IK_Dummy_Spine2
+    400232: IK_LeftArm
+    400234: IK_LeftFoot
+    400236: IK_LeftForeArm
+    400238: IK_LeftHand
+    400240: IK_LeftLeg
+    400242: IK_LeftToe_End
+    400244: IK_LeftToeBase
+    400246: IK_LeftUpLeg
+    400248: IK_RightArm
+    400250: IK_RightFoot
+    400252: IK_RightForeArm
+    400254: IK_RightHand
+    400256: IK_RightLeg
+    400258: IK_RightToe_End
+    400260: IK_RightToeBase
+    400262: IK_RightUpLeg
+    400264: Joint_GRP
+    400266: Left_Ankle_IK_AnimData_GRP
+    400268: Left_Ankle_IK_CTRL
+    400270: Left_Toe_End_IK_CTRL
+    400272: Left_Toe_IK_AnimData_GRP
+    400274: Left_ToeBase_IK_AnimData_GRP
+    400276: Left_ToeBase_IK_CTRL
+    400278: LeftArm_FK_CTRL
+    400280: LeftArm_FK_CTRL_AnimData_CONST_GRP
+    400282: LeftArm_FK_CTRL_In_Rig_CONST_GRP
+    400284: LeftArm_FK_CTRL_POS_GRP
+    400286: LeftFoot_FK_CTRL
+    400288: LeftFoot_FK_CTRL_AnimData_CONST_GRP
+    400290: LeftFoot_FK_CTRL_In_Rig_CONST_GRP
+    400292: LeftFoot_FK_CTRL_POS_GRP
+    400294: LeftFoot_IK_BakingLOC
+    400296: LeftFoot_IK_CTRL
+    400298: LeftFoot_IK_CTRL_AnimData_CONST_GRP
+    400300: LeftFoot_IK_CTRL_grandparent_AnimData_CONST_GRP
+    400302: LeftFoot_IK_CTRL_grandparent_Global_POS_GRP
+    400304: LeftFoot_IK_CTRL_grandparent_inRig_CONST_GRP
+    400306: LeftFoot_IK_CTRL_grandparent_POS_GRP
+    400308: LeftFoot_IK_CTRL_In_Rig_CONST_GRP
+    400310: LeftFoot_IK_CTRL_parent_AnimData_CONST_GRP
+    400312: LeftFoot_IK_CTRL_parent_Global_POS_GRP
+    400314: LeftFoot_IK_CTRL_parent_POS_GRP
+    400316: LeftFoot_IK_CTRL_POS_GRP
+    400318: LeftFoot_IK_CTRL_Reorient_GRP
+    400320: LeftFoot_Options
+    400322: LeftForeArm_FK_CTRL
+    400324: LeftForeArm_FK_CTRL_AnimData_CONST_GRP
+    400326: LeftForeArm_FK_CTRL_In_Rig_CONST_GRP
+    400328: LeftForeArm_FK_CTRL_POS_GRP
+    400330: LeftForeArm_IK_BakingLOC
+    400332: LeftForeArm_IK_CTRL_GuideCurve_Cluster2Handle
+    400334: LeftHand_CTRLs_GRP
+    400336: LeftHand_FK_CTRL
+    400338: LeftHand_FK_CTRL_AnimData_CONST_GRP
+    400340: LeftHand_FK_CTRL_In_Rig_CONST_GRP
+    400342: LeftHand_FK_CTRL_POS_GRP
+    400344: LeftHand_IK_CTRL
+    400346: LeftHand_IK_CTRL_AnimData_CONST_GRP
+    400348: LeftHand_IK_CTRL_grandparent_AnimData_CONST_GRP
+    400350: LeftHand_IK_CTRL_grandparent_Global_POS_GRP
+    400352: LeftHand_IK_CTRL_grandparent_inRig_CONST_GRP
+    400354: LeftHand_IK_CTRL_grandparent_POS_GRP
+    400356: LeftHand_IK_CTRL_In_Rig_CONST_GRP
+    400358: LeftHand_IK_CTRL_parent_AnimData_CONST_GRP
+    400360: LeftHand_IK_CTRL_parent_Global_POS_GRP
+    400362: LeftHand_IK_CTRL_parent_POS_GRP
+    400364: LeftHand_IK_CTRL_POS_GRP
+    400366: LeftHand_Options
+    400368: LeftHandIndex1_CTRL
+    400370: LeftHandIndex1_CTRL_AnimData_CONST_GRP
+    400372: LeftHandIndex1_CTRL_In_Rig_CONST_GRP
+    400374: LeftHandIndex1_CTRL_POS_GRP
+    400376: LeftHandIndex2_CTRL
+    400378: LeftHandIndex2_CTRL_AnimData_CONST_GRP
+    400380: LeftHandIndex2_CTRL_In_Rig_CONST_GRP
+    400382: LeftHandIndex2_CTRL_POS_GRP
+    400384: LeftHandIndex3_CTRL
+    400386: LeftHandIndex3_CTRL_AnimData_CONST_GRP
+    400388: LeftHandIndex3_CTRL_In_Rig_CONST_GRP
+    400390: LeftHandIndex3_CTRL_POS_GRP
+    400392: LeftHandThumb1_CTRL
+    400394: LeftHandThumb1_CTRL_AnimData_CONST_GRP
+    400396: LeftHandThumb1_CTRL_In_Rig_CONST_GRP
+    400398: LeftHandThumb1_CTRL_POS_GRP
+    400400: LeftHandThumb2_CTRL
+    400402: LeftHandThumb2_CTRL_AnimData_CONST_GRP
+    400404: LeftHandThumb2_CTRL_In_Rig_CONST_GRP
+    400406: LeftHandThumb2_CTRL_POS_GRP
+    400408: LeftHandThumb3_CTRL
+    400410: LeftHandThumb3_CTRL_AnimData_CONST_GRP
+    400412: LeftHandThumb3_CTRL_In_Rig_CONST_GRP
+    400414: LeftHandThumb3_CTRL_POS_GRP
+    400416: LeftLeg_FK_CTRL
+    400418: LeftLeg_FK_CTRL_AnimData_CONST_GRP
+    400420: LeftLeg_FK_CTRL_In_Rig_CONST_GRP
+    400422: LeftLeg_FK_CTRL_POS_GRP
+    400424: LeftLeg_IK_BakingLOC
+    400426: LeftLeg_IK_CTRL_GuideCurve_Cluster2Handle
+    400428: LeftShoulder_CTRL
+    400430: LeftShoulder_CTRL_AnimData_CONST_GRP
+    400432: LeftShoulder_CTRL_In_Rig_CONST_GRP
+    400434: LeftShoulder_CTRL_POS_GRP
+    400436: LeftToeBase_FK_CTRL
+    400438: LeftToeBase_FK_CTRL_AnimData_CONST_GRP
+    400440: LeftToeBase_FK_CTRL_In_Rig_CONST_GRP
+    400442: LeftToeBase_FK_CTRL_POS_GRP
+    400444: LeftUpLeg_FK_CTRL
+    400446: LeftUpLeg_FK_CTRL_AnimData_CONST_GRP
+    400448: LeftUpLeg_FK_CTRL_In_Rig_CONST_GRP
+    400450: LeftUpLeg_FK_CTRL_POS_GRP
+    400452: Neck_CTRL
+    400454: Neck_CTRL_AnimData_CONST_GRP
+    400456: Neck_CTRL_In_Rig_CONST_GRP
+    400458: Neck_CTRL_POS_GRP
+    400460: //RootNode
+    400462: Pelvis_CTRL
+    400464: Pelvis_CTRL_AnimData_CONST_GRP
+    400466: Pelvis_CTRL_In_Rig_CONST_GRP
+    400468: Pelvis_CTRL_POS_GRP
+    400470: Right_Ankle_IK_AnimData_GRP
+    400472: Right_Ankle_IK_CTRL
+    400474: Right_Toe_End_IK_CTRL
+    400476: Right_Toe_IK_AnimData_GRP
+    400478: Right_ToeBase_IK_AnimData_GRP
+    400480: Right_ToeBase_IK_CTRL
+    400482: RightArm_FK_CTRL
+    400484: RightArm_FK_CTRL_AnimData_CONST_GRP
+    400486: RightArm_FK_CTRL_In_Rig_CONST_GRP
+    400488: RightArm_FK_CTRL_POS_GRP
+    400490: RightFoot_FK_CTRL
+    400492: RightFoot_FK_CTRL_AnimData_CONST_GRP
+    400494: RightFoot_FK_CTRL_In_Rig_CONST_GRP
+    400496: RightFoot_FK_CTRL_POS_GRP
+    400498: RightFoot_IK_BakingLOC
+    400500: RightFoot_IK_CTRL
+    400502: RightFoot_IK_CTRL_AnimData_CONST_GRP
+    400504: RightFoot_IK_CTRL_grandparent_AnimData_CONST_GRP
+    400506: RightFoot_IK_CTRL_grandparent_Global_POS_GRP
+    400508: RightFoot_IK_CTRL_grandparent_inRig_CONST_GRP
+    400510: RightFoot_IK_CTRL_grandparent_POS_GRP
+    400512: RightFoot_IK_CTRL_In_Rig_CONST_GRP
+    400514: RightFoot_IK_CTRL_parent_AnimData_CONST_GRP
+    400516: RightFoot_IK_CTRL_parent_Global_POS_GRP
+    400518: RightFoot_IK_CTRL_parent_POS_GRP
+    400520: RightFoot_IK_CTRL_POS_GRP
+    400522: RightFoot_IK_CTRL_Reorient_GRP
+    400524: RightFoot_Options
+    400526: RightForeArm_FK_CTRL
+    400528: RightForeArm_FK_CTRL_AnimData_CONST_GRP
+    400530: RightForeArm_FK_CTRL_In_Rig_CONST_GRP
+    400532: RightForeArm_FK_CTRL_POS_GRP
+    400534: RightForeArm_IK_BakingLOC
+    400536: RightForeArm_IK_CTRL_GuideCurve_Cluster2Handle
+    400538: RightHand_CTRLs_GRP
+    400540: RightHand_FK_CTRL
+    400542: RightHand_FK_CTRL_AnimData_CONST_GRP
+    400544: RightHand_FK_CTRL_In_Rig_CONST_GRP
+    400546: RightHand_FK_CTRL_POS_GRP
+    400548: RightHand_IK_CTRL
+    400550: RightHand_IK_CTRL_AnimData_CONST_GRP
+    400552: RightHand_IK_CTRL_grandparent_AnimData_CONST_GRP
+    400554: RightHand_IK_CTRL_grandparent_Global_POS_GRP
+    400556: RightHand_IK_CTRL_grandparent_inRig_CONST_GRP
+    400558: RightHand_IK_CTRL_grandparent_POS_GRP
+    400560: RightHand_IK_CTRL_In_Rig_CONST_GRP
+    400562: RightHand_IK_CTRL_parent_AnimData_CONST_GRP
+    400564: RightHand_IK_CTRL_parent_Global_POS_GRP
+    400566: RightHand_IK_CTRL_parent_POS_GRP
+    400568: RightHand_IK_CTRL_POS_GRP
+    400570: RightHand_Options
+    400572: RightHandIndex1_CTRL
+    400574: RightHandIndex1_CTRL_AnimData_CONST_GRP
+    400576: RightHandIndex1_CTRL_In_Rig_CONST_GRP
+    400578: RightHandIndex1_CTRL_POS_GRP
+    400580: RightHandIndex2_CTRL
+    400582: RightHandIndex2_CTRL_AnimData_CONST_GRP
+    400584: RightHandIndex2_CTRL_In_Rig_CONST_GRP
+    400586: RightHandIndex2_CTRL_POS_GRP
+    400588: RightHandIndex3_CTRL
+    400590: RightHandIndex3_CTRL_AnimData_CONST_GRP
+    400592: RightHandIndex3_CTRL_In_Rig_CONST_GRP
+    400594: RightHandIndex3_CTRL_POS_GRP
+    400596: RightHandThumb1_CTRL
+    400598: RightHandThumb1_CTRL_AnimData_CONST_GRP
+    400600: RightHandThumb1_CTRL_In_Rig_CONST_GRP
+    400602: RightHandThumb1_CTRL_POS_GRP
+    400604: RightHandThumb2_CTRL
+    400606: RightHandThumb2_CTRL_AnimData_CONST_GRP
+    400608: RightHandThumb2_CTRL_In_Rig_CONST_GRP
+    400610: RightHandThumb2_CTRL_POS_GRP
+    400612: RightHandThumb3_CTRL
+    400614: RightHandThumb3_CTRL_AnimData_CONST_GRP
+    400616: RightHandThumb3_CTRL_In_Rig_CONST_GRP
+    400618: RightHandThumb3_CTRL_POS_GRP
+    400620: RightLeg_FK_CTRL
+    400622: RightLeg_FK_CTRL_AnimData_CONST_GRP
+    400624: RightLeg_FK_CTRL_In_Rig_CONST_GRP
+    400626: RightLeg_FK_CTRL_POS_GRP
+    400628: RightLeg_IK_BakingLOC
+    400630: RightLeg_IK_CTRL_GuideCurve_Cluster2Handle
+    400632: RightShoulder_CTRL
+    400634: RightShoulder_CTRL_AnimData_CONST_GRP
+    400636: RightShoulder_CTRL_In_Rig_CONST_GRP
+    400638: RightShoulder_CTRL_POS_GRP
+    400640: RightToeBase_FK_CTRL
+    400642: RightToeBase_FK_CTRL_AnimData_CONST_GRP
+    400644: RightToeBase_FK_CTRL_In_Rig_CONST_GRP
+    400646: RightToeBase_FK_CTRL_POS_GRP
+    400648: RightUpLeg_FK_CTRL
+    400650: RightUpLeg_FK_CTRL_AnimData_CONST_GRP
+    400652: RightUpLeg_FK_CTRL_In_Rig_CONST_GRP
+    400654: RightUpLeg_FK_CTRL_POS_GRP
+    400656: Root_CTRL
+    400658: Root_CTRL_AnimData_CONST_GRP
+    400660: Root_CTRL_In_Rig_CONST_GRP
+    400662: Root_CTRL_POS_GRP
+    400664: Spine1_CTRL
+    400666: Spine1_CTRL_AnimData_CONST_GRP
+    400668: Spine1_CTRL_In_Rig_CONST_GRP
+    400670: Spine1_CTRL_POS_GRP
+    400672: Spine2_CTRL
+    400674: Spine2_CTRL_AnimData_CONST_GRP
+    400676: Spine2_CTRL_In_Rig_CONST_GRP
+    400678: Spine2_CTRL_POS_GRP
+    400680: Spine_CTRL
+    400682: Spine_CTRL_AnimData_CONST_GRP
+    400684: Spine_CTRL_In_Rig_CONST_GRP
+    400686: Spine_CTRL_POS_GRP
+    400688: transform1
+    400690: transform2
+    400692: transform3
+    7400000: jump
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: jump
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CTRL_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/IK_Dummy_Joint_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/IK_Dummy_Joint_GRP/IK_Dummy_Root
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/IK_Dummy_Joint_GRP/IK_Dummy_Root/IK_Dummy_Spine
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/IK_Dummy_Joint_GRP/IK_Dummy_Root/IK_Dummy_Spine/IK_Dummy_Spine1
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/IK_Dummy_Joint_GRP/IK_Dummy_Root/IK_Dummy_Spine/IK_Dummy_Spine1/IK_Dummy_Spine2
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/IK_Dummy_Joint_GRP/IK_Dummy_Root/IK_Dummy_Spine/IK_Dummy_Spine1/IK_Dummy_Spine2/IK_Dummy_LeftShoulder
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/IK_Dummy_Joint_GRP/IK_Dummy_Root/IK_Dummy_Spine/IK_Dummy_Spine1/IK_Dummy_Spine2/IK_Dummy_RightShoulder
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/IK_Dummy_Joint_GRP/IK_Dummy_Root/transform3
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/IK_Dummy_Joint_GRP/IK_Dummy_Root/transform3/IK_Dummy_Hips
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftFoot_IK_CTRL_grandparent_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftFoot_IK_CTRL_grandparent_POS_GRP/LeftFoot_IK_CTRL_grandparent_Global_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftFoot_IK_CTRL_grandparent_POS_GRP/LeftFoot_IK_CTRL_grandparent_Global_POS_GRP/LeftFoot_IK_CTRL_grandparent_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftFoot_IK_CTRL_grandparent_POS_GRP/LeftFoot_IK_CTRL_grandparent_Global_POS_GRP/LeftFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_grandparent_inRig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftFoot_IK_CTRL_grandparent_POS_GRP/LeftFoot_IK_CTRL_grandparent_Global_POS_GRP/LeftFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_grandparent_inRig_CONST_GRP/LeftFoot_IK_CTRL_parent_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftFoot_IK_CTRL_grandparent_POS_GRP/LeftFoot_IK_CTRL_grandparent_Global_POS_GRP/LeftFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_grandparent_inRig_CONST_GRP/LeftFoot_IK_CTRL_parent_POS_GRP/LeftFoot_IK_CTRL_parent_Global_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftFoot_IK_CTRL_grandparent_POS_GRP/LeftFoot_IK_CTRL_grandparent_Global_POS_GRP/LeftFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_grandparent_inRig_CONST_GRP/LeftFoot_IK_CTRL_parent_POS_GRP/LeftFoot_IK_CTRL_parent_Global_POS_GRP/LeftFoot_IK_CTRL_parent_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftFoot_IK_CTRL_grandparent_POS_GRP/LeftFoot_IK_CTRL_grandparent_Global_POS_GRP/LeftFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_grandparent_inRig_CONST_GRP/LeftFoot_IK_CTRL_parent_POS_GRP/LeftFoot_IK_CTRL_parent_Global_POS_GRP/LeftFoot_IK_CTRL_parent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftFoot_IK_CTRL_grandparent_POS_GRP/LeftFoot_IK_CTRL_grandparent_Global_POS_GRP/LeftFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_grandparent_inRig_CONST_GRP/LeftFoot_IK_CTRL_parent_POS_GRP/LeftFoot_IK_CTRL_parent_Global_POS_GRP/LeftFoot_IK_CTRL_parent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_POS_GRP/LeftFoot_IK_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftFoot_IK_CTRL_grandparent_POS_GRP/LeftFoot_IK_CTRL_grandparent_Global_POS_GRP/LeftFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_grandparent_inRig_CONST_GRP/LeftFoot_IK_CTRL_parent_POS_GRP/LeftFoot_IK_CTRL_parent_Global_POS_GRP/LeftFoot_IK_CTRL_parent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_POS_GRP/LeftFoot_IK_CTRL_AnimData_CONST_GRP/LeftFoot_IK_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftFoot_IK_CTRL_grandparent_POS_GRP/LeftFoot_IK_CTRL_grandparent_Global_POS_GRP/LeftFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_grandparent_inRig_CONST_GRP/LeftFoot_IK_CTRL_parent_POS_GRP/LeftFoot_IK_CTRL_parent_Global_POS_GRP/LeftFoot_IK_CTRL_parent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_POS_GRP/LeftFoot_IK_CTRL_AnimData_CONST_GRP/LeftFoot_IK_CTRL_In_Rig_CONST_GRP/LeftFoot_IK_CTRL_Reorient_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftFoot_IK_CTRL_grandparent_POS_GRP/LeftFoot_IK_CTRL_grandparent_Global_POS_GRP/LeftFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_grandparent_inRig_CONST_GRP/LeftFoot_IK_CTRL_parent_POS_GRP/LeftFoot_IK_CTRL_parent_Global_POS_GRP/LeftFoot_IK_CTRL_parent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_POS_GRP/LeftFoot_IK_CTRL_AnimData_CONST_GRP/LeftFoot_IK_CTRL_In_Rig_CONST_GRP/LeftFoot_IK_CTRL_Reorient_GRP/LeftFoot_IK_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftFoot_IK_CTRL_grandparent_POS_GRP/LeftFoot_IK_CTRL_grandparent_Global_POS_GRP/LeftFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_grandparent_inRig_CONST_GRP/LeftFoot_IK_CTRL_parent_POS_GRP/LeftFoot_IK_CTRL_parent_Global_POS_GRP/LeftFoot_IK_CTRL_parent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_POS_GRP/LeftFoot_IK_CTRL_AnimData_CONST_GRP/LeftFoot_IK_CTRL_In_Rig_CONST_GRP/LeftFoot_IK_CTRL_Reorient_GRP/LeftFoot_IK_CTRL/Left_Toe_IK_AnimData_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftFoot_IK_CTRL_grandparent_POS_GRP/LeftFoot_IK_CTRL_grandparent_Global_POS_GRP/LeftFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_grandparent_inRig_CONST_GRP/LeftFoot_IK_CTRL_parent_POS_GRP/LeftFoot_IK_CTRL_parent_Global_POS_GRP/LeftFoot_IK_CTRL_parent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_POS_GRP/LeftFoot_IK_CTRL_AnimData_CONST_GRP/LeftFoot_IK_CTRL_In_Rig_CONST_GRP/LeftFoot_IK_CTRL_Reorient_GRP/LeftFoot_IK_CTRL/Left_Toe_IK_AnimData_GRP/Left_Toe_End_IK_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftFoot_IK_CTRL_grandparent_POS_GRP/LeftFoot_IK_CTRL_grandparent_Global_POS_GRP/LeftFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_grandparent_inRig_CONST_GRP/LeftFoot_IK_CTRL_parent_POS_GRP/LeftFoot_IK_CTRL_parent_Global_POS_GRP/LeftFoot_IK_CTRL_parent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_POS_GRP/LeftFoot_IK_CTRL_AnimData_CONST_GRP/LeftFoot_IK_CTRL_In_Rig_CONST_GRP/LeftFoot_IK_CTRL_Reorient_GRP/LeftFoot_IK_CTRL/Left_Toe_IK_AnimData_GRP/Left_Toe_End_IK_CTRL/Left_Ankle_IK_AnimData_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftFoot_IK_CTRL_grandparent_POS_GRP/LeftFoot_IK_CTRL_grandparent_Global_POS_GRP/LeftFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_grandparent_inRig_CONST_GRP/LeftFoot_IK_CTRL_parent_POS_GRP/LeftFoot_IK_CTRL_parent_Global_POS_GRP/LeftFoot_IK_CTRL_parent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_POS_GRP/LeftFoot_IK_CTRL_AnimData_CONST_GRP/LeftFoot_IK_CTRL_In_Rig_CONST_GRP/LeftFoot_IK_CTRL_Reorient_GRP/LeftFoot_IK_CTRL/Left_Toe_IK_AnimData_GRP/Left_Toe_End_IK_CTRL/Left_Ankle_IK_AnimData_GRP/Left_Ankle_IK_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftFoot_IK_CTRL_grandparent_POS_GRP/LeftFoot_IK_CTRL_grandparent_Global_POS_GRP/LeftFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_grandparent_inRig_CONST_GRP/LeftFoot_IK_CTRL_parent_POS_GRP/LeftFoot_IK_CTRL_parent_Global_POS_GRP/LeftFoot_IK_CTRL_parent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_POS_GRP/LeftFoot_IK_CTRL_AnimData_CONST_GRP/LeftFoot_IK_CTRL_In_Rig_CONST_GRP/LeftFoot_IK_CTRL_Reorient_GRP/LeftFoot_IK_CTRL/Left_Toe_IK_AnimData_GRP/Left_Toe_End_IK_CTRL/Left_ToeBase_IK_AnimData_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftFoot_IK_CTRL_grandparent_POS_GRP/LeftFoot_IK_CTRL_grandparent_Global_POS_GRP/LeftFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_grandparent_inRig_CONST_GRP/LeftFoot_IK_CTRL_parent_POS_GRP/LeftFoot_IK_CTRL_parent_Global_POS_GRP/LeftFoot_IK_CTRL_parent_AnimData_CONST_GRP/LeftFoot_IK_CTRL_POS_GRP/LeftFoot_IK_CTRL_AnimData_CONST_GRP/LeftFoot_IK_CTRL_In_Rig_CONST_GRP/LeftFoot_IK_CTRL_Reorient_GRP/LeftFoot_IK_CTRL/Left_Toe_IK_AnimData_GRP/Left_Toe_End_IK_CTRL/Left_ToeBase_IK_AnimData_GRP/Left_ToeBase_IK_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftFoot_Options
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_CTRLs_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_CTRLs_GRP/LeftHandIndex1_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_CTRLs_GRP/LeftHandIndex1_CTRL_POS_GRP/LeftHandIndex1_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_CTRLs_GRP/LeftHandIndex1_CTRL_POS_GRP/LeftHandIndex1_CTRL_AnimData_CONST_GRP/LeftHandIndex1_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_CTRLs_GRP/LeftHandIndex1_CTRL_POS_GRP/LeftHandIndex1_CTRL_AnimData_CONST_GRP/LeftHandIndex1_CTRL_In_Rig_CONST_GRP/LeftHandIndex1_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_CTRLs_GRP/LeftHandIndex1_CTRL_POS_GRP/LeftHandIndex1_CTRL_AnimData_CONST_GRP/LeftHandIndex1_CTRL_In_Rig_CONST_GRP/LeftHandIndex1_CTRL/LeftHandIndex2_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_CTRLs_GRP/LeftHandIndex1_CTRL_POS_GRP/LeftHandIndex1_CTRL_AnimData_CONST_GRP/LeftHandIndex1_CTRL_In_Rig_CONST_GRP/LeftHandIndex1_CTRL/LeftHandIndex2_CTRL_POS_GRP/LeftHandIndex2_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_CTRLs_GRP/LeftHandIndex1_CTRL_POS_GRP/LeftHandIndex1_CTRL_AnimData_CONST_GRP/LeftHandIndex1_CTRL_In_Rig_CONST_GRP/LeftHandIndex1_CTRL/LeftHandIndex2_CTRL_POS_GRP/LeftHandIndex2_CTRL_AnimData_CONST_GRP/LeftHandIndex2_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_CTRLs_GRP/LeftHandIndex1_CTRL_POS_GRP/LeftHandIndex1_CTRL_AnimData_CONST_GRP/LeftHandIndex1_CTRL_In_Rig_CONST_GRP/LeftHandIndex1_CTRL/LeftHandIndex2_CTRL_POS_GRP/LeftHandIndex2_CTRL_AnimData_CONST_GRP/LeftHandIndex2_CTRL_In_Rig_CONST_GRP/LeftHandIndex2_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_CTRLs_GRP/LeftHandIndex1_CTRL_POS_GRP/LeftHandIndex1_CTRL_AnimData_CONST_GRP/LeftHandIndex1_CTRL_In_Rig_CONST_GRP/LeftHandIndex1_CTRL/LeftHandIndex2_CTRL_POS_GRP/LeftHandIndex2_CTRL_AnimData_CONST_GRP/LeftHandIndex2_CTRL_In_Rig_CONST_GRP/LeftHandIndex2_CTRL/LeftHandIndex3_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_CTRLs_GRP/LeftHandIndex1_CTRL_POS_GRP/LeftHandIndex1_CTRL_AnimData_CONST_GRP/LeftHandIndex1_CTRL_In_Rig_CONST_GRP/LeftHandIndex1_CTRL/LeftHandIndex2_CTRL_POS_GRP/LeftHandIndex2_CTRL_AnimData_CONST_GRP/LeftHandIndex2_CTRL_In_Rig_CONST_GRP/LeftHandIndex2_CTRL/LeftHandIndex3_CTRL_POS_GRP/LeftHandIndex3_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_CTRLs_GRP/LeftHandIndex1_CTRL_POS_GRP/LeftHandIndex1_CTRL_AnimData_CONST_GRP/LeftHandIndex1_CTRL_In_Rig_CONST_GRP/LeftHandIndex1_CTRL/LeftHandIndex2_CTRL_POS_GRP/LeftHandIndex2_CTRL_AnimData_CONST_GRP/LeftHandIndex2_CTRL_In_Rig_CONST_GRP/LeftHandIndex2_CTRL/LeftHandIndex3_CTRL_POS_GRP/LeftHandIndex3_CTRL_AnimData_CONST_GRP/LeftHandIndex3_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_CTRLs_GRP/LeftHandIndex1_CTRL_POS_GRP/LeftHandIndex1_CTRL_AnimData_CONST_GRP/LeftHandIndex1_CTRL_In_Rig_CONST_GRP/LeftHandIndex1_CTRL/LeftHandIndex2_CTRL_POS_GRP/LeftHandIndex2_CTRL_AnimData_CONST_GRP/LeftHandIndex2_CTRL_In_Rig_CONST_GRP/LeftHandIndex2_CTRL/LeftHandIndex3_CTRL_POS_GRP/LeftHandIndex3_CTRL_AnimData_CONST_GRP/LeftHandIndex3_CTRL_In_Rig_CONST_GRP/LeftHandIndex3_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_CTRLs_GRP/LeftHandThumb1_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_CTRLs_GRP/LeftHandThumb1_CTRL_POS_GRP/LeftHandThumb1_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_CTRLs_GRP/LeftHandThumb1_CTRL_POS_GRP/LeftHandThumb1_CTRL_AnimData_CONST_GRP/LeftHandThumb1_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_CTRLs_GRP/LeftHandThumb1_CTRL_POS_GRP/LeftHandThumb1_CTRL_AnimData_CONST_GRP/LeftHandThumb1_CTRL_In_Rig_CONST_GRP/LeftHandThumb1_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_CTRLs_GRP/LeftHandThumb1_CTRL_POS_GRP/LeftHandThumb1_CTRL_AnimData_CONST_GRP/LeftHandThumb1_CTRL_In_Rig_CONST_GRP/LeftHandThumb1_CTRL/LeftHandThumb2_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_CTRLs_GRP/LeftHandThumb1_CTRL_POS_GRP/LeftHandThumb1_CTRL_AnimData_CONST_GRP/LeftHandThumb1_CTRL_In_Rig_CONST_GRP/LeftHandThumb1_CTRL/LeftHandThumb2_CTRL_POS_GRP/LeftHandThumb2_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_CTRLs_GRP/LeftHandThumb1_CTRL_POS_GRP/LeftHandThumb1_CTRL_AnimData_CONST_GRP/LeftHandThumb1_CTRL_In_Rig_CONST_GRP/LeftHandThumb1_CTRL/LeftHandThumb2_CTRL_POS_GRP/LeftHandThumb2_CTRL_AnimData_CONST_GRP/LeftHandThumb2_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_CTRLs_GRP/LeftHandThumb1_CTRL_POS_GRP/LeftHandThumb1_CTRL_AnimData_CONST_GRP/LeftHandThumb1_CTRL_In_Rig_CONST_GRP/LeftHandThumb1_CTRL/LeftHandThumb2_CTRL_POS_GRP/LeftHandThumb2_CTRL_AnimData_CONST_GRP/LeftHandThumb2_CTRL_In_Rig_CONST_GRP/LeftHandThumb2_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_CTRLs_GRP/LeftHandThumb1_CTRL_POS_GRP/LeftHandThumb1_CTRL_AnimData_CONST_GRP/LeftHandThumb1_CTRL_In_Rig_CONST_GRP/LeftHandThumb1_CTRL/LeftHandThumb2_CTRL_POS_GRP/LeftHandThumb2_CTRL_AnimData_CONST_GRP/LeftHandThumb2_CTRL_In_Rig_CONST_GRP/LeftHandThumb2_CTRL/LeftHandThumb3_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_CTRLs_GRP/LeftHandThumb1_CTRL_POS_GRP/LeftHandThumb1_CTRL_AnimData_CONST_GRP/LeftHandThumb1_CTRL_In_Rig_CONST_GRP/LeftHandThumb1_CTRL/LeftHandThumb2_CTRL_POS_GRP/LeftHandThumb2_CTRL_AnimData_CONST_GRP/LeftHandThumb2_CTRL_In_Rig_CONST_GRP/LeftHandThumb2_CTRL/LeftHandThumb3_CTRL_POS_GRP/LeftHandThumb3_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_CTRLs_GRP/LeftHandThumb1_CTRL_POS_GRP/LeftHandThumb1_CTRL_AnimData_CONST_GRP/LeftHandThumb1_CTRL_In_Rig_CONST_GRP/LeftHandThumb1_CTRL/LeftHandThumb2_CTRL_POS_GRP/LeftHandThumb2_CTRL_AnimData_CONST_GRP/LeftHandThumb2_CTRL_In_Rig_CONST_GRP/LeftHandThumb2_CTRL/LeftHandThumb3_CTRL_POS_GRP/LeftHandThumb3_CTRL_AnimData_CONST_GRP/LeftHandThumb3_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_CTRLs_GRP/LeftHandThumb1_CTRL_POS_GRP/LeftHandThumb1_CTRL_AnimData_CONST_GRP/LeftHandThumb1_CTRL_In_Rig_CONST_GRP/LeftHandThumb1_CTRL/LeftHandThumb2_CTRL_POS_GRP/LeftHandThumb2_CTRL_AnimData_CONST_GRP/LeftHandThumb2_CTRL_In_Rig_CONST_GRP/LeftHandThumb2_CTRL/LeftHandThumb3_CTRL_POS_GRP/LeftHandThumb3_CTRL_AnimData_CONST_GRP/LeftHandThumb3_CTRL_In_Rig_CONST_GRP/LeftHandThumb3_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_IK_CTRL_grandparent_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_IK_CTRL_grandparent_POS_GRP/LeftHand_IK_CTRL_grandparent_Global_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_IK_CTRL_grandparent_POS_GRP/LeftHand_IK_CTRL_grandparent_Global_POS_GRP/LeftHand_IK_CTRL_grandparent_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_IK_CTRL_grandparent_POS_GRP/LeftHand_IK_CTRL_grandparent_Global_POS_GRP/LeftHand_IK_CTRL_grandparent_AnimData_CONST_GRP/LeftHand_IK_CTRL_grandparent_inRig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_IK_CTRL_grandparent_POS_GRP/LeftHand_IK_CTRL_grandparent_Global_POS_GRP/LeftHand_IK_CTRL_grandparent_AnimData_CONST_GRP/LeftHand_IK_CTRL_grandparent_inRig_CONST_GRP/LeftHand_IK_CTRL_parent_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_IK_CTRL_grandparent_POS_GRP/LeftHand_IK_CTRL_grandparent_Global_POS_GRP/LeftHand_IK_CTRL_grandparent_AnimData_CONST_GRP/LeftHand_IK_CTRL_grandparent_inRig_CONST_GRP/LeftHand_IK_CTRL_parent_POS_GRP/LeftHand_IK_CTRL_parent_Global_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_IK_CTRL_grandparent_POS_GRP/LeftHand_IK_CTRL_grandparent_Global_POS_GRP/LeftHand_IK_CTRL_grandparent_AnimData_CONST_GRP/LeftHand_IK_CTRL_grandparent_inRig_CONST_GRP/LeftHand_IK_CTRL_parent_POS_GRP/LeftHand_IK_CTRL_parent_Global_POS_GRP/LeftHand_IK_CTRL_parent_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_IK_CTRL_grandparent_POS_GRP/LeftHand_IK_CTRL_grandparent_Global_POS_GRP/LeftHand_IK_CTRL_grandparent_AnimData_CONST_GRP/LeftHand_IK_CTRL_grandparent_inRig_CONST_GRP/LeftHand_IK_CTRL_parent_POS_GRP/LeftHand_IK_CTRL_parent_Global_POS_GRP/LeftHand_IK_CTRL_parent_AnimData_CONST_GRP/LeftHand_IK_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_IK_CTRL_grandparent_POS_GRP/LeftHand_IK_CTRL_grandparent_Global_POS_GRP/LeftHand_IK_CTRL_grandparent_AnimData_CONST_GRP/LeftHand_IK_CTRL_grandparent_inRig_CONST_GRP/LeftHand_IK_CTRL_parent_POS_GRP/LeftHand_IK_CTRL_parent_Global_POS_GRP/LeftHand_IK_CTRL_parent_AnimData_CONST_GRP/LeftHand_IK_CTRL_POS_GRP/LeftHand_IK_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_IK_CTRL_grandparent_POS_GRP/LeftHand_IK_CTRL_grandparent_Global_POS_GRP/LeftHand_IK_CTRL_grandparent_AnimData_CONST_GRP/LeftHand_IK_CTRL_grandparent_inRig_CONST_GRP/LeftHand_IK_CTRL_parent_POS_GRP/LeftHand_IK_CTRL_parent_Global_POS_GRP/LeftHand_IK_CTRL_parent_AnimData_CONST_GRP/LeftHand_IK_CTRL_POS_GRP/LeftHand_IK_CTRL_AnimData_CONST_GRP/LeftHand_IK_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_IK_CTRL_grandparent_POS_GRP/LeftHand_IK_CTRL_grandparent_Global_POS_GRP/LeftHand_IK_CTRL_grandparent_AnimData_CONST_GRP/LeftHand_IK_CTRL_grandparent_inRig_CONST_GRP/LeftHand_IK_CTRL_parent_POS_GRP/LeftHand_IK_CTRL_parent_Global_POS_GRP/LeftHand_IK_CTRL_parent_AnimData_CONST_GRP/LeftHand_IK_CTRL_POS_GRP/LeftHand_IK_CTRL_AnimData_CONST_GRP/LeftHand_IK_CTRL_In_Rig_CONST_GRP/LeftHand_IK_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/LeftHand_Options
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightFoot_IK_CTRL_grandparent_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightFoot_IK_CTRL_grandparent_POS_GRP/RightFoot_IK_CTRL_grandparent_Global_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightFoot_IK_CTRL_grandparent_POS_GRP/RightFoot_IK_CTRL_grandparent_Global_POS_GRP/RightFoot_IK_CTRL_grandparent_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightFoot_IK_CTRL_grandparent_POS_GRP/RightFoot_IK_CTRL_grandparent_Global_POS_GRP/RightFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/RightFoot_IK_CTRL_grandparent_inRig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightFoot_IK_CTRL_grandparent_POS_GRP/RightFoot_IK_CTRL_grandparent_Global_POS_GRP/RightFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/RightFoot_IK_CTRL_grandparent_inRig_CONST_GRP/RightFoot_IK_CTRL_parent_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightFoot_IK_CTRL_grandparent_POS_GRP/RightFoot_IK_CTRL_grandparent_Global_POS_GRP/RightFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/RightFoot_IK_CTRL_grandparent_inRig_CONST_GRP/RightFoot_IK_CTRL_parent_POS_GRP/RightFoot_IK_CTRL_parent_Global_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightFoot_IK_CTRL_grandparent_POS_GRP/RightFoot_IK_CTRL_grandparent_Global_POS_GRP/RightFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/RightFoot_IK_CTRL_grandparent_inRig_CONST_GRP/RightFoot_IK_CTRL_parent_POS_GRP/RightFoot_IK_CTRL_parent_Global_POS_GRP/RightFoot_IK_CTRL_parent_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightFoot_IK_CTRL_grandparent_POS_GRP/RightFoot_IK_CTRL_grandparent_Global_POS_GRP/RightFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/RightFoot_IK_CTRL_grandparent_inRig_CONST_GRP/RightFoot_IK_CTRL_parent_POS_GRP/RightFoot_IK_CTRL_parent_Global_POS_GRP/RightFoot_IK_CTRL_parent_AnimData_CONST_GRP/RightFoot_IK_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightFoot_IK_CTRL_grandparent_POS_GRP/RightFoot_IK_CTRL_grandparent_Global_POS_GRP/RightFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/RightFoot_IK_CTRL_grandparent_inRig_CONST_GRP/RightFoot_IK_CTRL_parent_POS_GRP/RightFoot_IK_CTRL_parent_Global_POS_GRP/RightFoot_IK_CTRL_parent_AnimData_CONST_GRP/RightFoot_IK_CTRL_POS_GRP/RightFoot_IK_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightFoot_IK_CTRL_grandparent_POS_GRP/RightFoot_IK_CTRL_grandparent_Global_POS_GRP/RightFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/RightFoot_IK_CTRL_grandparent_inRig_CONST_GRP/RightFoot_IK_CTRL_parent_POS_GRP/RightFoot_IK_CTRL_parent_Global_POS_GRP/RightFoot_IK_CTRL_parent_AnimData_CONST_GRP/RightFoot_IK_CTRL_POS_GRP/RightFoot_IK_CTRL_AnimData_CONST_GRP/RightFoot_IK_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightFoot_IK_CTRL_grandparent_POS_GRP/RightFoot_IK_CTRL_grandparent_Global_POS_GRP/RightFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/RightFoot_IK_CTRL_grandparent_inRig_CONST_GRP/RightFoot_IK_CTRL_parent_POS_GRP/RightFoot_IK_CTRL_parent_Global_POS_GRP/RightFoot_IK_CTRL_parent_AnimData_CONST_GRP/RightFoot_IK_CTRL_POS_GRP/RightFoot_IK_CTRL_AnimData_CONST_GRP/RightFoot_IK_CTRL_In_Rig_CONST_GRP/RightFoot_IK_CTRL_Reorient_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightFoot_IK_CTRL_grandparent_POS_GRP/RightFoot_IK_CTRL_grandparent_Global_POS_GRP/RightFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/RightFoot_IK_CTRL_grandparent_inRig_CONST_GRP/RightFoot_IK_CTRL_parent_POS_GRP/RightFoot_IK_CTRL_parent_Global_POS_GRP/RightFoot_IK_CTRL_parent_AnimData_CONST_GRP/RightFoot_IK_CTRL_POS_GRP/RightFoot_IK_CTRL_AnimData_CONST_GRP/RightFoot_IK_CTRL_In_Rig_CONST_GRP/RightFoot_IK_CTRL_Reorient_GRP/RightFoot_IK_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightFoot_IK_CTRL_grandparent_POS_GRP/RightFoot_IK_CTRL_grandparent_Global_POS_GRP/RightFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/RightFoot_IK_CTRL_grandparent_inRig_CONST_GRP/RightFoot_IK_CTRL_parent_POS_GRP/RightFoot_IK_CTRL_parent_Global_POS_GRP/RightFoot_IK_CTRL_parent_AnimData_CONST_GRP/RightFoot_IK_CTRL_POS_GRP/RightFoot_IK_CTRL_AnimData_CONST_GRP/RightFoot_IK_CTRL_In_Rig_CONST_GRP/RightFoot_IK_CTRL_Reorient_GRP/RightFoot_IK_CTRL/Right_Toe_IK_AnimData_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightFoot_IK_CTRL_grandparent_POS_GRP/RightFoot_IK_CTRL_grandparent_Global_POS_GRP/RightFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/RightFoot_IK_CTRL_grandparent_inRig_CONST_GRP/RightFoot_IK_CTRL_parent_POS_GRP/RightFoot_IK_CTRL_parent_Global_POS_GRP/RightFoot_IK_CTRL_parent_AnimData_CONST_GRP/RightFoot_IK_CTRL_POS_GRP/RightFoot_IK_CTRL_AnimData_CONST_GRP/RightFoot_IK_CTRL_In_Rig_CONST_GRP/RightFoot_IK_CTRL_Reorient_GRP/RightFoot_IK_CTRL/Right_Toe_IK_AnimData_GRP/Right_Toe_End_IK_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightFoot_IK_CTRL_grandparent_POS_GRP/RightFoot_IK_CTRL_grandparent_Global_POS_GRP/RightFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/RightFoot_IK_CTRL_grandparent_inRig_CONST_GRP/RightFoot_IK_CTRL_parent_POS_GRP/RightFoot_IK_CTRL_parent_Global_POS_GRP/RightFoot_IK_CTRL_parent_AnimData_CONST_GRP/RightFoot_IK_CTRL_POS_GRP/RightFoot_IK_CTRL_AnimData_CONST_GRP/RightFoot_IK_CTRL_In_Rig_CONST_GRP/RightFoot_IK_CTRL_Reorient_GRP/RightFoot_IK_CTRL/Right_Toe_IK_AnimData_GRP/Right_Toe_End_IK_CTRL/Right_Ankle_IK_AnimData_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightFoot_IK_CTRL_grandparent_POS_GRP/RightFoot_IK_CTRL_grandparent_Global_POS_GRP/RightFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/RightFoot_IK_CTRL_grandparent_inRig_CONST_GRP/RightFoot_IK_CTRL_parent_POS_GRP/RightFoot_IK_CTRL_parent_Global_POS_GRP/RightFoot_IK_CTRL_parent_AnimData_CONST_GRP/RightFoot_IK_CTRL_POS_GRP/RightFoot_IK_CTRL_AnimData_CONST_GRP/RightFoot_IK_CTRL_In_Rig_CONST_GRP/RightFoot_IK_CTRL_Reorient_GRP/RightFoot_IK_CTRL/Right_Toe_IK_AnimData_GRP/Right_Toe_End_IK_CTRL/Right_Ankle_IK_AnimData_GRP/Right_Ankle_IK_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightFoot_IK_CTRL_grandparent_POS_GRP/RightFoot_IK_CTRL_grandparent_Global_POS_GRP/RightFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/RightFoot_IK_CTRL_grandparent_inRig_CONST_GRP/RightFoot_IK_CTRL_parent_POS_GRP/RightFoot_IK_CTRL_parent_Global_POS_GRP/RightFoot_IK_CTRL_parent_AnimData_CONST_GRP/RightFoot_IK_CTRL_POS_GRP/RightFoot_IK_CTRL_AnimData_CONST_GRP/RightFoot_IK_CTRL_In_Rig_CONST_GRP/RightFoot_IK_CTRL_Reorient_GRP/RightFoot_IK_CTRL/Right_Toe_IK_AnimData_GRP/Right_Toe_End_IK_CTRL/Right_ToeBase_IK_AnimData_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightFoot_IK_CTRL_grandparent_POS_GRP/RightFoot_IK_CTRL_grandparent_Global_POS_GRP/RightFoot_IK_CTRL_grandparent_AnimData_CONST_GRP/RightFoot_IK_CTRL_grandparent_inRig_CONST_GRP/RightFoot_IK_CTRL_parent_POS_GRP/RightFoot_IK_CTRL_parent_Global_POS_GRP/RightFoot_IK_CTRL_parent_AnimData_CONST_GRP/RightFoot_IK_CTRL_POS_GRP/RightFoot_IK_CTRL_AnimData_CONST_GRP/RightFoot_IK_CTRL_In_Rig_CONST_GRP/RightFoot_IK_CTRL_Reorient_GRP/RightFoot_IK_CTRL/Right_Toe_IK_AnimData_GRP/Right_Toe_End_IK_CTRL/Right_ToeBase_IK_AnimData_GRP/Right_ToeBase_IK_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightFoot_Options
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_CTRLs_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_CTRLs_GRP/RightHandIndex1_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_CTRLs_GRP/RightHandIndex1_CTRL_POS_GRP/RightHandIndex1_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_CTRLs_GRP/RightHandIndex1_CTRL_POS_GRP/RightHandIndex1_CTRL_AnimData_CONST_GRP/RightHandIndex1_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_CTRLs_GRP/RightHandIndex1_CTRL_POS_GRP/RightHandIndex1_CTRL_AnimData_CONST_GRP/RightHandIndex1_CTRL_In_Rig_CONST_GRP/RightHandIndex1_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_CTRLs_GRP/RightHandIndex1_CTRL_POS_GRP/RightHandIndex1_CTRL_AnimData_CONST_GRP/RightHandIndex1_CTRL_In_Rig_CONST_GRP/RightHandIndex1_CTRL/RightHandIndex2_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_CTRLs_GRP/RightHandIndex1_CTRL_POS_GRP/RightHandIndex1_CTRL_AnimData_CONST_GRP/RightHandIndex1_CTRL_In_Rig_CONST_GRP/RightHandIndex1_CTRL/RightHandIndex2_CTRL_POS_GRP/RightHandIndex2_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_CTRLs_GRP/RightHandIndex1_CTRL_POS_GRP/RightHandIndex1_CTRL_AnimData_CONST_GRP/RightHandIndex1_CTRL_In_Rig_CONST_GRP/RightHandIndex1_CTRL/RightHandIndex2_CTRL_POS_GRP/RightHandIndex2_CTRL_AnimData_CONST_GRP/RightHandIndex2_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_CTRLs_GRP/RightHandIndex1_CTRL_POS_GRP/RightHandIndex1_CTRL_AnimData_CONST_GRP/RightHandIndex1_CTRL_In_Rig_CONST_GRP/RightHandIndex1_CTRL/RightHandIndex2_CTRL_POS_GRP/RightHandIndex2_CTRL_AnimData_CONST_GRP/RightHandIndex2_CTRL_In_Rig_CONST_GRP/RightHandIndex2_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_CTRLs_GRP/RightHandIndex1_CTRL_POS_GRP/RightHandIndex1_CTRL_AnimData_CONST_GRP/RightHandIndex1_CTRL_In_Rig_CONST_GRP/RightHandIndex1_CTRL/RightHandIndex2_CTRL_POS_GRP/RightHandIndex2_CTRL_AnimData_CONST_GRP/RightHandIndex2_CTRL_In_Rig_CONST_GRP/RightHandIndex2_CTRL/RightHandIndex3_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_CTRLs_GRP/RightHandIndex1_CTRL_POS_GRP/RightHandIndex1_CTRL_AnimData_CONST_GRP/RightHandIndex1_CTRL_In_Rig_CONST_GRP/RightHandIndex1_CTRL/RightHandIndex2_CTRL_POS_GRP/RightHandIndex2_CTRL_AnimData_CONST_GRP/RightHandIndex2_CTRL_In_Rig_CONST_GRP/RightHandIndex2_CTRL/RightHandIndex3_CTRL_POS_GRP/RightHandIndex3_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_CTRLs_GRP/RightHandIndex1_CTRL_POS_GRP/RightHandIndex1_CTRL_AnimData_CONST_GRP/RightHandIndex1_CTRL_In_Rig_CONST_GRP/RightHandIndex1_CTRL/RightHandIndex2_CTRL_POS_GRP/RightHandIndex2_CTRL_AnimData_CONST_GRP/RightHandIndex2_CTRL_In_Rig_CONST_GRP/RightHandIndex2_CTRL/RightHandIndex3_CTRL_POS_GRP/RightHandIndex3_CTRL_AnimData_CONST_GRP/RightHandIndex3_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_CTRLs_GRP/RightHandIndex1_CTRL_POS_GRP/RightHandIndex1_CTRL_AnimData_CONST_GRP/RightHandIndex1_CTRL_In_Rig_CONST_GRP/RightHandIndex1_CTRL/RightHandIndex2_CTRL_POS_GRP/RightHandIndex2_CTRL_AnimData_CONST_GRP/RightHandIndex2_CTRL_In_Rig_CONST_GRP/RightHandIndex2_CTRL/RightHandIndex3_CTRL_POS_GRP/RightHandIndex3_CTRL_AnimData_CONST_GRP/RightHandIndex3_CTRL_In_Rig_CONST_GRP/RightHandIndex3_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_CTRLs_GRP/RightHandThumb1_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_CTRLs_GRP/RightHandThumb1_CTRL_POS_GRP/RightHandThumb1_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_CTRLs_GRP/RightHandThumb1_CTRL_POS_GRP/RightHandThumb1_CTRL_AnimData_CONST_GRP/RightHandThumb1_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_CTRLs_GRP/RightHandThumb1_CTRL_POS_GRP/RightHandThumb1_CTRL_AnimData_CONST_GRP/RightHandThumb1_CTRL_In_Rig_CONST_GRP/RightHandThumb1_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_CTRLs_GRP/RightHandThumb1_CTRL_POS_GRP/RightHandThumb1_CTRL_AnimData_CONST_GRP/RightHandThumb1_CTRL_In_Rig_CONST_GRP/RightHandThumb1_CTRL/RightHandThumb2_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_CTRLs_GRP/RightHandThumb1_CTRL_POS_GRP/RightHandThumb1_CTRL_AnimData_CONST_GRP/RightHandThumb1_CTRL_In_Rig_CONST_GRP/RightHandThumb1_CTRL/RightHandThumb2_CTRL_POS_GRP/RightHandThumb2_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_CTRLs_GRP/RightHandThumb1_CTRL_POS_GRP/RightHandThumb1_CTRL_AnimData_CONST_GRP/RightHandThumb1_CTRL_In_Rig_CONST_GRP/RightHandThumb1_CTRL/RightHandThumb2_CTRL_POS_GRP/RightHandThumb2_CTRL_AnimData_CONST_GRP/RightHandThumb2_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_CTRLs_GRP/RightHandThumb1_CTRL_POS_GRP/RightHandThumb1_CTRL_AnimData_CONST_GRP/RightHandThumb1_CTRL_In_Rig_CONST_GRP/RightHandThumb1_CTRL/RightHandThumb2_CTRL_POS_GRP/RightHandThumb2_CTRL_AnimData_CONST_GRP/RightHandThumb2_CTRL_In_Rig_CONST_GRP/RightHandThumb2_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_CTRLs_GRP/RightHandThumb1_CTRL_POS_GRP/RightHandThumb1_CTRL_AnimData_CONST_GRP/RightHandThumb1_CTRL_In_Rig_CONST_GRP/RightHandThumb1_CTRL/RightHandThumb2_CTRL_POS_GRP/RightHandThumb2_CTRL_AnimData_CONST_GRP/RightHandThumb2_CTRL_In_Rig_CONST_GRP/RightHandThumb2_CTRL/RightHandThumb3_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_CTRLs_GRP/RightHandThumb1_CTRL_POS_GRP/RightHandThumb1_CTRL_AnimData_CONST_GRP/RightHandThumb1_CTRL_In_Rig_CONST_GRP/RightHandThumb1_CTRL/RightHandThumb2_CTRL_POS_GRP/RightHandThumb2_CTRL_AnimData_CONST_GRP/RightHandThumb2_CTRL_In_Rig_CONST_GRP/RightHandThumb2_CTRL/RightHandThumb3_CTRL_POS_GRP/RightHandThumb3_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_CTRLs_GRP/RightHandThumb1_CTRL_POS_GRP/RightHandThumb1_CTRL_AnimData_CONST_GRP/RightHandThumb1_CTRL_In_Rig_CONST_GRP/RightHandThumb1_CTRL/RightHandThumb2_CTRL_POS_GRP/RightHandThumb2_CTRL_AnimData_CONST_GRP/RightHandThumb2_CTRL_In_Rig_CONST_GRP/RightHandThumb2_CTRL/RightHandThumb3_CTRL_POS_GRP/RightHandThumb3_CTRL_AnimData_CONST_GRP/RightHandThumb3_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_CTRLs_GRP/RightHandThumb1_CTRL_POS_GRP/RightHandThumb1_CTRL_AnimData_CONST_GRP/RightHandThumb1_CTRL_In_Rig_CONST_GRP/RightHandThumb1_CTRL/RightHandThumb2_CTRL_POS_GRP/RightHandThumb2_CTRL_AnimData_CONST_GRP/RightHandThumb2_CTRL_In_Rig_CONST_GRP/RightHandThumb2_CTRL/RightHandThumb3_CTRL_POS_GRP/RightHandThumb3_CTRL_AnimData_CONST_GRP/RightHandThumb3_CTRL_In_Rig_CONST_GRP/RightHandThumb3_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_IK_CTRL_grandparent_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_IK_CTRL_grandparent_POS_GRP/RightHand_IK_CTRL_grandparent_Global_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_IK_CTRL_grandparent_POS_GRP/RightHand_IK_CTRL_grandparent_Global_POS_GRP/RightHand_IK_CTRL_grandparent_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_IK_CTRL_grandparent_POS_GRP/RightHand_IK_CTRL_grandparent_Global_POS_GRP/RightHand_IK_CTRL_grandparent_AnimData_CONST_GRP/RightHand_IK_CTRL_grandparent_inRig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_IK_CTRL_grandparent_POS_GRP/RightHand_IK_CTRL_grandparent_Global_POS_GRP/RightHand_IK_CTRL_grandparent_AnimData_CONST_GRP/RightHand_IK_CTRL_grandparent_inRig_CONST_GRP/RightHand_IK_CTRL_parent_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_IK_CTRL_grandparent_POS_GRP/RightHand_IK_CTRL_grandparent_Global_POS_GRP/RightHand_IK_CTRL_grandparent_AnimData_CONST_GRP/RightHand_IK_CTRL_grandparent_inRig_CONST_GRP/RightHand_IK_CTRL_parent_POS_GRP/RightHand_IK_CTRL_parent_Global_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_IK_CTRL_grandparent_POS_GRP/RightHand_IK_CTRL_grandparent_Global_POS_GRP/RightHand_IK_CTRL_grandparent_AnimData_CONST_GRP/RightHand_IK_CTRL_grandparent_inRig_CONST_GRP/RightHand_IK_CTRL_parent_POS_GRP/RightHand_IK_CTRL_parent_Global_POS_GRP/RightHand_IK_CTRL_parent_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_IK_CTRL_grandparent_POS_GRP/RightHand_IK_CTRL_grandparent_Global_POS_GRP/RightHand_IK_CTRL_grandparent_AnimData_CONST_GRP/RightHand_IK_CTRL_grandparent_inRig_CONST_GRP/RightHand_IK_CTRL_parent_POS_GRP/RightHand_IK_CTRL_parent_Global_POS_GRP/RightHand_IK_CTRL_parent_AnimData_CONST_GRP/RightHand_IK_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_IK_CTRL_grandparent_POS_GRP/RightHand_IK_CTRL_grandparent_Global_POS_GRP/RightHand_IK_CTRL_grandparent_AnimData_CONST_GRP/RightHand_IK_CTRL_grandparent_inRig_CONST_GRP/RightHand_IK_CTRL_parent_POS_GRP/RightHand_IK_CTRL_parent_Global_POS_GRP/RightHand_IK_CTRL_parent_AnimData_CONST_GRP/RightHand_IK_CTRL_POS_GRP/RightHand_IK_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_IK_CTRL_grandparent_POS_GRP/RightHand_IK_CTRL_grandparent_Global_POS_GRP/RightHand_IK_CTRL_grandparent_AnimData_CONST_GRP/RightHand_IK_CTRL_grandparent_inRig_CONST_GRP/RightHand_IK_CTRL_parent_POS_GRP/RightHand_IK_CTRL_parent_Global_POS_GRP/RightHand_IK_CTRL_parent_AnimData_CONST_GRP/RightHand_IK_CTRL_POS_GRP/RightHand_IK_CTRL_AnimData_CONST_GRP/RightHand_IK_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_IK_CTRL_grandparent_POS_GRP/RightHand_IK_CTRL_grandparent_Global_POS_GRP/RightHand_IK_CTRL_grandparent_AnimData_CONST_GRP/RightHand_IK_CTRL_grandparent_inRig_CONST_GRP/RightHand_IK_CTRL_parent_POS_GRP/RightHand_IK_CTRL_parent_Global_POS_GRP/RightHand_IK_CTRL_parent_AnimData_CONST_GRP/RightHand_IK_CTRL_POS_GRP/RightHand_IK_CTRL_AnimData_CONST_GRP/RightHand_IK_CTRL_In_Rig_CONST_GRP/RightHand_IK_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/RightHand_Options
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/LeftUpLeg_FK_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/LeftUpLeg_FK_CTRL_POS_GRP/LeftUpLeg_FK_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/LeftUpLeg_FK_CTRL_POS_GRP/LeftUpLeg_FK_CTRL_AnimData_CONST_GRP/LeftUpLeg_FK_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/LeftUpLeg_FK_CTRL_POS_GRP/LeftUpLeg_FK_CTRL_AnimData_CONST_GRP/LeftUpLeg_FK_CTRL_In_Rig_CONST_GRP/LeftUpLeg_FK_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/LeftUpLeg_FK_CTRL_POS_GRP/LeftUpLeg_FK_CTRL_AnimData_CONST_GRP/LeftUpLeg_FK_CTRL_In_Rig_CONST_GRP/LeftUpLeg_FK_CTRL/LeftLeg_FK_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/LeftUpLeg_FK_CTRL_POS_GRP/LeftUpLeg_FK_CTRL_AnimData_CONST_GRP/LeftUpLeg_FK_CTRL_In_Rig_CONST_GRP/LeftUpLeg_FK_CTRL/LeftLeg_FK_CTRL_POS_GRP/LeftLeg_FK_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/LeftUpLeg_FK_CTRL_POS_GRP/LeftUpLeg_FK_CTRL_AnimData_CONST_GRP/LeftUpLeg_FK_CTRL_In_Rig_CONST_GRP/LeftUpLeg_FK_CTRL/LeftLeg_FK_CTRL_POS_GRP/LeftLeg_FK_CTRL_AnimData_CONST_GRP/LeftLeg_FK_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/LeftUpLeg_FK_CTRL_POS_GRP/LeftUpLeg_FK_CTRL_AnimData_CONST_GRP/LeftUpLeg_FK_CTRL_In_Rig_CONST_GRP/LeftUpLeg_FK_CTRL/LeftLeg_FK_CTRL_POS_GRP/LeftLeg_FK_CTRL_AnimData_CONST_GRP/LeftLeg_FK_CTRL_In_Rig_CONST_GRP/LeftLeg_FK_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/LeftUpLeg_FK_CTRL_POS_GRP/LeftUpLeg_FK_CTRL_AnimData_CONST_GRP/LeftUpLeg_FK_CTRL_In_Rig_CONST_GRP/LeftUpLeg_FK_CTRL/LeftLeg_FK_CTRL_POS_GRP/LeftLeg_FK_CTRL_AnimData_CONST_GRP/LeftLeg_FK_CTRL_In_Rig_CONST_GRP/LeftLeg_FK_CTRL/LeftFoot_FK_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/LeftUpLeg_FK_CTRL_POS_GRP/LeftUpLeg_FK_CTRL_AnimData_CONST_GRP/LeftUpLeg_FK_CTRL_In_Rig_CONST_GRP/LeftUpLeg_FK_CTRL/LeftLeg_FK_CTRL_POS_GRP/LeftLeg_FK_CTRL_AnimData_CONST_GRP/LeftLeg_FK_CTRL_In_Rig_CONST_GRP/LeftLeg_FK_CTRL/LeftFoot_FK_CTRL_POS_GRP/LeftFoot_FK_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/LeftUpLeg_FK_CTRL_POS_GRP/LeftUpLeg_FK_CTRL_AnimData_CONST_GRP/LeftUpLeg_FK_CTRL_In_Rig_CONST_GRP/LeftUpLeg_FK_CTRL/LeftLeg_FK_CTRL_POS_GRP/LeftLeg_FK_CTRL_AnimData_CONST_GRP/LeftLeg_FK_CTRL_In_Rig_CONST_GRP/LeftLeg_FK_CTRL/LeftFoot_FK_CTRL_POS_GRP/LeftFoot_FK_CTRL_AnimData_CONST_GRP/LeftFoot_FK_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/LeftUpLeg_FK_CTRL_POS_GRP/LeftUpLeg_FK_CTRL_AnimData_CONST_GRP/LeftUpLeg_FK_CTRL_In_Rig_CONST_GRP/LeftUpLeg_FK_CTRL/LeftLeg_FK_CTRL_POS_GRP/LeftLeg_FK_CTRL_AnimData_CONST_GRP/LeftLeg_FK_CTRL_In_Rig_CONST_GRP/LeftLeg_FK_CTRL/LeftFoot_FK_CTRL_POS_GRP/LeftFoot_FK_CTRL_AnimData_CONST_GRP/LeftFoot_FK_CTRL_In_Rig_CONST_GRP/LeftFoot_FK_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/LeftUpLeg_FK_CTRL_POS_GRP/LeftUpLeg_FK_CTRL_AnimData_CONST_GRP/LeftUpLeg_FK_CTRL_In_Rig_CONST_GRP/LeftUpLeg_FK_CTRL/LeftLeg_FK_CTRL_POS_GRP/LeftLeg_FK_CTRL_AnimData_CONST_GRP/LeftLeg_FK_CTRL_In_Rig_CONST_GRP/LeftLeg_FK_CTRL/LeftFoot_FK_CTRL_POS_GRP/LeftFoot_FK_CTRL_AnimData_CONST_GRP/LeftFoot_FK_CTRL_In_Rig_CONST_GRP/LeftFoot_FK_CTRL/LeftToeBase_FK_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/LeftUpLeg_FK_CTRL_POS_GRP/LeftUpLeg_FK_CTRL_AnimData_CONST_GRP/LeftUpLeg_FK_CTRL_In_Rig_CONST_GRP/LeftUpLeg_FK_CTRL/LeftLeg_FK_CTRL_POS_GRP/LeftLeg_FK_CTRL_AnimData_CONST_GRP/LeftLeg_FK_CTRL_In_Rig_CONST_GRP/LeftLeg_FK_CTRL/LeftFoot_FK_CTRL_POS_GRP/LeftFoot_FK_CTRL_AnimData_CONST_GRP/LeftFoot_FK_CTRL_In_Rig_CONST_GRP/LeftFoot_FK_CTRL/LeftToeBase_FK_CTRL_POS_GRP/LeftToeBase_FK_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/LeftUpLeg_FK_CTRL_POS_GRP/LeftUpLeg_FK_CTRL_AnimData_CONST_GRP/LeftUpLeg_FK_CTRL_In_Rig_CONST_GRP/LeftUpLeg_FK_CTRL/LeftLeg_FK_CTRL_POS_GRP/LeftLeg_FK_CTRL_AnimData_CONST_GRP/LeftLeg_FK_CTRL_In_Rig_CONST_GRP/LeftLeg_FK_CTRL/LeftFoot_FK_CTRL_POS_GRP/LeftFoot_FK_CTRL_AnimData_CONST_GRP/LeftFoot_FK_CTRL_In_Rig_CONST_GRP/LeftFoot_FK_CTRL/LeftToeBase_FK_CTRL_POS_GRP/LeftToeBase_FK_CTRL_AnimData_CONST_GRP/LeftToeBase_FK_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/LeftUpLeg_FK_CTRL_POS_GRP/LeftUpLeg_FK_CTRL_AnimData_CONST_GRP/LeftUpLeg_FK_CTRL_In_Rig_CONST_GRP/LeftUpLeg_FK_CTRL/LeftLeg_FK_CTRL_POS_GRP/LeftLeg_FK_CTRL_AnimData_CONST_GRP/LeftLeg_FK_CTRL_In_Rig_CONST_GRP/LeftLeg_FK_CTRL/LeftFoot_FK_CTRL_POS_GRP/LeftFoot_FK_CTRL_AnimData_CONST_GRP/LeftFoot_FK_CTRL_In_Rig_CONST_GRP/LeftFoot_FK_CTRL/LeftToeBase_FK_CTRL_POS_GRP/LeftToeBase_FK_CTRL_AnimData_CONST_GRP/LeftToeBase_FK_CTRL_In_Rig_CONST_GRP/LeftToeBase_FK_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/RightUpLeg_FK_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/RightUpLeg_FK_CTRL_POS_GRP/RightUpLeg_FK_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/RightUpLeg_FK_CTRL_POS_GRP/RightUpLeg_FK_CTRL_AnimData_CONST_GRP/RightUpLeg_FK_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/RightUpLeg_FK_CTRL_POS_GRP/RightUpLeg_FK_CTRL_AnimData_CONST_GRP/RightUpLeg_FK_CTRL_In_Rig_CONST_GRP/RightUpLeg_FK_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/RightUpLeg_FK_CTRL_POS_GRP/RightUpLeg_FK_CTRL_AnimData_CONST_GRP/RightUpLeg_FK_CTRL_In_Rig_CONST_GRP/RightUpLeg_FK_CTRL/RightLeg_FK_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/RightUpLeg_FK_CTRL_POS_GRP/RightUpLeg_FK_CTRL_AnimData_CONST_GRP/RightUpLeg_FK_CTRL_In_Rig_CONST_GRP/RightUpLeg_FK_CTRL/RightLeg_FK_CTRL_POS_GRP/RightLeg_FK_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/RightUpLeg_FK_CTRL_POS_GRP/RightUpLeg_FK_CTRL_AnimData_CONST_GRP/RightUpLeg_FK_CTRL_In_Rig_CONST_GRP/RightUpLeg_FK_CTRL/RightLeg_FK_CTRL_POS_GRP/RightLeg_FK_CTRL_AnimData_CONST_GRP/RightLeg_FK_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/RightUpLeg_FK_CTRL_POS_GRP/RightUpLeg_FK_CTRL_AnimData_CONST_GRP/RightUpLeg_FK_CTRL_In_Rig_CONST_GRP/RightUpLeg_FK_CTRL/RightLeg_FK_CTRL_POS_GRP/RightLeg_FK_CTRL_AnimData_CONST_GRP/RightLeg_FK_CTRL_In_Rig_CONST_GRP/RightLeg_FK_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/RightUpLeg_FK_CTRL_POS_GRP/RightUpLeg_FK_CTRL_AnimData_CONST_GRP/RightUpLeg_FK_CTRL_In_Rig_CONST_GRP/RightUpLeg_FK_CTRL/RightLeg_FK_CTRL_POS_GRP/RightLeg_FK_CTRL_AnimData_CONST_GRP/RightLeg_FK_CTRL_In_Rig_CONST_GRP/RightLeg_FK_CTRL/RightFoot_FK_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/RightUpLeg_FK_CTRL_POS_GRP/RightUpLeg_FK_CTRL_AnimData_CONST_GRP/RightUpLeg_FK_CTRL_In_Rig_CONST_GRP/RightUpLeg_FK_CTRL/RightLeg_FK_CTRL_POS_GRP/RightLeg_FK_CTRL_AnimData_CONST_GRP/RightLeg_FK_CTRL_In_Rig_CONST_GRP/RightLeg_FK_CTRL/RightFoot_FK_CTRL_POS_GRP/RightFoot_FK_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/RightUpLeg_FK_CTRL_POS_GRP/RightUpLeg_FK_CTRL_AnimData_CONST_GRP/RightUpLeg_FK_CTRL_In_Rig_CONST_GRP/RightUpLeg_FK_CTRL/RightLeg_FK_CTRL_POS_GRP/RightLeg_FK_CTRL_AnimData_CONST_GRP/RightLeg_FK_CTRL_In_Rig_CONST_GRP/RightLeg_FK_CTRL/RightFoot_FK_CTRL_POS_GRP/RightFoot_FK_CTRL_AnimData_CONST_GRP/RightFoot_FK_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/RightUpLeg_FK_CTRL_POS_GRP/RightUpLeg_FK_CTRL_AnimData_CONST_GRP/RightUpLeg_FK_CTRL_In_Rig_CONST_GRP/RightUpLeg_FK_CTRL/RightLeg_FK_CTRL_POS_GRP/RightLeg_FK_CTRL_AnimData_CONST_GRP/RightLeg_FK_CTRL_In_Rig_CONST_GRP/RightLeg_FK_CTRL/RightFoot_FK_CTRL_POS_GRP/RightFoot_FK_CTRL_AnimData_CONST_GRP/RightFoot_FK_CTRL_In_Rig_CONST_GRP/RightFoot_FK_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/RightUpLeg_FK_CTRL_POS_GRP/RightUpLeg_FK_CTRL_AnimData_CONST_GRP/RightUpLeg_FK_CTRL_In_Rig_CONST_GRP/RightUpLeg_FK_CTRL/RightLeg_FK_CTRL_POS_GRP/RightLeg_FK_CTRL_AnimData_CONST_GRP/RightLeg_FK_CTRL_In_Rig_CONST_GRP/RightLeg_FK_CTRL/RightFoot_FK_CTRL_POS_GRP/RightFoot_FK_CTRL_AnimData_CONST_GRP/RightFoot_FK_CTRL_In_Rig_CONST_GRP/RightFoot_FK_CTRL/RightToeBase_FK_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/RightUpLeg_FK_CTRL_POS_GRP/RightUpLeg_FK_CTRL_AnimData_CONST_GRP/RightUpLeg_FK_CTRL_In_Rig_CONST_GRP/RightUpLeg_FK_CTRL/RightLeg_FK_CTRL_POS_GRP/RightLeg_FK_CTRL_AnimData_CONST_GRP/RightLeg_FK_CTRL_In_Rig_CONST_GRP/RightLeg_FK_CTRL/RightFoot_FK_CTRL_POS_GRP/RightFoot_FK_CTRL_AnimData_CONST_GRP/RightFoot_FK_CTRL_In_Rig_CONST_GRP/RightFoot_FK_CTRL/RightToeBase_FK_CTRL_POS_GRP/RightToeBase_FK_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/RightUpLeg_FK_CTRL_POS_GRP/RightUpLeg_FK_CTRL_AnimData_CONST_GRP/RightUpLeg_FK_CTRL_In_Rig_CONST_GRP/RightUpLeg_FK_CTRL/RightLeg_FK_CTRL_POS_GRP/RightLeg_FK_CTRL_AnimData_CONST_GRP/RightLeg_FK_CTRL_In_Rig_CONST_GRP/RightLeg_FK_CTRL/RightFoot_FK_CTRL_POS_GRP/RightFoot_FK_CTRL_AnimData_CONST_GRP/RightFoot_FK_CTRL_In_Rig_CONST_GRP/RightFoot_FK_CTRL/RightToeBase_FK_CTRL_POS_GRP/RightToeBase_FK_CTRL_AnimData_CONST_GRP/RightToeBase_FK_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Pelvis_CTRL_POS_GRP/Pelvis_CTRL_AnimData_CONST_GRP/Pelvis_CTRL_In_Rig_CONST_GRP/Pelvis_CTRL/RightUpLeg_FK_CTRL_POS_GRP/RightUpLeg_FK_CTRL_AnimData_CONST_GRP/RightUpLeg_FK_CTRL_In_Rig_CONST_GRP/RightUpLeg_FK_CTRL/RightLeg_FK_CTRL_POS_GRP/RightLeg_FK_CTRL_AnimData_CONST_GRP/RightLeg_FK_CTRL_In_Rig_CONST_GRP/RightLeg_FK_CTRL/RightFoot_FK_CTRL_POS_GRP/RightFoot_FK_CTRL_AnimData_CONST_GRP/RightFoot_FK_CTRL_In_Rig_CONST_GRP/RightFoot_FK_CTRL/RightToeBase_FK_CTRL_POS_GRP/RightToeBase_FK_CTRL_AnimData_CONST_GRP/RightToeBase_FK_CTRL_In_Rig_CONST_GRP/RightToeBase_FK_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/LeftShoulder_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/LeftShoulder_CTRL_POS_GRP/LeftShoulder_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/LeftShoulder_CTRL_POS_GRP/LeftShoulder_CTRL_AnimData_CONST_GRP/LeftShoulder_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/LeftShoulder_CTRL_POS_GRP/LeftShoulder_CTRL_AnimData_CONST_GRP/LeftShoulder_CTRL_In_Rig_CONST_GRP/LeftShoulder_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/LeftShoulder_CTRL_POS_GRP/LeftShoulder_CTRL_AnimData_CONST_GRP/LeftShoulder_CTRL_In_Rig_CONST_GRP/LeftShoulder_CTRL/LeftArm_FK_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/LeftShoulder_CTRL_POS_GRP/LeftShoulder_CTRL_AnimData_CONST_GRP/LeftShoulder_CTRL_In_Rig_CONST_GRP/LeftShoulder_CTRL/LeftArm_FK_CTRL_POS_GRP/LeftArm_FK_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/LeftShoulder_CTRL_POS_GRP/LeftShoulder_CTRL_AnimData_CONST_GRP/LeftShoulder_CTRL_In_Rig_CONST_GRP/LeftShoulder_CTRL/LeftArm_FK_CTRL_POS_GRP/LeftArm_FK_CTRL_AnimData_CONST_GRP/LeftArm_FK_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/LeftShoulder_CTRL_POS_GRP/LeftShoulder_CTRL_AnimData_CONST_GRP/LeftShoulder_CTRL_In_Rig_CONST_GRP/LeftShoulder_CTRL/LeftArm_FK_CTRL_POS_GRP/LeftArm_FK_CTRL_AnimData_CONST_GRP/LeftArm_FK_CTRL_In_Rig_CONST_GRP/LeftArm_FK_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/LeftShoulder_CTRL_POS_GRP/LeftShoulder_CTRL_AnimData_CONST_GRP/LeftShoulder_CTRL_In_Rig_CONST_GRP/LeftShoulder_CTRL/LeftArm_FK_CTRL_POS_GRP/LeftArm_FK_CTRL_AnimData_CONST_GRP/LeftArm_FK_CTRL_In_Rig_CONST_GRP/LeftArm_FK_CTRL/LeftForeArm_FK_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/LeftShoulder_CTRL_POS_GRP/LeftShoulder_CTRL_AnimData_CONST_GRP/LeftShoulder_CTRL_In_Rig_CONST_GRP/LeftShoulder_CTRL/LeftArm_FK_CTRL_POS_GRP/LeftArm_FK_CTRL_AnimData_CONST_GRP/LeftArm_FK_CTRL_In_Rig_CONST_GRP/LeftArm_FK_CTRL/LeftForeArm_FK_CTRL_POS_GRP/LeftForeArm_FK_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/LeftShoulder_CTRL_POS_GRP/LeftShoulder_CTRL_AnimData_CONST_GRP/LeftShoulder_CTRL_In_Rig_CONST_GRP/LeftShoulder_CTRL/LeftArm_FK_CTRL_POS_GRP/LeftArm_FK_CTRL_AnimData_CONST_GRP/LeftArm_FK_CTRL_In_Rig_CONST_GRP/LeftArm_FK_CTRL/LeftForeArm_FK_CTRL_POS_GRP/LeftForeArm_FK_CTRL_AnimData_CONST_GRP/LeftForeArm_FK_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/LeftShoulder_CTRL_POS_GRP/LeftShoulder_CTRL_AnimData_CONST_GRP/LeftShoulder_CTRL_In_Rig_CONST_GRP/LeftShoulder_CTRL/LeftArm_FK_CTRL_POS_GRP/LeftArm_FK_CTRL_AnimData_CONST_GRP/LeftArm_FK_CTRL_In_Rig_CONST_GRP/LeftArm_FK_CTRL/LeftForeArm_FK_CTRL_POS_GRP/LeftForeArm_FK_CTRL_AnimData_CONST_GRP/LeftForeArm_FK_CTRL_In_Rig_CONST_GRP/LeftForeArm_FK_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/LeftShoulder_CTRL_POS_GRP/LeftShoulder_CTRL_AnimData_CONST_GRP/LeftShoulder_CTRL_In_Rig_CONST_GRP/LeftShoulder_CTRL/LeftArm_FK_CTRL_POS_GRP/LeftArm_FK_CTRL_AnimData_CONST_GRP/LeftArm_FK_CTRL_In_Rig_CONST_GRP/LeftArm_FK_CTRL/LeftForeArm_FK_CTRL_POS_GRP/LeftForeArm_FK_CTRL_AnimData_CONST_GRP/LeftForeArm_FK_CTRL_In_Rig_CONST_GRP/LeftForeArm_FK_CTRL/LeftHand_FK_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/LeftShoulder_CTRL_POS_GRP/LeftShoulder_CTRL_AnimData_CONST_GRP/LeftShoulder_CTRL_In_Rig_CONST_GRP/LeftShoulder_CTRL/LeftArm_FK_CTRL_POS_GRP/LeftArm_FK_CTRL_AnimData_CONST_GRP/LeftArm_FK_CTRL_In_Rig_CONST_GRP/LeftArm_FK_CTRL/LeftForeArm_FK_CTRL_POS_GRP/LeftForeArm_FK_CTRL_AnimData_CONST_GRP/LeftForeArm_FK_CTRL_In_Rig_CONST_GRP/LeftForeArm_FK_CTRL/LeftHand_FK_CTRL_POS_GRP/LeftHand_FK_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/LeftShoulder_CTRL_POS_GRP/LeftShoulder_CTRL_AnimData_CONST_GRP/LeftShoulder_CTRL_In_Rig_CONST_GRP/LeftShoulder_CTRL/LeftArm_FK_CTRL_POS_GRP/LeftArm_FK_CTRL_AnimData_CONST_GRP/LeftArm_FK_CTRL_In_Rig_CONST_GRP/LeftArm_FK_CTRL/LeftForeArm_FK_CTRL_POS_GRP/LeftForeArm_FK_CTRL_AnimData_CONST_GRP/LeftForeArm_FK_CTRL_In_Rig_CONST_GRP/LeftForeArm_FK_CTRL/LeftHand_FK_CTRL_POS_GRP/LeftHand_FK_CTRL_AnimData_CONST_GRP/LeftHand_FK_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/LeftShoulder_CTRL_POS_GRP/LeftShoulder_CTRL_AnimData_CONST_GRP/LeftShoulder_CTRL_In_Rig_CONST_GRP/LeftShoulder_CTRL/LeftArm_FK_CTRL_POS_GRP/LeftArm_FK_CTRL_AnimData_CONST_GRP/LeftArm_FK_CTRL_In_Rig_CONST_GRP/LeftArm_FK_CTRL/LeftForeArm_FK_CTRL_POS_GRP/LeftForeArm_FK_CTRL_AnimData_CONST_GRP/LeftForeArm_FK_CTRL_In_Rig_CONST_GRP/LeftForeArm_FK_CTRL/LeftHand_FK_CTRL_POS_GRP/LeftHand_FK_CTRL_AnimData_CONST_GRP/LeftHand_FK_CTRL_In_Rig_CONST_GRP/LeftHand_FK_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/Neck_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/Neck_CTRL_POS_GRP/Neck_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/Neck_CTRL_POS_GRP/Neck_CTRL_AnimData_CONST_GRP/Neck_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/Neck_CTRL_POS_GRP/Neck_CTRL_AnimData_CONST_GRP/Neck_CTRL_In_Rig_CONST_GRP/Neck_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/Neck_CTRL_POS_GRP/Neck_CTRL_AnimData_CONST_GRP/Neck_CTRL_In_Rig_CONST_GRP/Neck_CTRL/Head_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/Neck_CTRL_POS_GRP/Neck_CTRL_AnimData_CONST_GRP/Neck_CTRL_In_Rig_CONST_GRP/Neck_CTRL/Head_CTRL_POS_GRP/Head_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/Neck_CTRL_POS_GRP/Neck_CTRL_AnimData_CONST_GRP/Neck_CTRL_In_Rig_CONST_GRP/Neck_CTRL/Head_CTRL_POS_GRP/Head_CTRL_AnimData_CONST_GRP/Head_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/Neck_CTRL_POS_GRP/Neck_CTRL_AnimData_CONST_GRP/Neck_CTRL_In_Rig_CONST_GRP/Neck_CTRL/Head_CTRL_POS_GRP/Head_CTRL_AnimData_CONST_GRP/Head_CTRL_In_Rig_CONST_GRP/Head_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/RightShoulder_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/RightShoulder_CTRL_POS_GRP/RightShoulder_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/RightShoulder_CTRL_POS_GRP/RightShoulder_CTRL_AnimData_CONST_GRP/RightShoulder_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/RightShoulder_CTRL_POS_GRP/RightShoulder_CTRL_AnimData_CONST_GRP/RightShoulder_CTRL_In_Rig_CONST_GRP/RightShoulder_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/RightShoulder_CTRL_POS_GRP/RightShoulder_CTRL_AnimData_CONST_GRP/RightShoulder_CTRL_In_Rig_CONST_GRP/RightShoulder_CTRL/RightArm_FK_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/RightShoulder_CTRL_POS_GRP/RightShoulder_CTRL_AnimData_CONST_GRP/RightShoulder_CTRL_In_Rig_CONST_GRP/RightShoulder_CTRL/RightArm_FK_CTRL_POS_GRP/RightArm_FK_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/RightShoulder_CTRL_POS_GRP/RightShoulder_CTRL_AnimData_CONST_GRP/RightShoulder_CTRL_In_Rig_CONST_GRP/RightShoulder_CTRL/RightArm_FK_CTRL_POS_GRP/RightArm_FK_CTRL_AnimData_CONST_GRP/RightArm_FK_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/RightShoulder_CTRL_POS_GRP/RightShoulder_CTRL_AnimData_CONST_GRP/RightShoulder_CTRL_In_Rig_CONST_GRP/RightShoulder_CTRL/RightArm_FK_CTRL_POS_GRP/RightArm_FK_CTRL_AnimData_CONST_GRP/RightArm_FK_CTRL_In_Rig_CONST_GRP/RightArm_FK_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/RightShoulder_CTRL_POS_GRP/RightShoulder_CTRL_AnimData_CONST_GRP/RightShoulder_CTRL_In_Rig_CONST_GRP/RightShoulder_CTRL/RightArm_FK_CTRL_POS_GRP/RightArm_FK_CTRL_AnimData_CONST_GRP/RightArm_FK_CTRL_In_Rig_CONST_GRP/RightArm_FK_CTRL/RightForeArm_FK_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/RightShoulder_CTRL_POS_GRP/RightShoulder_CTRL_AnimData_CONST_GRP/RightShoulder_CTRL_In_Rig_CONST_GRP/RightShoulder_CTRL/RightArm_FK_CTRL_POS_GRP/RightArm_FK_CTRL_AnimData_CONST_GRP/RightArm_FK_CTRL_In_Rig_CONST_GRP/RightArm_FK_CTRL/RightForeArm_FK_CTRL_POS_GRP/RightForeArm_FK_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/RightShoulder_CTRL_POS_GRP/RightShoulder_CTRL_AnimData_CONST_GRP/RightShoulder_CTRL_In_Rig_CONST_GRP/RightShoulder_CTRL/RightArm_FK_CTRL_POS_GRP/RightArm_FK_CTRL_AnimData_CONST_GRP/RightArm_FK_CTRL_In_Rig_CONST_GRP/RightArm_FK_CTRL/RightForeArm_FK_CTRL_POS_GRP/RightForeArm_FK_CTRL_AnimData_CONST_GRP/RightForeArm_FK_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/RightShoulder_CTRL_POS_GRP/RightShoulder_CTRL_AnimData_CONST_GRP/RightShoulder_CTRL_In_Rig_CONST_GRP/RightShoulder_CTRL/RightArm_FK_CTRL_POS_GRP/RightArm_FK_CTRL_AnimData_CONST_GRP/RightArm_FK_CTRL_In_Rig_CONST_GRP/RightArm_FK_CTRL/RightForeArm_FK_CTRL_POS_GRP/RightForeArm_FK_CTRL_AnimData_CONST_GRP/RightForeArm_FK_CTRL_In_Rig_CONST_GRP/RightForeArm_FK_CTRL
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/RightShoulder_CTRL_POS_GRP/RightShoulder_CTRL_AnimData_CONST_GRP/RightShoulder_CTRL_In_Rig_CONST_GRP/RightShoulder_CTRL/RightArm_FK_CTRL_POS_GRP/RightArm_FK_CTRL_AnimData_CONST_GRP/RightArm_FK_CTRL_In_Rig_CONST_GRP/RightArm_FK_CTRL/RightForeArm_FK_CTRL_POS_GRP/RightForeArm_FK_CTRL_AnimData_CONST_GRP/RightForeArm_FK_CTRL_In_Rig_CONST_GRP/RightForeArm_FK_CTRL/RightHand_FK_CTRL_POS_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/RightShoulder_CTRL_POS_GRP/RightShoulder_CTRL_AnimData_CONST_GRP/RightShoulder_CTRL_In_Rig_CONST_GRP/RightShoulder_CTRL/RightArm_FK_CTRL_POS_GRP/RightArm_FK_CTRL_AnimData_CONST_GRP/RightArm_FK_CTRL_In_Rig_CONST_GRP/RightArm_FK_CTRL/RightForeArm_FK_CTRL_POS_GRP/RightForeArm_FK_CTRL_AnimData_CONST_GRP/RightForeArm_FK_CTRL_In_Rig_CONST_GRP/RightForeArm_FK_CTRL/RightHand_FK_CTRL_POS_GRP/RightHand_FK_CTRL_AnimData_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/RightShoulder_CTRL_POS_GRP/RightShoulder_CTRL_AnimData_CONST_GRP/RightShoulder_CTRL_In_Rig_CONST_GRP/RightShoulder_CTRL/RightArm_FK_CTRL_POS_GRP/RightArm_FK_CTRL_AnimData_CONST_GRP/RightArm_FK_CTRL_In_Rig_CONST_GRP/RightArm_FK_CTRL/RightForeArm_FK_CTRL_POS_GRP/RightForeArm_FK_CTRL_AnimData_CONST_GRP/RightForeArm_FK_CTRL_In_Rig_CONST_GRP/RightForeArm_FK_CTRL/RightHand_FK_CTRL_POS_GRP/RightHand_FK_CTRL_AnimData_CONST_GRP/RightHand_FK_CTRL_In_Rig_CONST_GRP
+        weight: 1
+      - path: CTRL_GRP/global_CTRL/Root_CTRL_POS_GRP/Root_CTRL_AnimData_CONST_GRP/Root_CTRL_In_Rig_CONST_GRP/Root_CTRL/Spine_CTRL_POS_GRP/Spine_CTRL_AnimData_CONST_GRP/Spine_CTRL_In_Rig_CONST_GRP/Spine_CTRL/Spine1_CTRL_POS_GRP/Spine1_CTRL_AnimData_CONST_GRP/Spine1_CTRL_In_Rig_CONST_GRP/Spine1_CTRL/Spine2_CTRL_POS_GRP/Spine2_CTRL_AnimData_CONST_GRP/Spine2_CTRL_In_Rig_CONST_GRP/Spine2_CTRL/RightShoulder_CTRL_POS_GRP/RightShoulder_CTRL_AnimData_CONST_GRP/RightShoulder_CTRL_In_Rig_CONST_GRP/RightShoulder_CTRL/RightArm_FK_CTRL_POS_GRP/RightArm_FK_CTRL_AnimData_CONST_GRP/RightArm_FK_CTRL_In_Rig_CONST_GRP/RightArm_FK_CTRL/RightForeArm_FK_CTRL_POS_GRP/RightForeArm_FK_CTRL_AnimData_CONST_GRP/RightForeArm_FK_CTRL_In_Rig_CONST_GRP/RightForeArm_FK_CTRL/RightHand_FK_CTRL_POS_GRP/RightHand_FK_CTRL_AnimData_CONST_GRP/RightHand_FK_CTRL_In_Rig_CONST_GRP/RightHand_FK_CTRL
+        weight: 1
+      - path: Joint_GRP
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_LeftShoulder
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_LeftShoulder/AnimData_LeftArm
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_LeftShoulder/AnimData_LeftArm/AnimData_LeftForeArm
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_LeftShoulder/AnimData_LeftArm/AnimData_LeftForeArm/AnimData_LeftHand
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_LeftShoulder/AnimData_LeftArm/AnimData_LeftForeArm/AnimData_LeftHand/AnimData_LeftHandIndex1
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_LeftShoulder/AnimData_LeftArm/AnimData_LeftForeArm/AnimData_LeftHand/AnimData_LeftHandIndex1/AnimData_LeftHandIndex2
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_LeftShoulder/AnimData_LeftArm/AnimData_LeftForeArm/AnimData_LeftHand/AnimData_LeftHandIndex1/AnimData_LeftHandIndex2/AnimData_LeftHandIndex3
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_LeftShoulder/AnimData_LeftArm/AnimData_LeftForeArm/AnimData_LeftHand/AnimData_LeftHandIndex1/AnimData_LeftHandIndex2/AnimData_LeftHandIndex3/AnimData_LeftHandIndex4
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_LeftShoulder/AnimData_LeftArm/AnimData_LeftForeArm/AnimData_LeftHand/AnimData_LeftHandThumb1
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_LeftShoulder/AnimData_LeftArm/AnimData_LeftForeArm/AnimData_LeftHand/AnimData_LeftHandThumb1/AnimData_LeftHandThumb2
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_LeftShoulder/AnimData_LeftArm/AnimData_LeftForeArm/AnimData_LeftHand/AnimData_LeftHandThumb1/AnimData_LeftHandThumb2/AnimData_LeftHandThumb3
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_LeftShoulder/AnimData_LeftArm/AnimData_LeftForeArm/AnimData_LeftHand/AnimData_LeftHandThumb1/AnimData_LeftHandThumb2/AnimData_LeftHandThumb3/AnimData_LeftHandThumb4
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_Neck
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_Neck/AnimData_Head
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_Neck/AnimData_Head/AnimData_HeadTop_End
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_RightShoulder
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_RightShoulder/AnimData_RightArm
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_RightShoulder/AnimData_RightArm/AnimData_RightForeArm
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_RightShoulder/AnimData_RightArm/AnimData_RightForeArm/AnimData_RightHand
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_RightShoulder/AnimData_RightArm/AnimData_RightForeArm/AnimData_RightHand/AnimData_RightHandIndex1
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_RightShoulder/AnimData_RightArm/AnimData_RightForeArm/AnimData_RightHand/AnimData_RightHandIndex1/AnimData_RightHandIndex2
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_RightShoulder/AnimData_RightArm/AnimData_RightForeArm/AnimData_RightHand/AnimData_RightHandIndex1/AnimData_RightHandIndex2/AnimData_RightHandIndex3
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_RightShoulder/AnimData_RightArm/AnimData_RightForeArm/AnimData_RightHand/AnimData_RightHandIndex1/AnimData_RightHandIndex2/AnimData_RightHandIndex3/AnimData_RightHandIndex4
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_RightShoulder/AnimData_RightArm/AnimData_RightForeArm/AnimData_RightHand/AnimData_RightHandThumb1
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_RightShoulder/AnimData_RightArm/AnimData_RightForeArm/AnimData_RightHand/AnimData_RightHandThumb1/AnimData_RightHandThumb2
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_RightShoulder/AnimData_RightArm/AnimData_RightForeArm/AnimData_RightHand/AnimData_RightHandThumb1/AnimData_RightHandThumb2/AnimData_RightHandThumb3
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/AnimData_Spine/AnimData_Spine1/AnimData_Spine2/AnimData_RightShoulder/AnimData_RightArm/AnimData_RightForeArm/AnimData_RightHand/AnimData_RightHandThumb1/AnimData_RightHandThumb2/AnimData_RightHandThumb3/AnimData_RightHandThumb4
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/transform2
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/transform2/AnimData_Hips
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/transform2/AnimData_Hips/AnimData_LeftUpLeg
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/transform2/AnimData_Hips/AnimData_LeftUpLeg/AnimData_LeftLeg
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/transform2/AnimData_Hips/AnimData_LeftUpLeg/AnimData_LeftLeg/AnimData_LeftFoot
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/transform2/AnimData_Hips/AnimData_LeftUpLeg/AnimData_LeftLeg/AnimData_LeftFoot/AnimData_LeftToeBase
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/transform2/AnimData_Hips/AnimData_LeftUpLeg/AnimData_LeftLeg/AnimData_LeftFoot/AnimData_LeftToeBase/AnimData_LeftToe_End
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/transform2/AnimData_Hips/AnimData_RightUpLeg
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/transform2/AnimData_Hips/AnimData_RightUpLeg/AnimData_RightLeg
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/transform2/AnimData_Hips/AnimData_RightUpLeg/AnimData_RightLeg/AnimData_RightFoot
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/transform2/AnimData_Hips/AnimData_RightUpLeg/AnimData_RightLeg/AnimData_RightFoot/AnimData_RightToeBase
+        weight: 1
+      - path: Joint_GRP/AnimData_Joint_GRP/AnimData_Root/transform2/AnimData_Hips/AnimData_RightUpLeg/AnimData_RightLeg/AnimData_RightFoot/AnimData_RightToeBase/AnimData_RightToe_End
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_LeftShoulder
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_LeftShoulder/Bind_LeftArm
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_LeftShoulder/Bind_LeftArm/Bind_LeftForeArm
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_LeftShoulder/Bind_LeftArm/Bind_LeftForeArm/Bind_LeftHand
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_LeftShoulder/Bind_LeftArm/Bind_LeftForeArm/Bind_LeftHand/Bind_LeftHandIndex1
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_LeftShoulder/Bind_LeftArm/Bind_LeftForeArm/Bind_LeftHand/Bind_LeftHandIndex1/Bind_LeftHandIndex2
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_LeftShoulder/Bind_LeftArm/Bind_LeftForeArm/Bind_LeftHand/Bind_LeftHandIndex1/Bind_LeftHandIndex2/Bind_LeftHandIndex3
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_LeftShoulder/Bind_LeftArm/Bind_LeftForeArm/Bind_LeftHand/Bind_LeftHandIndex1/Bind_LeftHandIndex2/Bind_LeftHandIndex3/Bind_LeftHandIndex4
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_LeftShoulder/Bind_LeftArm/Bind_LeftForeArm/Bind_LeftHand/Bind_LeftHandThumb1
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_LeftShoulder/Bind_LeftArm/Bind_LeftForeArm/Bind_LeftHand/Bind_LeftHandThumb1/Bind_LeftHandThumb2
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_LeftShoulder/Bind_LeftArm/Bind_LeftForeArm/Bind_LeftHand/Bind_LeftHandThumb1/Bind_LeftHandThumb2/Bind_LeftHandThumb3
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_LeftShoulder/Bind_LeftArm/Bind_LeftForeArm/Bind_LeftHand/Bind_LeftHandThumb1/Bind_LeftHandThumb2/Bind_LeftHandThumb3/Bind_LeftHandThumb4
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_LeftShoulder/Bind_LeftArm/Bind_LeftForeArm/LeftForeArm_IK_BakingLOC
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_LeftShoulder/FK_LeftArm
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_LeftShoulder/FK_LeftArm/FK_LeftForeArm
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_LeftShoulder/FK_LeftArm/FK_LeftForeArm/FK_LeftHand
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_LeftShoulder/IK_LeftArm
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_LeftShoulder/IK_LeftArm/IK_LeftForeArm
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_LeftShoulder/IK_LeftArm/IK_LeftForeArm/IK_LeftHand
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_LeftShoulder/IK_LeftArm/IK_LeftForeArm/LeftForeArm_IK_CTRL_GuideCurve_Cluster2Handle
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_Neck
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_Neck/Bind_Head
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_Neck/Bind_Head/Bind_HeadTop_End
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_RightShoulder
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_RightShoulder/Bind_RightArm
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_RightShoulder/Bind_RightArm/Bind_RightForeArm
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_RightShoulder/Bind_RightArm/Bind_RightForeArm/Bind_RightHand
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_RightShoulder/Bind_RightArm/Bind_RightForeArm/Bind_RightHand/Bind_RightHandIndex1
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_RightShoulder/Bind_RightArm/Bind_RightForeArm/Bind_RightHand/Bind_RightHandIndex1/Bind_RightHandIndex2
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_RightShoulder/Bind_RightArm/Bind_RightForeArm/Bind_RightHand/Bind_RightHandIndex1/Bind_RightHandIndex2/Bind_RightHandIndex3
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_RightShoulder/Bind_RightArm/Bind_RightForeArm/Bind_RightHand/Bind_RightHandIndex1/Bind_RightHandIndex2/Bind_RightHandIndex3/Bind_RightHandIndex4
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_RightShoulder/Bind_RightArm/Bind_RightForeArm/Bind_RightHand/Bind_RightHandThumb1
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_RightShoulder/Bind_RightArm/Bind_RightForeArm/Bind_RightHand/Bind_RightHandThumb1/Bind_RightHandThumb2
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_RightShoulder/Bind_RightArm/Bind_RightForeArm/Bind_RightHand/Bind_RightHandThumb1/Bind_RightHandThumb2/Bind_RightHandThumb3
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_RightShoulder/Bind_RightArm/Bind_RightForeArm/Bind_RightHand/Bind_RightHandThumb1/Bind_RightHandThumb2/Bind_RightHandThumb3/Bind_RightHandThumb4
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_RightShoulder/Bind_RightArm/Bind_RightForeArm/RightForeArm_IK_BakingLOC
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_RightShoulder/FK_RightArm
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_RightShoulder/FK_RightArm/FK_RightForeArm
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_RightShoulder/FK_RightArm/FK_RightForeArm/FK_RightHand
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_RightShoulder/IK_RightArm
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_RightShoulder/IK_RightArm/IK_RightForeArm
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_RightShoulder/IK_RightArm/IK_RightForeArm/IK_RightHand
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/Bind_Spine/Bind_Spine1/Bind_Spine2/Bind_RightShoulder/IK_RightArm/IK_RightForeArm/RightForeArm_IK_CTRL_GuideCurve_Cluster2Handle
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/Bind_LeftUpLeg
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/Bind_LeftUpLeg/Bind_LeftLeg
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/Bind_LeftUpLeg/Bind_LeftLeg/Bind_LeftFoot
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/Bind_LeftUpLeg/Bind_LeftLeg/Bind_LeftFoot/Bind_LeftToeBase
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/Bind_LeftUpLeg/Bind_LeftLeg/Bind_LeftFoot/Bind_LeftToeBase/Bind_LeftToe_End
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/Bind_LeftUpLeg/Bind_LeftLeg/Bind_LeftFoot/LeftFoot_IK_BakingLOC
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/Bind_LeftUpLeg/Bind_LeftLeg/LeftLeg_IK_BakingLOC
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/Bind_RightUpLeg
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/Bind_RightUpLeg/Bind_RightLeg
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/Bind_RightUpLeg/Bind_RightLeg/Bind_RightFoot
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/Bind_RightUpLeg/Bind_RightLeg/Bind_RightFoot/Bind_RightToeBase
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/Bind_RightUpLeg/Bind_RightLeg/Bind_RightFoot/Bind_RightToeBase/Bind_RightToe_End
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/Bind_RightUpLeg/Bind_RightLeg/Bind_RightFoot/RightFoot_IK_BakingLOC
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/Bind_RightUpLeg/Bind_RightLeg/RightLeg_IK_BakingLOC
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/FK_LeftUpLeg
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/FK_LeftUpLeg/FK_LeftLeg
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/FK_LeftUpLeg/FK_LeftLeg/FK_LeftFoot
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/FK_LeftUpLeg/FK_LeftLeg/FK_LeftFoot/FK_LeftToeBase
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/FK_LeftUpLeg/FK_LeftLeg/FK_LeftFoot/FK_LeftToeBase/FK_LeftToe_End
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/FK_RightUpLeg
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/FK_RightUpLeg/FK_RightLeg
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/FK_RightUpLeg/FK_RightLeg/FK_RightFoot
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/FK_RightUpLeg/FK_RightLeg/FK_RightFoot/FK_RightToeBase
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/FK_RightUpLeg/FK_RightLeg/FK_RightFoot/FK_RightToeBase/FK_RightToe_End
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/IK_LeftUpLeg
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/IK_LeftUpLeg/IK_LeftLeg
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/IK_LeftUpLeg/IK_LeftLeg/IK_LeftFoot
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/IK_LeftUpLeg/IK_LeftLeg/IK_LeftFoot/IK_LeftToeBase
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/IK_LeftUpLeg/IK_LeftLeg/IK_LeftFoot/IK_LeftToeBase/IK_LeftToe_End
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/IK_LeftUpLeg/IK_LeftLeg/LeftLeg_IK_CTRL_GuideCurve_Cluster2Handle
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/IK_RightUpLeg
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/IK_RightUpLeg/IK_RightLeg
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/IK_RightUpLeg/IK_RightLeg/IK_RightFoot
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/IK_RightUpLeg/IK_RightLeg/IK_RightFoot/IK_RightToeBase
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/IK_RightUpLeg/IK_RightLeg/IK_RightFoot/IK_RightToeBase/IK_RightToe_End
+        weight: 1
+      - path: Joint_GRP/Bind_Joint_GRP/Bind_Root/transform1/Bind_Hips/IK_RightUpLeg/IK_RightLeg/RightLeg_IK_CTRL_GuideCurve_Cluster2Handle
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
