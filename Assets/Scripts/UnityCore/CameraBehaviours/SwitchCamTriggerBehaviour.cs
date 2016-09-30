@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using Prime31.TransitionKit;
 using System.Collections;
 
 public class SwitchCamTriggerBehaviour : MonoBehaviour
@@ -30,7 +31,16 @@ public class SwitchCamTriggerBehaviour : MonoBehaviour
                 cameraObject.SetActive(true);
 
                 cameraObject.GetComponent<MainCameraBehaviour>().SetCamera();
-                
+
+                var fishEye = new FishEyeTransition()
+                {
+                    duration = 0.1f,
+                    size = 0.1f,
+                    zoom = 100.0f,
+                    colorSeparation = 0.1f
+                };
+                TransitionKit.instance.transitionWithDelegate(fishEye);
+
             }
     }
 }
