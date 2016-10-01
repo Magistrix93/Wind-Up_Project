@@ -1,17 +1,19 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 
 public class PlatTurnBehaviour : MonoBehaviour
 {
-    public GameObject character;
-    public bool controlJumping;
+
+    private GameObject character;
+    private bool controlJumping;
 
     private GameObject enterPoint;
 
     private BoxCollider coll;
 
-    public bool stopRotation = true;
-    public float direction;
+    private bool stopRotation = true;
+    private float direction;
 
     public bool teleportFaceUp;
 

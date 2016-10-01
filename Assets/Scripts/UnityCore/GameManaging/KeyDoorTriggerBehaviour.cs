@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 
 public class KeyDoorTriggerBehaviour : MonoBehaviour
 {
+    [NonSerialized]
     public bool chiave;
 
     // Use this for initialization

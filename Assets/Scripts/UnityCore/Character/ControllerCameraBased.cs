@@ -11,19 +11,23 @@ public enum CharacterStates
 public class ControllerCameraBased : MonoBehaviour
 {
     private float Speed;
-    public bool CanJump;
+    private bool CanJump;
     private float JumpSpeed;
-    public Vector3 MoveDirection;
+    private Vector3 MoveDirection;
     private float RunMultiplier;
     private float RunSpeed;
     private float mass;
 
-    public bool Jumping;
+    private bool Jumping;
+
+    [NonSerialized]
     public bool Grounded;
+
+    [NonSerialized]
     public bool platformRotate = false;
 
-    public Vector3 CameraDirectionX;
-    public Vector3 CameraDirectionY;
+    private Vector3 CameraDirectionX;
+    private Vector3 CameraDirectionY;
 
     private Vector3 lookDirection;
 
@@ -31,12 +35,13 @@ public class ControllerCameraBased : MonoBehaviour
 
     private GameObject model;
 
-    public int gravity;
+    private float gravity;
 
-    public float raycast;
+    private float raycast;
 
     private RaycastHit hit;
 
+    [NonSerialized]
     public CharacterStates charaStates;
 
     private Rigidbody rigid;
@@ -57,7 +62,7 @@ public class ControllerCameraBased : MonoBehaviour
         mass = 4f;
         model = transform.Find("omino_unity").gameObject;
         animator = model.GetComponent<Animator>();
-        raycast = 1.6f;
+        raycast = 1.45f;
         charaStates = CharacterStates.Controllable;
     }
 
@@ -71,10 +76,9 @@ public class ControllerCameraBased : MonoBehaviour
     void FixedUpdate()
     {
 
-        if (Physics.SphereCast(transform.position, 0.70f, Vector3.down, out hit, raycast))
+        if (Physics.SphereCast(transform.position, 0.80f, Vector3.down, out hit, raycast))
         {
             Grounded = true;            
-            gravity = 0;
             if (hit.transform.CompareTag("Platform"))
             {
                 transform.SetParent(hit.transform.parent);
@@ -95,8 +99,8 @@ public class ControllerCameraBased : MonoBehaviour
             rigid.velocity = Vector3.zero;
             rigid.angularVelocity = Vector3.zero;
             MoveDirection = Vector3.zero;
-            animator.SetBool("IsMidair", false);
             animator.speed = 1;
+            gravity = 0;
 
             if (!Input.GetButton("Jump"))
                 CanJump = true;
@@ -113,7 +117,7 @@ public class ControllerCameraBased : MonoBehaviour
         else
         {
             MoveDirection += Physics.gravity * Time.deltaTime * mass;
-            animator.SetBool("IsMidair", true);
+            gravity = MoveDirection.y / mass;
         }
 
         if (Jumping)
@@ -136,6 +140,10 @@ public class ControllerCameraBased : MonoBehaviour
             animator.SetBool("IsSprinting", false);
         }
 
+        if(Mathf.Abs(gravity) > 0.3f )
+            animator.SetBool("IsMidair", true);
+        else if (Grounded)
+            animator.SetBool("IsMidair", false);
 
         transform.LookAt(lookDirection);
         transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);

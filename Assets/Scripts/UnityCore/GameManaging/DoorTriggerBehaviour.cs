@@ -4,13 +4,14 @@ using UnityEngine.SceneManagement;
 
 public class DoorTriggerBehaviour : MonoBehaviour
 {
-    public GameObject key;
+    private GameObject key;
     private KeyDoorTriggerBehaviour door;
     private bool accessON;
 
     // Use this for initialization
     void Start()
     {
+        key = GameObject.FindGameObjectWithTag("Key");
         accessON = false;
         door = key.GetComponent<KeyDoorTriggerBehaviour>();
     }
