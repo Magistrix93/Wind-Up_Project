@@ -29,7 +29,7 @@ public class PlatMoveBehaviour : MonoBehaviour
         size = Plat.Length;
         actualPosition = transform.position;
         StartCoroutine(Attesa());
-        coll = transform.Find("Cubo").GetComponent<BoxCollider>();
+        coll = transform.Find("piatt_mobile").GetComponent<BoxCollider>();
 
 
     }
