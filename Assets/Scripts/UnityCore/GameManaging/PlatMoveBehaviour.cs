@@ -38,56 +38,55 @@ public class PlatMoveBehaviour : MonoBehaviour
     void Update()
     {
         if (!coll.isTrigger)
-        {
-            if (start)
+            if (!inWaiting)
             {
-                if (!inWaiting)
+                if (start)
+                {
                     transform.position = Vector3.MoveTowards(transform.position, Plat[i].position, speed * Time.deltaTime);
 
-                if (transform.position == Plat[i].position)
-                    i++;
+                    if (transform.position == Plat[i].position)
+                        i++;
 
-                if (i == size)
-                {
-                    if (!coroutineChecker)
-                        StartCoroutine(Attesa());
-
-                    start = false;
-                    i -= 2;
-                }
-            }
-
-            if (!start)
-            {
-                if (i < 0)
-                {
-                    if (!inWaiting)
-                        transform.position = Vector3.MoveTowards(transform.position, actualPosition, speed * Time.deltaTime);
-
-                    if (transform.position == actualPosition)
+                    if (i == size)
                     {
-                        if (!coroutineChecker)
-                            StartCoroutine(Attesa());
-                        i = 0;
-                        start = true;
+                        inWaiting = true;
+
+                        start = false;
+                        i -= 2;
                     }
                 }
-                else
-                {
-                    if (!inWaiting)
+
+                if (!start)
+                    if (i < 0)
+                    {
+
+                        transform.position = Vector3.MoveTowards(transform.position, actualPosition, speed * Time.deltaTime);
+
+                        if (transform.position == actualPosition)
+                        {
+                            inWaiting = true;
+                            i = 0;
+                            start = true;
+                        }
+                    }
+                    else
+                    {
                         transform.position = Vector3.MoveTowards(transform.position, Plat[i].position, speed * Time.deltaTime);
 
-                    if (transform.position == Plat[i].position)
-                        i--;
-                }
+                        if (transform.position == Plat[i].position)
+                            i--;
+                    }
+                
             }
-        }
+
+            else if (!coroutineChecker)
+                 StartCoroutine(Attesa());
+            
     }
 
     private IEnumerator Attesa()
     {
         coroutineChecker = true;
-        inWaiting = true;
         yield return new WaitForSeconds(wait);
         inWaiting = false;
         coroutineChecker = false;
