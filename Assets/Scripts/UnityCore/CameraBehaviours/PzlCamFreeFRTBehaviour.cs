@@ -14,17 +14,15 @@ public class PzlCamFreeFRTBehaviour : MainCameraBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        if(thisCamera.enabled)
-        {
-            direction = new Vector3(player.transform.position.x, player.transform.position.y + maxHeightDistance, transform.position.z);
 
-            transform.position = Vector3.MoveTowards(transform.position, direction, step * Time.deltaTime);
+        direction = new Vector3(player.transform.position.x, player.transform.position.y + maxHeightDistance, transform.position.z);
 
-            if (LookOnCharacter)
-                transform.LookAt(player.transform.position);
-        }
+        transform.position = Vector3.MoveTowards(transform.position, direction, step * Time.deltaTime);
+
+        if (LookOnCharacter)
+            transform.LookAt(player.transform.position);
 
     }
 
@@ -35,7 +33,7 @@ public class PzlCamFreeFRTBehaviour : MainCameraBehaviour
         if (maxHeightDistance == 0)
             Setting(player);
 
-        transform.position = new Vector3(player.transform.position.x, transform.position.y + maxHeightDistance, transform.position.z);
+        transform.position = new Vector3(player.transform.position.x, player.transform.position.y + maxHeightDistance, transform.position.z);
     }
 
 }

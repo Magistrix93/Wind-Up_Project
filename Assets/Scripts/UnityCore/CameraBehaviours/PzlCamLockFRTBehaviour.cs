@@ -17,25 +17,21 @@ public class PzlCamLockFRTBehaviour : MainCameraBehaviour
 
     void OnEnable()
     {
-        
+
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        if(thisCamera.enabled)
-        {
-            direction = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
+        direction = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
 
-            if (LookOnCharacter)
-                lookTarget = new Vector3(player.transform.position.x, groundPosition, player.transform.position.z);
+        if (LookOnCharacter)
+            lookTarget = new Vector3(player.transform.position.x, groundPosition, player.transform.position.z);
 
-            transform.position = Vector3.MoveTowards(transform.position, direction, step * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, direction, step * Time.deltaTime);
 
-            if(LookOnCharacter)
-                transform.LookAt(lookTarget);
-        }
-        
+        if (LookOnCharacter)
+            transform.LookAt(lookTarget);
     }
 
     public override void SetCamera()
