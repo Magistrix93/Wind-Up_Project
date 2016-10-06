@@ -31,9 +31,12 @@ public class EnterPointBehaviour : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             player = other.gameObject;
-
-            teleport.SetActive(true);
-            teleport.transform.position = player.transform.position;
+            if (teleport != null)
+            {
+                teleport.SetActive(true);
+                teleport.transform.position = player.transform.position;
+            }
+            
             if(!checkRoutine)
                 StartCoroutine(Teleporting());
         }
@@ -48,7 +51,8 @@ public class EnterPointBehaviour : MonoBehaviour
         player.transform.position = newExitPoint.transform.position;
         newExitPoint.GetComponent<ExitPointBehaviour>().Arrived();
         player.GetComponent<ControllerCameraBased>().charaStates = CharacterStates.Controllable;
-        teleport.SetActive(false);
+        if (teleport != null)
+            teleport.SetActive(false);
         checkRoutine = false;
     }
 

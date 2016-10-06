@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class DoorTriggerBehaviour : MonoBehaviour
 {
@@ -10,6 +11,11 @@ public class DoorTriggerBehaviour : MonoBehaviour
     private Texture emissSbloccata;
     private Renderer rend;
 
+    [NonSerialized]
+    public bool nextLevel;
+    [NonSerialized]
+    public int thisLevel;
+
     // Use this for initialization
     void Start()
     {
@@ -18,6 +24,9 @@ public class DoorTriggerBehaviour : MonoBehaviour
         door = key.GetComponent<KeyDoorTriggerBehaviour>();
         emissSbloccata = Resources.Load<Texture>("emiss_sbloccata");
         rend = GetComponent<Renderer>();
+        nextLevel = false;
+        thisLevel = SceneManager.GetActiveScene().buildIndex;
+
     }
 
     // Update is called once per frame
@@ -30,7 +39,10 @@ public class DoorTriggerBehaviour : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && (accessON))
+        {
             rend.material.SetTexture("_MKGlowTex", emissSbloccata);
+            nextLevel = true;
+        }
     }
 
 }

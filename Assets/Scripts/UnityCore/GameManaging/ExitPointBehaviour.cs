@@ -24,8 +24,11 @@ public class ExitPointBehaviour : MonoBehaviour
 
     public void Arrived()
     {
-        teleport.transform.position = player.transform.position;
-        teleport.SetActive(true);
+        if (teleport != null)
+        {
+            teleport.transform.position = player.transform.position;
+            teleport.SetActive(true);
+        }            
         StartCoroutine(Teleporting());
         Camera.main.gameObject.GetComponent<MainCameraBehaviour>().SetCamera();
     }
@@ -33,6 +36,7 @@ public class ExitPointBehaviour : MonoBehaviour
     private IEnumerator Teleporting()
     {
         yield return new WaitForSeconds(0.3f);
-        teleport.SetActive(false);
+        if (teleport != null)
+            teleport.SetActive(false);
     }
 }
