@@ -34,7 +34,7 @@ public class SwitchCamTriggerBehaviour : MonoBehaviour
 
                 var fishEye = new FishEyeTransition()
                 {
-                    duration = 0.1f,
+                    duration = 0.3f,
                     size = 0.1f,
                     zoom = 100.0f,
                     colorSeparation = 0.1f

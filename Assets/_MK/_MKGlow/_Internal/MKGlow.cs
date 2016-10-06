@@ -281,12 +281,6 @@ namespace MKGlowSystem
                 DestroyImmediate(blurMaterial);
             }
 
-            if (glowCamera)
-                DestroyImmediate(GlowCamera);
-
-            if (glowCameraObject)
-                DestroyImmediate(GlowCameraObject);
-
             if (glowTexture)
             {
                 RenderTexture.ReleaseTemporary(glowTexture);
