@@ -15,6 +15,7 @@ public class PlatMoveBehaviour : MonoBehaviour
     private int size;
     private bool coroutineChecker;
     private bool inWaiting;
+    private bool firstWait = true;
 
     private BoxCollider coll;
 
@@ -37,11 +38,19 @@ public class PlatMoveBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (!coll.isTrigger)
             if (!inWaiting)
             {
                 if (start)
                 {
+                    if (transform.position == actualPosition && firstWait)
+                    {
+                        inWaiting = true;
+                        i = 0;
+                        firstWait = false;
+                    }
+
                     transform.position = Vector3.MoveTowards(transform.position, Plat[i].position, speed * Time.deltaTime);
 
                     if (transform.position == Plat[i].position)
@@ -76,12 +85,12 @@ public class PlatMoveBehaviour : MonoBehaviour
                         if (transform.position == Plat[i].position)
                             i--;
                     }
-                
+
             }
 
             else if (!coroutineChecker)
-                 StartCoroutine(Attesa());
-            
+                StartCoroutine(Attesa());
+
     }
 
     private IEnumerator Attesa()
